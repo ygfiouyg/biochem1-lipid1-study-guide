@@ -1,0 +1,120 @@
+{
+ "lecture": "Lipid-1",
+ "pdf": "Lipid Lec. 1.pdf.pdf",
+ "pages": 28,
+ "model": "baai/bge-m3",
+ "chunks": [
+  {
+   "page": "01",
+   "chars": 213
+  },
+  {
+   "page": "02",
+   "chars": 1039
+  },
+  {
+   "page": "03",
+   "chars": 1075
+  },
+  {
+   "page": "04",
+   "chars": 724
+  },
+  {
+   "page": "05",
+   "chars": 907
+  },
+  {
+   "page": "06",
+   "chars": 643
+  },
+  {
+   "page": "07",
+   "chars": 660
+  },
+  {
+   "page": "08",
+   "chars": 747
+  },
+  {
+   "page": "09",
+   "chars": 116
+  },
+  {
+   "page": "10",
+   "chars": 1005
+  },
+  {
+   "page": "11",
+   "chars": 1029
+  },
+  {
+   "page": "12",
+   "chars": 904
+  },
+  {
+   "page": "13",
+   "chars": 253
+  },
+  {
+   "page": "14",
+   "chars": 253
+  },
+  {
+   "page": "15",
+   "chars": 253
+  },
+  {
+   "page": "16",
+   "chars": 253
+  },
+  {
+   "page": "17",
+   "chars": 752
+  },
+  {
+   "page": "18",
+   "chars": 1162
+  },
+  {
+   "page": "19",
+   "chars": 1095
+  },
+  {
+   "page": "20",
+   "chars": 76
+  },
+  {
+   "page": "21",
+   "chars": 1116
+  },
+  {
+   "page": "22",
+   "chars": 739
+  },
+  {
+   "page": "23",
+   "chars": 583
+  },
+  {
+   "page": "24",
+   "chars": 973
+  },
+  {
+   "page": "25",
+   "chars": 849
+  },
+  {
+   "page": "26",
+   "chars": 859
+  },
+  {
+   "page": "27",
+   "chars": 679
+  },
+  {
+   "page": "28",
+   "chars": 985
+  }
+ ]
+}
