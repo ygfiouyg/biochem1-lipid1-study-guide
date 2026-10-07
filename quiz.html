@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>كويز الدهون — محاضرة 1+2 تفاعلي</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0f1420;color:#e8eefc;font-family:'Segoe UI',Tahoma,sans-serif;line-height:1.8}
+header{background:linear-gradient(90deg,#12182a,#1b2540);border-bottom:1px solid #2a3852;padding:14px;text-align:center;position:sticky;top:0;z-index:10}
+h1{margin:0;font-size:1.15rem}
+.sub{color:#9fb0cc;font-size:.75rem}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+.bar{height:6px;background:#1e293b;border-radius:9px;overflow:hidden;margin:8px 0 4px}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#7c5cff,#22d3ee);transition:.3s}
+.stats{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;font-size:.8rem;color:#9fb0cc;margin:10px 0}
+.stats b{color:#22d3ee}
+.q{background:#171f2e;border:1px solid #2a3852;border-radius:16px;padding:16px;margin:14px 0}
+.tag{display:inline-block;font-size:.66rem;background:#1e293b;border:1px solid #2a3852;color:#9fb0cc;border-radius:999px;padding:2px 9px;margin-bottom:8px}
+.qt{font-weight:700;margin-bottom:10px}
+.opt{display:block;padding:10px 13px;border:1px solid #2a3852;border-radius:11px;margin:7px 0;cursor:pointer;background:#141d2f;transition:.15s}
+.opt:hover{border-color:#7c5cff}
+.opt.right{background:rgba(34,197,94,.18);border-color:#22c55e;font-weight:700}
+.opt.wrong{background:rgba(239,68,68,.18);border-color:#ef4444}
+.exp{display:none;margin-top:10px;padding:10px 13px;border-radius:11px;background:#1e293b;border-right:4px solid #22d3ee;font-size:.9rem}
+.exp.show{display:block}
+.big{text-align:center;font-size:2rem;font-weight:800;margin:14px 0}
+.btn{background:#7c5cff;color:#fff;border:0;border-radius:12px;padding:12px 26px;font-size:1rem;font-weight:700;cursor:pointer;font-family:inherit}
+.btn.alt{background:#1e293b;border:1px solid #2a3852;font-weight:500;font-size:.85rem;padding:9px 16px}
+footer{color:#9fb0cc;text-align:center;padding:26px;font-size:.78rem}
+</style></head>
+<body>
+<header><h1>🧪 كويز الدهون — محاضرة ١ + ٢</h1><div class="sub">٤٠ سؤال شامل · إجابة فورية + تفسير · بدون إنترنت</div></header>
+<div class="wrap">
+<div class="bar"><i id="bar"></i></div>
+<div class="stats">سؤال <b id="c">0</b>/<b id="t">0</b> · صح <b id="ok">0</b> · غلط <b id="no">0</b> · النتيجة <b id="pct">0%</b></div>
+<div id="box"></div>
+<div style="text-align:center;margin:20px 0"><button class="btn" id="reset">🔄 ابدأ من جديد</button> <button class="btn alt" id="shuffle">🔀 خلط الأسئلة</button></div>
+<div class="big" id="final"></div>
+</div>
+<footer>مهارة عبد السلام — PDF Study Architect · Biochemistry I · Lipid Lectures 1+2</footer>
+<script>
+var Q=[
+{q:"الدهون بتتصنف مع بعض أساسًا بسبب:",o:["نفس المجموعة الوظيفية","الذوبانية المشتركة","نفس الوزن الجزيئي","نفس نقطة الانصهار"],a:1,e:"heterogeneous group جمعها السلوك الموحد ناحية المذيبات: مش بتدوب في الماء وبتدوب في المذيبات العضوية.",t:"L1"},
+{q:"الدهون بتتكوّن أساسًا من:",o:["حمض + قاعدة","كحول + أحماض دهنية برابطة إستر","سكر + بروتين","أمينو + فوسفات"],a:1,e:"كحول + أحماض دهنية متوصّلين برابطة إستر (R-COO-R').",t:"L1"},
+{q:"أي المذيبات دي بتدوب فيها الدهون؟",o:["الماء","الإيثر ثنائي الإيثيل والكلوروفورم","محلول ملحي","الكحول المائي"],a:1,e:"diethyl ether, chloroform, acetone — بقاعدة (الشبيه يذيب الشبيه).",t:"L1"},
+{q:"الفئات الأربعة الكبرى للدهون:",o:["Simple, Compound, Associated, Derived","Solid, Liquid, Gas, Plasma","Acidic, Basic, Neutral, Amphoteric","Alpha, Beta, Gamma, Delta"],a:0,e:"بسيطة + مركبة + مرافقة + مشتقة.",t:"L1"},
+{q:"الدهون البسيطة تحتوي على:",o:["كحول + أحماض دهنية فقط","كحول + فوسفات","بروتين + دهن","سكر + دهن"],a:0,e:"مفيش فوسفات ولا كاربوهيدرات ولا بروتين.",t:"L1"},
+{q:"في الشموع، الكحول بيكون:",o:["جليسرول","كحول عالي مش جليسرول","سفينجوزين","كولين"],a:1,e:"الشموع = إسترات أحماض دهنية عالية مع كحولات عالية، مش جليسرول.",t:"L1"},
+{q:"أي فئة دهون مركبة بها فوسفات؟",o:["Glycolipids","Phospholipids","Sulpholipids","Aminolipids"],a:1,e:"الفوسفوليبيدات مُميزة بمجموعة الفوسفات.",t:"L2"},
+{q:"دور الـLipoproteins الأساسي:",o:["تحلية الدهون","نقل الدهون في الدم","تخزين الطاقة","امتصاص الفيتامينات"],a:1,e:"البروتين بيعمل وسيلة نقل لأن الدهون مش بتدوب في الدم المائي.",t:"L2"},
+{q:"الدهون المشتقة (Derived) بتنتج من:",o:["التحلل المائي","الأكسدة","التصبن","التكرمل"],a:0,e:"نواتج تحلل الدهون البسيطة أو المركبة: أحماض دهنية، كحولات، هيدروكربونات.",t:"L1"},
+{q:"المواد المرافقة للدهون مثالها:",o:["فيتامينات A,D,E,K","البروتينات","السكريات","الأحماض الأمينية"],a:0,e:"فيتامينات ذوّابة في الدهن + ستيرويدات + كاروتينات.",t:"L1"},
+{q:"الجليسرول يحتوي على كام مجموعة هيدروكسيل؟",o:["1","2","3","4"],a:2,e:"ثلاث مجموعات OH → عشان كده يعمل 3 روابط إستر.",t:"L1"},
+{q:"من الاستخدامات الطبية للجليسرول:",o:["النيترو جليسرين للأنجينا","مضاد حيوي","خافض للحرارة","مدر للبول"],a:0,e:"Nitroglycerin للذبحة الصدرية + استخدام تناضحي للجلوكوما + مستحضرات تجميل.",t:"L1"},
+{q:"الصيغة العامة للحمض الدهني:",o:["R-OH","R-COOH","R-NH2","R-CHO"],a:1,e:"R-COOH: ذيل كربوني كاره للماء + مجموعة كربوكسيل.",t:"L1"},
+{q:"عدد الكربونات في الأحماض الدهنية الطبيعية عادةً:",o:["فردي","زوجي","عشري","لا قاعدة"],a:1,e:"بتتبنى من وحدات أسيتيل-CoA (2 كربون) → النتيجة مضاعف 2.",t:"L1"},
+{q:"حمض الزبديك (Butyric acid) مثال على:",o:["حمض غير مشبع","حمض مشبع (4 كربون، في الزبدة)","شمع","كحول عالي"],a:1,e:"CH3-CH2-CH2-COOH، خط مستقيم بدون روابط مزدوجة.",t:"L1"},
+{q:"كل ما زادت الروابط المزدوجة في الحمض الدهني:",o:["نقطة الانصهار تزيد","نقطة الانصهار تقل","مفيش تأثير","يبقى قابل للذوبان في الماء"],a:1,e:"الروابط بتعمل انحناءات (bends) تمنع التكويم المنتظم → انصهار أقل.",t:"L1"},
+{q:"ترقيم حمض الأراكيدونيك:",o:["18:1(9)","18:2(9,12)","20:4(5,8,11,14)","16:1(9)"],a:2,e:"20 كربون + 4 روابط مزدوجة عند 5,8,11,14.",a2:2,t:"L1"},
+{q:"حمض الأوليك ترقيمه:",o:["18:1(9)","18:2(9,12)","24:1(15)","18:3(9,12,15)"],a:0,e:"18 كربون، رابطة مزدوجة واحدة عند 9 (أحادي غير مشبع).",t:"L1"},
+{q:"في الشكل cis للحمض الدهني غير المشبع:",o:["السلسلة مستقيمة","فيها انحناء","مش موجود طبيعيًا","بتزيد نقطة الانصهار"],a:1,e:"cis هو السائد طبيعيًا وبيدّي انحناء حقيقي في السلسلة.",t:"L1"},
+{q:"التراي جليسريد بيتكوّن من:",o:["جليسرول + 3 أحماض دهنية و3 روابط إستر","جليسرول + حمضين","2 جليسرول + حمض","كحول عالي + حمض"],a:0,e:"triacylglycerol = 3 مجموعات أسيل متوصّلة بالجليسرول.",t:"L1"},
+{q:"مثال على Simple glyceride:",o:["Palmitostearin","Tripalmitin","Lecithin","Kerasin"],a:1,e:"Simple = الأحماض الثلاثة متطابقة (tripalmitin).",t:"L1"},
+{q:"مثال على Mixed glyceride:",o:["Tripalmitin","Palmitostearin","Cardiolipin","Nervon"],a:1,e:"Mixed = الأحماض الثلاثة مختلفة (palmitostearin).",t:"L1"},
+{q:"الكثافة النوعية للدهون:",o:["أكبر من 1","أقل من 1","تساوي 1","تساوي صفر"],a:1,e:"عشان كده بتطفو على الماء.",t:"L1"},
+{q:"اللون الأصفر في الزبدة غالبًا جاي من:",o:["الدهن النقي","الكاروتين (مادة مرافقة)","البروتين","الملح"],a:1,e:"الدهن النقي بلا لون ولا ريحة ولا طعم؛ اللون من مواد مرافقة.",t:"L1"},
+{q:"التصبن (Saponification) بـNaOH بيدي:",o:["جليسرول + أحماض حرة","صابون + جليسرول","صابون بس","ألدهيدات وكيتونات"],a:1,e:"الصابون = ملح صوديوم للحمض الدهني، قابل للذوبان في الماء.",t:"L1"},
+{q:"في جسم الإنسان، إنزيم الليباز بيحلل التراي جليسريد لـ:",o:["صابون + جليسرول","جليسرول + أحماض دهنية حرة","ألدهيدات","سيراميد"],a:1,e:"الليباز يعمل مع الماء → glycerol + free fatty acids.",t:"L1"},
+{q:"الصابون بيشيل الدهن لأنه:",o:["طرفين أيونيين","ذيل غير قطبي يمسك الدهن + رأس أيوني يحب الماء","رأس قطبي بس","يذوب في الزيت"],a:1,e:"جزيء amphipathic بيعمل جسر بين الماء والدهن (micelles).",t:"L1"},
+{q:"الزناخة (Rancidity) بتنتج عن أكسدة:",o:["الروابط المزدوجة","مجموعة الكربوكسيل","الروابط الإسترية","مجموعة الأمينو"],a:0,e:"الأكسدة تضرب الروابط المزدوجة → ألدهيدات وكيتونات وبيروكسيدات (ريحة وطعم سيئين).",t:"L1"},
+{q:"أي العوامل دي بتسرّع الزناخة؟",o:["التخزين البارد","النيتروجين","الضوء والأكسجين والحرارة والرطوبة","مضادات الأكسدة"],a:2,e:"العوامل الأربعة المسرّعة: ضوء + أكسجين + رطوبة + حرارة.",t:"L1"},
+{q:"من طرق منع الزناخة:",o:["زيادة الحرارة","التبريد + نيتروجين/تفريغ + مضادات أكسدة","التعرض للضوء","إضافة ماء"],a:1,e:"التحكم في الحرارة والأكسجين هو المفتاح.",t:"L1"},
+{q:"شمع النحل (Beeswax) يتكوّن من:",o:["جليسرول + حمض بالميتيك","كحول ميريسيلي + حمض بالميتيك","جليسرول + حمض أوليك","سفينجوزين + سكر"],a:1,e:"الشموع إسترات كحولات عالية مع أحماض دهنية عالية.",t:"L1"},
+{q:"اللانولين (Lanolin) يُستخدم في:",o:["تحضير المراهم","تحلية الطعام","تصنيع الوقود","الأسمدة"],a:0,e:"من صوف الأغنام، ومقاوم للماء → قاعدة ممتازة للمراهم.",t:"L1"},
+{q:"المجموعة المميزة في الفوسفوليبيدات:",o:["الكربوهيدرات","الكبريت","الفوسفور","الأمينو"],a:2,e:"سُميّت فوسفوليبيدات لاحتوائها على الفوسفور.",t:"L2"},
+{q:"أبسط أنواع الفوسفوليبيد:",o:["الليسيثين","حمض الفوسفاتيديك","الكارديوليبين","السفينجوميلين"],a:1,e:"Phosphatidic acid = جليسرول + 2 حمض دهني + فوسفات (بدون قاعدة نيتروجينية).",t:"L2"},
+{q:"الكارديوليبين (Cardiolipin) موجود في:",o:["غشاء الميتوكوندريا","المايلين","حاجز الجلد","غشاء الخلية البكتيري"],a:0,e:"اتُعزل من عضلة القلب، ويُوجد في غشاء الميتوكوندريا.",t:"L2"},
+{q:"اختبار VDRL للزهري بيعتمد على:",o:["الليسيثين","الكارديوليبين كمستضد","الكوليسترول","السيراميد"],a:1,e:"الكارديوليبين يستخدم كأنتيجين في التشخيص المصلي.",t:"L2"},
+{q:"القاعدة النيتروجينية في الليسيثين:",o:["إيثانولامين","سيرين","كولين","إينوزيتول"],a:2,e:"Choline هي بصمة الليسيثين.",t:"L2"},
+{q:"إنزيم Lecithinase A موجود في:",o:["سم الثعابين","الحليب","الدم","اللعاب"],a:0,e:"بيشيل حمض دهني غير مشبع من الليسيثين → lysolecithin.",t:"L2"},
+{q:"الـLysolecithin تأثيره:",o:["محلل للدم (haemolytic)","مضاد أكسدة","منشط للقلب","مخفض للسكر"],a:0,e:"بسبب طبيعته amphipathic بيفتح غشاء كرات الدم الحمراء.",t:"L2"},
+{q:"أهمية الليسيثين:",o:["أغشية الخلايا + استقلاب الدهون بالكبد","تجلط الدم","تكوين المايلين","حاجز الجلد"],a:0,e:"مكون غشائي + ضروري لاستقلاب دهون الكبد + طبيعته amphipathic.",t:"L2"},
+{q:"القاعدة النيتروجينية في السيفالين:",o:["كولين","إيثانولامين أو سيرين","إينوزيتول","سفينجوزين"],a:1,e:"Phosphatidylethanolamine / Phosphatidylserine.",t:"L2"},
+{q:"السيفالين مرتبط بتكوين:",o:["الثرمبوبلاستين (لتجلط الدم)","المايلين","الليزوزيم","الأنسولين"],a:0,e:"lysophosphatidylethanolamine تشارك في تكوين thromboplastin الضروري للتجلط.",t:"L2"},
+{q:"البصمة المميزة للإينوزيتيدات:",o:["كولين بدل الفوسفات","إينوزيتول يحل محل القاعدة النيتروجينية","كبريت بدل الفوسفات","بدون قاعدة"],a:1,e:"Inositol replaces the nitrogenous base — ومهمة في مسارات الإشارة.",t:"L2"},
+{q:"البلازمالوجين (Plasmalogen) يتميز بـ:",o:["رابطة إستر","رابطة إيثر مع كحول دهني غير مشبع","بدون فوسفات","يحتوي سيراميد"],a:1,e:"الحمض الدهني عند C1 مستبدل بكحول دهني غير مشبع برابطة إيثر (ether).",t:"L2"},
+{q:"البلازمالوجين موجود بكثرة في:",o:["الدماغ والقلب","الجلد","الكبد فقط","العظم"],a:0,e:"خصوصًا في الدماغ والقلب، وله دور إشاري ومضاد أكسدة.",t:"L2"},
+{q:"السفينجوميلين يحتوي على:",o:["جليسرول","سفينجوزين","إيثانولامين","إينوزيتول"],a:1,e:"سفينجوزين = كحول أميني طويل السلسلة، متوفر في الجهاز العصبي.",t:"L2"},
+{q:"السيراميد (Ceramide) هو:",o:["مشتق N-acyl للسفينجوزين","نوع من الليسيثين","شمع","سكر أحادي"],a:0,e:"سفينجوزين + حمض دهني = سيراميد، مهم في حاجز الجلد والـapoptosis.",t:"L2"},
+{q:"الجليكوليبيدات تتكوّن من:",o:["جليسرول + فوسفات","سفينجوزين + حمض دهني + كربوهيدرات","كحول عالي + كبريت","بروتين + دهن"],a:1,e:"عشان كده بتُسمى sphingolipids، ولو السكر جالاكتوز تُسمى galactolipids.",t:"L2"},
+{q:"الجانجليوزيدات (Gangliosides) هي جليكوليبيدات بـ:",o:["سكر واحد","سكرين","أكثر من 3 سكريات","بدون سكر"],a:2,e:"سلاسل كربوهيدراتية أكثر من 3 سكريات = gangliosides.",t:"L2"},
+{q:"السيريبروزيدات موجودة في:",o:["المادة البيضاء بالمخ والمايلين","الكبد","الرئة","الكلية"],a:0,e:"cerebroside = جليكوليبيد في نصف الكرة المخية + أغلفة المايلين.",t:"L2"},
+{q:"الكيراسين (Kerasin) يتكوّن من:",o:["Lignoceric acid + galactose","Nervonic acid + glucose","Palmitic acid + choline","Stearic acid + serine"],a:0,e:"Kerasin = lignoceric، Phrenosine = cerebronic، Nervon = nervonic.",t:"L2"},
+{q:"الفرينوزين (Phrenosine) يتكوّن من:",o:["Lignoceric acid + galactose","Cerebronic acid + galactose","Nervonic acid + galactose","Oleic acid + glucose"],a:1,e:"Phrenosine (cerebron) = cerebronic acid + galactose.",t:"L2"},
+{q:"السلفوليبيدات هي:",o:["إسترات كبريتاتية للكيراتين أو الفرينوزين","فوسفوليبيدات","شموع","ستيرويدات"],a:0,e:"الكبريت على كربون 3 من الجالاكتوز — مهمة في الدماغ والمايلين.",t:"L2"},
+{q:"الليبوبروتينات تُعتبر نوع من:",o:["الأمينو ليبيدات","الشموع","الجليكوليبيدات","الستيرويدات"],a:0,e:"لأن البروتين يحتوي مجموعات أمينو.",t:"L2"},
+{q:"الفيتامينات المرافقة للدهون:",o:["B و C","A و D و E و K","A و C","D و B12"],a:1,e:"الفيتامينات الذوّابة في الدهن.",t:"L2"}
+];
+var order=[],idx=0,ok=0,no=0;
+function build(){
+ order=Q.map(function(_,i){return i});
+}
+function shuffle(){for(var i=order.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=order[i];order[i]=order[j];order[j]=t;}}
+function render(){
+ var box=document.getElementById('box');box.innerHTML='';
+ document.getElementById('t').textContent=Q.length;
+ order.forEach(function(qi){
+  var q=Q[qi];
+  var d=document.createElement('div');d.className='q';
+  var h='<span class="tag">'+(q.t==='L2'?'محاضرة ٢':'محاضرة ١')+'</span><div class="qt">'+q.q+'</div>';
+  q.o.forEach(function(o,j){h+='<div class="opt" data-q="'+qi+'" data-j="'+j+'">'+String.fromCharCode(65+j)+'. '+o+'</div>';});
+  h+='<div class="exp" id="e'+qi+'"></div>';
+  d.innerHTML=h;box.appendChild(d);
+ });
+}
+document.getElementById('box').addEventListener('click',function(e){
+ var t=e.target.closest('.opt');if(!t)return;
+ if(t.parentNode.dataset.done)return;
+ t.parentNode.dataset.done='1';
+ var qi=+t.dataset.q,j=+t.dataset.j,q=Q[qi];
+ var ops=t.parentNode.querySelectorAll('.opt');
+ ops.forEach(function(o){o.classList.remove('right','wrong')});
+ ops[q.a].classList.add('right');
+ var good=(j===q.a);
+ if(!good)t.classList.add('wrong');
+ var ex=document.getElementById('e'+qi);
+ ex.innerHTML='<b>'+(good?'✅ صح!':'❌ غلط — الإجابة الصحيحة: '+String.fromCharCode(65+q.a))+'</b><br>'+q.e;
+ ex.classList.add('show');
+ if(good)ok++;else no++;
+ idx++;
+ upd();
+});
+function upd(){
+ document.getElementById('c').textContent=idx;
+ document.getElementById('ok').textContent=ok;
+ document.getElementById('no').textContent=no;
+ var p=Q.length?Math.round(ok/Q.length*100):0;
+ document.getElementById('pct').textContent=p+'%';
+ document.getElementById('bar').style.width=(idx/Q.length*100)+'%';
+ if(idx===Q.length){
+  var m=p>=90?'🏆 ممتاز — جاهز للامتحان!':p>=75?'🔥 جيد جدًا — راجع الناقص':p>=60?'👍 كويس — محتاج مراجعة':'📚 راجع المحاضرات تاني';
+  document.getElementById('final').textContent='النتيجة النهائية: '+ok+'/'+Q.length+' ('+p+'%) — '+m;
+ }
+}
+document.getElementById('reset').addEventListener('click',function(){ok=0;no=0;idx=0;document.getElementById('final').textContent='';build();render();upd();});
+document.getElementById('shuffle').addEventListener('click',function(){ok=0;no=0;idx=0;document.getElementById('final').textContent='';build();shuffle();render();upd();});
+build();render();upd();
+</script>
+</body></html>
