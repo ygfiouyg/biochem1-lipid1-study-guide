@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Biochemistry I — Lecture 1: Lipid Chemistry (Simple Lipids)</title>
+<style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#14161f;--dim:#5b6070;--line:#e6e8f0;--brand:#6d4aff;--brand2:#00b3a4;--warn:#e8562a;--ok:#1faa59;--hi:#fff4d6}
+html[data-theme=dark]{--bg:#0e1016;--card:#171a23;--ink:#eef1f8;--dim:#9aa1b2;--line:#262b38;--hi:#2a2413}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.8 -apple-system,Segoe UI,Roboto,Tahoma,Arial}
+.wrap{max-width:940px;margin:0 auto;padding:18px}
+header.hero{background:linear-gradient(135deg,#6d4aff,#00b3a4);color:#fff;border-radius:20px;padding:26px 22px;margin-bottom:18px}
+header.hero h1{margin:0 0 6px;font-size:24px}
+header.hero p{margin:0;opacity:.92;font-size:14px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5;border-bottom:1px solid var(--line)}
+.bar input{flex:1;min-width:180px;padding:11px 14px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:15px}
+.btn{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:10px 14px;border-radius:12px;font-size:14px}
+.btn:hover{border-color:var(--brand)}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:16px 0}
+.toc a{display:block;color:var(--brand);text-decoration:none;padding:4px 0;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin:16px 0}
+h2{font-size:20px;margin:0 0 4px}
+h2 .en{color:var(--dim);font-size:14px;font-weight:600;display:block;direction:ltr;text-align:left}
+h3{font-size:16px;margin:18px 0 6px}
+.en{direction:ltr;text-align:left;font-family:ui-monospace,Menlo,Consolas,monospace;background:var(--hi);border-radius:10px;padding:10px 12px;margin:8px 0;font-size:14px;line-height:1.6}
+.tbl{width:100%;border-collapse:collapse;margin:10px 0;font-size:14px}
+.tbl th,.tbl td{border:1px solid var(--line);padding:8px 10px;text-align:start}
+.tbl th{background:linear-gradient(0deg,transparent,rgba(109,74,255,.08))}
+.tag{display:inline-block;font-size:12px;padding:3px 9px;border-radius:999px;border:1px solid var(--line);margin:0 0 6px}
+.hy{background:var(--hi);border:1px dashed #e6b800}
+.warn{border-color:var(--warn)}
+.det{border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:8px 0;background:var(--card)}
+.det summary{cursor:pointer;font-weight:700;color:var(--brand)}
+.q{margin:12px 0;padding:12px;border:1px solid var(--line);border-radius:12px}
+.q b{display:block;margin-bottom:6px}
+.opt{display:block;padding:6px 0;font-size:14px}
+.opt input{margin-inline-end:6px}
+.fb{font-size:13px;margin-top:6px}
+.ok{color:var(--ok);font-weight:700}.no{color:var(--warn);font-weight:700}
+.flow{display:flex;gap:6px;flex-wrap:wrap;align-items:center;font-size:14px}
+.flow i{background:var(--hi);border-radius:10px;padding:6px 10px;font-style:normal}
+.mnem{background:linear-gradient(0deg,transparent,rgba(0,179,164,.10));border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0}
+.score{font-size:18px;font-weight:800}
+footer{color:var(--dim);font-size:13px;text-align:center;padding:26px 0}
+.hidden{display:none}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <h1>Biochemistry I — Lecture 1<br>Lipid Chemistry: Simple Lipids <span style="direction:ltr;unicode-bidi:embed">— كيمياء الليبيدات: الدهون البسيطة</span></h1>
+  <p>Dr. Hanan Hafila · Faculty of Pharmacy · Delta University for Science &amp; Technology</p>
+</header>
+
+<div class="bar">
+  <input id="search" placeholder="🔎 ابحث في المحتوى (مثال: glycerol, saponification, wax)">
+  <button class="btn" id="theme">🌙/☀️</button>
+  <button class="btn" id="expand">Expand All</button>
+  <button class="btn" id="collapse">Collapse All</button>
+</div>
+
+<div class="toc card">
+  <b>📚 المحتويات (Table of Contents)</b>
+  <a href="#s1">1) ما هو الليبيد؟ — What Is a Lipid?</a>
+  <a href="#s2">2) الفئات الأربع الكبرى — Four Major Categories</a>
+  <a href="#s3">3) الدهون البسيطة — Simple Lipids</a>
+  <a href="#s4">4) الجليسرول — Glycerol</a>
+  <a href="#s5">5) الأحماض الدهنية — Fatty Acids</a>
+  <a href="#s6">6) المشبعة وغير المشبعة — Saturated vs Unsaturated</a>
+  <a href="#s7">7) أحماض دهنية مهمة + PUFA</a>
+  <a href="#s8">8) الدهون المتعادلة — Triglycerides</a>
+  <a href="#s9">9) خواص الدهون والزيوت الفيزيائية</a>
+  <a href="#s10">10) التحلل المائي والتصبن — Hydrolysis &amp; Saponification</a>
+  <a href="#s11">11) الأكسدة والزناخة — Oxidation &amp; Rancidity</a>
+  <a href="#s12">12) الشمع — Waxes</a>
+  <a href="#s13">13) 🔥 High-Yield &amp; 🧠 Memory Tricks</a>
+  <a href="#s14">14) 🧠 Active Recall</a>
+  <a href="#s15">15) 📝 Question Bank</a>
+  <a href="#s16">16) 🎓 Final Exam (تفاعلي)</a>
+  <a href="#s17">17) ⚡ Last-Minute Revision</a>
+</div>
+
+<section class="card" id="s1">
+  <h2>1) ما هو الليبيد؟<span class="en">What Is a Lipid?</span></h2>
+  <div class="en">Definition: Lipids are a <b>heterogeneous group</b> of naturally occurring organic compounds classified together mainly because of their common <b>solubility properties</b>. Simply: organic compounds formed mainly from <b>alcohol + fatty acids</b> combined by an <b>ester linkage</b>.</div>
+  <p>الليبيدات مش عيلة واحدة مترابطة كيميائيًا — دي مجموعة <b>متنوعة</b> اتجمّعت مع بعض لسبب واحد أساسي: <b>الذوبان</b>. كلهم <b>مايذوبوش في الماء</b> و<b>يذوبوا في المذيبات العضوية</b>. وأبسط صيغة: كحول + أحماض دهنية مرتبطين بـ<b>رابطة إستر</b>.</p>
+  <table class="tbl">
+    <tr><th>خاصية الذوبان</th><th>Solubility profile</th></tr>
+    <tr><td>✕ غير قابل للذوبان في الماء</td><td>Insoluble in water</td></tr>
+    <tr><td>✓ قابل للذوبان في المذيبات العضوية</td><td>Soluble in organic solvents</td></tr>
+    <tr><td>المذيبات الشائعة</td><td>Diethyl ether · Chloroform · Acetone</td></tr>
+  </table>
+  <div class="mnem">🧠 <b>فكرة مفتاحية:</b> معظم خواص الليبيد بتبدأ من مبدأ واحد — <b>النفور من الماء (water avoidance)</b>. فكّر فيه كإنه زيت بيهرب من المية.</div>
+  <div class="det"><details><summary>🧠 تذكّر: ليه بيسموا "lipid" وهي مش عيلة واحدة؟</summary><p>لأنهم بيتشاركوا في <b>السلوك</b> (الذوبان) مش في التركيب الدقيق. زي "الفواكه الحمراء" — مش نوع واحد بس بيجمعهم اللون.</p></details></div>
+</section>
+
+<section class="card" id="s2">
+  <h2>2) الفئات الأربع الكبرى<span class="en">The Four Major Lipid Categories</span></h2>
+  <table class="tbl">
+    <tr><th>الفئة</th><th>المكونات</th><th>English</th></tr>
+    <tr><td>دهون بسيطة</td><td>كحول + أحماض دهنية</td><td>Simple lipids = Alcohol + fatty acids</td></tr>
+    <tr><td>دهون مركّبة</td><td>ليبيد + مجموعة إضافية</td><td>Compound lipids = Lipid + additional group</td></tr>
+    <tr><td>دهون مشتقة</td><td>نواتج التحلل المائي</td><td>Derived lipids = Hydrolysis products</td></tr>
+    <tr><td>مواد مصاحبة</td><td>فيتامينات، ستيرويدات، كاروتينات</td><td>Substances associated with lipids</td></tr>
+  </table>
+  <p>التصنيف بيعتمد على <b>إيه اللي متبقي على الهيكل الليبيدي</b> — هل هو كحول+أحماض بس؟ ولا فيه مجموعة إضافية (فوسفات/كربوهيدرات/بروتين)؟ ولا هو ناتج تحلل؟</p>
+  <h3>الدهون المركّبة بالتفصيل — Compound Lipids</h3>
+  <table class="tbl">
+    <tr><th>النوع</th><th>المجموعة الإضافية</th></tr>
+    <tr><td>Phospholipids</td><td>Phosphate group</td></tr>
+    <tr><td>Glycolipids</td><td>Carbohydrate residue</td></tr>
+    <tr><td>Sulfolipids</td><td>Sulfur-containing group</td></tr>
+    <tr><td>Aminolipids</td><td>Amino group</td></tr>
+    <tr><td>Lipoproteins</td><td>Combined with proteins; transport in blood</td></tr>
+  </table>
+  <div class="mnem">🧠 <b>حيلة الحفظ (S-C-D-A):</b> <b>S</b>imple → <b>C</b>ompound → <b>D</b>erived → <b>A</b>ssociated. "<b>سـ-كـ-د-ع</b>" — <b>س</b>هل، <b>ك</b>مبوند، <b>د</b>ريفت، <b>ع</b>وامل مصاحبة.</div>
+</section>
+
+<section class="card" id="s3">
+  <h2>3) الدهون البسيطة<span class="en">I. Simple Lipids — The Basic Framework</span></h2>
+  <div class="en">Simple lipids = only two building blocks: <b>Alcohol + Fatty acids</b>. Main types are determined by the <b>alcohol component</b>. They contain <b>no</b> extra phosphate, carbohydrate or protein group.</div>
+  <table class="tbl">
+    <tr><th>النوع</th><th>الكحول</th><th>ملاحظة</th></tr>
+    <tr><td>Neutral fats (الدهون المتعادلة)</td><td>Glycerol</td><td>Fats solid · Oils liquid</td></tr>
+    <tr><td>Waxes (الشموع)</td><td>Higher alcohol (not glycerol)</td><td>كحول عالي، مش جليسرول</td></tr>
+  </table>
+  <div class="mnem">🎯 <b>المفتاح:</b> "بسيط" = لبنة كحول + لبنة أحماض دهنية، وخلاص. أي حاجة زيادة (فوسفات/كربوهيدرات/بروتين) → يبقى "مركّب".</div>
+</section>
+
+<section class="card" id="s4">
+  <h2>4) الجليسرول<span class="en">Glycerol: A Three-OH Alcohol</span></h2>
+  <div class="en">HO–CH₂ · CH(OH) · CH₂–OH — glycerol contains <b>three hydroxyl groups</b> and forms <b>ester linkages</b> with fatty acids. Properties: soluble in water and alcohol; combines with fatty acids.</div>
+  <p>الجليسرول كحول صغير عنده <b>3 مجموعات هيدروكسيل (OH)</b> → وده اللي بيخليه يقدر يمسك <b>3 أحماض دهنية</b> في نفس الوقت (وكل واحدة بـ<b>رابطة إستر</b>). عشان كده هو "الكحول المركزي" في تكوين الـtriglycerides.</p>
+  <div class="hy">
+    <b>🎓 الأهمية الصيدلانية (Pharmaceutical relevance):</b>
+    <ul><li>مستحضرات التجميل (cosmetics)</li><li><b>Nitroglycerin</b> لعلاج الذبحة الصدرية (angina)</li><li>استخدام أسموزي متعلّق بالجليسرول في <b>الجلوكوما</b></li></ul>
+  </div>
+</section>
+
+<section class="card" id="s5">
+  <h2>5) الأحماض الدهنية<span class="en">Fatty Acids: The R–COOH Family</span></h2>
+  <div class="en">General formula: <b>R – COOH</b>. Naturally occurring fatty acids are usually <b>straight-chain</b> and commonly contain an <b>even number</b> of carbon atoms. Chain length affects solubility; the carbon chain is the hydrophobic region.</div>
+  <p>الحمض الدهني = ذيل كربوني طويل <b>(R)</b> + رأس حمضي <b>(COOH)</b>. الذيل هو المنطقة <b>الكارهة للماء (hydrophobic)</b>. أغلب الأحماض الطبيعية <b>مستقيمة السلسلة</b> وعدد كربوناتها <b>زوجي</b>.</p>
+  <div class="mnem">🧠 <b>حيلة:</b> تخيّل الحمض "خصلة شعر" — الذيل زيتي يكره الماء، والرأس الحمضي بيحب المية. وده أساس الشامبو والصابون.</div>
+</section>
+
+<section class="card" id="s6">
+  <h2>6) المشبعة وغير المشبعة<span class="en">Saturated vs Unsaturated Fatty Acids</span></h2>
+  <table class="tbl">
+    <tr><th>وجه المقارنة</th><th>Saturated (مشبع)</th><th>Unsaturated (غير مشبع)</th></tr>
+    <tr><td>الرابطة المزدوجة</td><td>لا يوجد C=C</td><td>واحد أو أكثر C=C</td></tr>
+    <tr><td>مثال</td><td>Butyric acid (4C) — في الزبدة</td><td>Oleic · Linoleic · Arachidonic</td></tr>
+    <tr><td>الصيغة</td><td>CH₃–CH₂–CH₂–COOH</td><td>Monounsaturated = رابطة واحدة · Polyunsaturated = أكثر</td></tr>
+    <tr><td>الشكل</td><td>مستقيم</td><td>فيه <b>انثناءات (bends)</b></td></tr>
+    <tr><td>نقطة الانصهار</td><td>أعلى</td><td>أقل</td></tr>
+  </table>
+  <div class="mnem">🎓 <b>أسرع تمييز للامتحان:</b> رابطة مزدوجة = <b>انثناء</b> = الجزيئات مابتترصّش فتبقى سيولة ونقطة انصهار <b>أقل</b>. (مشبع زي الزبدة جامد، غير مشبع زي الزيت سايل).</div>
+</section>
+
+<section class="card" id="s7">
+  <h2>7) أحماض دهنية مهمة + PUFA<span class="en">Important Unsaturated Fatty Acids &amp; Why PUFA Matter</span></h2>
+  <div class="en">Notation: <b>carbon number : number of double bonds (positions in parentheses)</b>.</div>
+  <table class="tbl">
+    <tr><th>الحمض</th><th>الرمز</th></tr>
+    <tr><td>Palmitoleic</td><td>16:1(9)</td></tr>
+    <tr><td>Oleic</td><td>18:1(9)</td></tr>
+    <tr><td>Nervonic</td><td>24:1(15)</td></tr>
+    <tr><td>Linoleic</td><td>18:2(9,12)</td></tr>
+    <tr><td>Linolenic</td><td>18:3(9,12,15)</td></tr>
+    <tr><td>Arachidonic</td><td>20:4(5,8,11,14)</td></tr>
+  </table>
+  <ul>
+    <li>الـPUFA <b>مطلوبة للنمو الطبيعي</b>.</li>
+    <li><b>Cis isomers</b> هي السائدة طبيعيًا، و<b>Trans</b> نادرة نسبيًا.</li>
+    <li>زيادة عدد الروابط المزدوجة → <b>نقطة انصهار أقل</b>.</li>
+  </ul>
+  <div class="flow"><i>Unsaturated</i> ↓ <i>أكثر روابط مزدوجة</i> ↓ <i>نقطة انصهار أقل</i></div>
+  <div class="mnem">🧠 <b>فك شفرة الرمز 18:2(9,12):</b> 18 كربون، 2 رابطة مزدوجة، عند الموضعين 9 و12.</div>
+</section>
+
+<section class="card" id="s8">
+  <h2>8) الدهون المتعادلة<span class="en">Neutral Fats = Triglycerides</span></h2>
+  <div class="en">Glycerol + 3 fatty acids → three ester linkages form a <b>triacylglycerol</b>. <b>Simple glyceride</b>: all three fatty acids identical (e.g. tripalmitin). <b>Mixed glyceride</b>: fatty acids are different (e.g. palmitostearin).</div>
+  <table class="tbl">
+    <tr><th>النوع</th><th>التعريف</th><th>مثال</th></tr>
+    <tr><td>Simple glyceride</td><td>الـ3 أحماض متطابقة</td><td>Tripalmitin</td></tr>
+    <tr><td>Mixed glyceride</td><td>الأحماض مختلفة</td><td>Palmitostearin</td></tr>
+  </table>
+  <div class="mnem">🧠 كلمة <b>triacylglycerol</b> بتقولك كل حاجة: <b>tri</b> = 3، <b>acyl</b> = مجموعات أسيل دهنية، <b>glycerol</b> = الكحول الأساسي.</div>
+</section>
+
+<section class="card" id="s9">
+  <h2>9) خواص الدهون والزيوت الفيزيائية<span class="en">Fats &amp; Oils: Physical Properties</span></h2>
+  <ul>
+    <li>الدهون والزيوت <b>النقية الطازجة</b>: عديمة اللون والرائحة والطعم.</li>
+    <li><b>الكثافة النوعية أقل من 1</b> (specific gravity &lt; 1) → تطفو على الماء.</li>
+    <li>غير قابلة للذوبان في الماء.</li>
+    <li>قابلة للذوبان في الإيثر والكلوروفورم والبنزين.</li>
+  </ul>
+  <p><b>ليه بيظهر لون أو ريحة؟</b> بسبب <b>مواد مصاحبة</b> للدهن (مش الليبيد النقي نفسه) — مثلاً <b>carotene</b> بيدّي لون أصفر.</p>
+  <div class="mnem">🎯 المفتاح: أي لون/رائحة في الدهن غالبًا من الشوائب المصاحبة، مش من الليبيد النقي.</div>
+</section>
+
+<section class="card" id="s10">
+  <h2>10) التحلل المائي والتصبن<span class="en">Hydrolysis &amp; Saponification</span></h2>
+  <table class="tbl">
+    <tr><th>في جسم الإنسان</th><th>في الصناعة: Saponification</th></tr>
+    <tr><td>Triglyceride + H₂O → (إنزيم <b>lipase</b>) → Glycerol + free fatty acids</td><td>Triglyceride + NaOH → Soap + Glycerol</td></tr>
+  </table>
+  <p>التصبن بينتج <b>أملاح أحماض دهنية قابلة للذوبان في الماء = الصابون</b>.</p>
+  <h3>إزاي الصابون بيشيل الدهن؟</h3>
+  <div class="flow"><i>ذيل غير قطبي (nonpolar tail) يمسك الليبيد</i> → <i>رأس كربوكسيلات أيوني (ionic carboxylate) يتفاعل مع الماء</i></div>
+  <p>السلوك المزدوج ده بيسحب المواد الزيتية جوه الطور المائي. <b>الصابون جسر بين الماء والليبيدات غير القطبية.</b></p>
+  <div class="mnem">🧠 <b>حيلة الصابون:</b> زيت + قلوي (NaOH) = صابون + جليسرول. وافتكر "الذيل يمسك الزيت والرأس يحب المية".</div>
+</section>
+
+<section class="card" id="s11">
+  <h2>11) الأكسدة والزناخة<span class="en">Oxidation &amp; Rancidity</span></h2>
+  <div class="en">Oxidation targets <b>double bonds</b>. Unsaturated fatty acids can form aldehydes, ketones, peroxides. <b>Rancidity</b> = unpleasant odor and taste.</div>
+  <p><b>عوامل بتسرّع الزناخة:</b> الضوء · الأكسجين · الرطوبة · الحرارة المرتفعة.</p>
+  <h3>منع الزناخة — Preventing Rancidity</h3>
+  <ul>
+    <li>التبريد لمنع نشاط إنزيم <b>lipase</b>.</li>
+    <li>استبدال الأكسجين بغاز خامل زي <b>النيتروجين</b>.</li>
+    <li>التعبئة بالتفريغ <b>(vacuum packaging)</b>.</li>
+    <li>إضافة <b>مضادات أكسدة</b> زي <b>فيتامين E</b>.</li>
+  </ul>
+  <div class="mnem">🧠 الحفظ: <b>قلّل الحرارة + امنع الأكسجين + أضف مضادات أكسدة</b>. والزناخة أهم في الزيوت الغنية بأحماض غير مشبعة.</div>
+</section>
+
+<section class="card" id="s12">
+  <h2>12) الشمع<span class="en">Waxes: Another Simple Lipid</span></h2>
+  <div class="en">Waxes are esters of <b>higher fatty acids</b> with <b>higher alcohols</b> — <b>not glycerol</b>. Insoluble in water · not easily hydrolyzed · not digested.</div>
+  <table class="tbl">
+    <tr><th>مثال</th><th>المكوّن</th></tr>
+    <tr><td>Beeswax (شمع النحل)</td><td>Mericyl alcohol + palmitic acid</td></tr>
+    <tr><td>Lanolin (دهن الصوف)</td><td>يُستخدم في تحضير المراهم (ointment)</td></tr>
+  </table>
+  <div class="mnem">🎯 الشموع مهمة صيدلانيًا في <b>المراهم</b> والتركيبات الواقية (topical &amp; ointments).</div>
+</section>
+
+<section class="card hy" id="s13">
+  <h2>13) 🔥 High-Yield &amp; 🧠 Memory Tricks</h2>
+  <div class="tag">🔥 HIGH-YIELD</div>
+  <ul>
+    <li>تعريف الليبيد = <b>الذوبان</b> (لا يذوب في الماء، يذوب في العضوية).</li>
+    <li>الفئات الأربع: <b>Simple · Compound · Derived · Associated</b>.</li>
+    <li>الجليسرول: <b>3 OH</b> · الكحول المركزي للـtriglycerides · نيتروجليسرين للذبحة، والجلوكوما.</li>
+    <li>حمض دهني = R–COOH · سلسلة مستقيمة · كربونات <b>زوجية</b>.</li>
+    <li>غير مشبع = رابطة مزدوجة = انثناء = <b>نقطة انصهار أقل</b>.</li>
+    <li>التحلل بـ<b>lipase</b> = جليسرول + أحماض حرة. التصبن بـ<b>NaOH</b> = صابون + جليسرول.</li>
+    <li>الشمع = حمض عالي + كحول عالي (مش جليسرول) → مراهم.</li>
+  </ul>
+  <div class="tag warn">⚠️ COMMON CONFUSION</div>
+  <ul>
+    <li><b>Simple vs Compound:</b> البسيط = كحول+أحماض بس. المركّب = فيه مجموعة إضافية.</li>
+    <li><b>Glycerol vs higher alcohol:</b> الجليسرول في الدهون المتعادلة، والكحول العالي في الشموع.</li>
+    <li><b>Saponification vs Hydrolysis:</b> الاتنين تكسير، بس الصابون بـNaOH بينتج أملاح صابونية.</li>
+  </ul>
+  <div class="mnem">🧠 <b>جملة الحفظ الذهبية:</b> "<b>كحول + أحماض = ليبيد</b>؛ زود مجموعة = مركّب؛ اكسر = مشتق؛ صاحبها فيتامين/ستيرويد = مصاحب."</div>
+</section>
+
+<section class="card" id="s14">
+  <h2>14) 🧠 Active Recall</h2>
+  <div class="det"><details><summary>Q: ليه الليبيدات بتتصنّف مع بعض رغم تنوّعها؟</summary><p>بسبب <b>خصائص الذوبان</b> المشتركة (لا تذوب في الماء، تذوب في المذيبات العضوية).</p></details></div>
+  <div class="det"><details><summary>Q: إيه الفرق بين الدهن البسيط والمركّب؟</summary><p>البسيط = كحول + أحماض دهنية فقط. المركّب = ليبيد + مجموعة إضافية (فوسفات/كربوهيدرات/كبريت/أمينو/بروتين).</p></details></div>
+  <div class="det"><summary>Q: أنواع الدهون المركّبة الخمسة؟</summary><p>Phospholipids · Glycolipids · Sulfolipids · Aminolipids · Lipoproteins.</p></details></div>
+  <div class="det"><details><summary>Q: ليه زيادة عدم التشبّع بتقلّل نقطة الانصهار؟</summary><p>لأن الروابط المزدوجة بتعمل <b>انثناءات</b> تمنع تراصّ السلاسل → تفاعلات أضعف → صهر أسهل.</p></details></div>
+  <div class="det"><details><summary>Q: إيه اللي بيحصل في التصبن؟</summary><p>Triglyceride + NaOH → <b>Soap</b> + Glycerol (أملاح أحماض دهنية قابلة للذوبان).</p></details></div>
+</section>
+
+<section class="card" id="s15">
+  <h2>15) 📝 Question Bank</h2>
+  <div class="tag">🟢 LEVEL 1 — EASY</div>
+  <ol>
+    <li>الليبيدات تُصنّف أساسًا حسب: (أ) الوزن (ب) الذوبان (ج) اللون (د) الطعم → <b>(ب)</b></li>
+    <li>الشمع يتكوّن من حمض دهني عالي + ... (أ) جليسرول (ب) كحول عالي (ج) فوسفات (د) سكر → <b>(ب)</b></li>
+    <li>الجليسرول يحتوي على كم مجموعة OH؟ → <b>ثلاثة</b></li>
+  </ol>
+  <div class="tag">🟡 LEVEL 2 — MODERATE</div>
+  <ol start="4">
+    <li>قارن بين Simple و Mixed glyceride مع مثال لكل. → تتطابق الأحماض (Tripalmitin) / تختلف (Palmitostearin).</li>
+    <li>اكتب الصيغة العامة للحمض الدهني ووضّح المنطقة الكارهة للماء. → <b>R–COOH</b>، الذيل الكربوني R هو hydrophobic.</li>
+    <li>ليه ممكن يظهر لون في الدهن النقي؟ → مواد مصاحبة مثل carotene.</li>
+  </ol>
+  <div class="tag warn">🔴 LEVEL 3 — DIFFICULT</div>
+  <ol start="7">
+    <li>فسّر إزاي الصابون بيشتغل على أساس بنيته الجزيئية. → ذيل غير قطبي يمسك الدهن + رأس أيوني يحب الماء → سحب الدهن للطور المائي.</li>
+    <li>عبّر بالرمز عن حمض عنده 20 كربون و4 روابط مزدوجة عند 5,8,11,14. → <b>20:4(5,8,11,14)</b> (Arachidonic).</li>
+    <li>مية معلومة: ليه الـlipoproteins تُعدّ مركّبة؟ → لأنها ليبيد + بروتين (وظيفة: نقل في الدم).</li>
+  </ol>
+</section>
+
+<section class="card" id="s16">
+  <h2>16) 🎓 Final Exam (تفاعلي)</h2>
+  <p>جاوب وأعرف سكورك فورًا 👇</p>
+  <div id="quiz"></div>
+  <button class="btn" id="submit" style="background:var(--brand);color:#fff;border:none;padding:12px 20px;font-weight:700">تصحيح الإجابات</button>
+  <div class="score" id="score"></div>
+</section>
+
+<section class="card" id="s17">
+  <h2>17) ⚡ Last-Minute Revision</h2>
+  <div class="tag">🔑 MUST KNOW</div>
+  <ul>
+    <li>Lipid = insoluble in water، soluble in organic solvents.</li>
+    <li>Simple = alcohol + fatty acids (ester).</li>
+    <li>Glycerol = 3 OH · nitroglycerin (angina) · glaucoma.</li>
+    <li>Fatty acid = R–COOH · even carbons · straight.</li>
+    <li>Unsaturation → bends → lower melting point.</li>
+    <li>Hydrolysis (lipase) vs Saponification (NaOH → soap).</li>
+    <li>Waxes = higher acid + higher alcohol (ointments).</li>
+  </ul>
+  <div class="tag">⚠️ DON'T CONFUSE</div>
+  <ul><li>Simple ≠ Compound ≠ Derived ≠ Associated.</li><li>Glycerol (neutral fats) ≠ higher alcohol (waxes).</li></ul>
+  <div class="tag">📌 ONE-MINUTE SUMMARY</div>
+  <p>الليبيدات عيلة متنوعة بتربطها خصيصة واحدة: كره الماء. تنقسم 4 فئات. البسيطة = كحول(جليسرول أو كحول عالي) + أحماض دهنية. الأحماض المشبعة جامدة، وغير المشبعة سايلة (انثناءات). الدهون المتعادلة = جليسرول+3 أحماض. التحلل المائي بالـlipase للجليسرول+أحماض حرة، والتصبن بـNaOH يصنع صابون. الزناخة = أكسدة الروابط المزدوجة. الشموع تُستخدم في المراهم.</p>
+</section>
+
+<footer>Selena · Premium Study Guide — Biochemistry I · Lecture 1 · 2026</footer>
+</div>
+
+<script>
+const QS=[
+ {q:"Lipids are classified mainly by:",o:["Color","Solubility","Molecular weight","Taste"],a:1},
+ {q:"A fatty acid general formula is:",o:["R–OH","R–NH2","R–COOH","R–CHO"],a:2},
+ {q:"Which alcohol is central in triglycerides?",o:["Mericyl alcohol","Glycerol","Ethanol","Cholesterol"],a:1},
+ {q:"Increasing double bonds makes melting point:",o:["Higher","Lower","Unchanged","Zero"],a:1},
+ {q:"Saponification of a triglyceride with NaOH gives:",o:["Soap + glycerol","Only glycerol","Only fatty acids","Protein"],a:0},
+ {q:"Waxes are esters of higher fatty acids with:",o:["Glycerol","Higher alcohols","Phosphate","Sugars"],a:1},
+ {q:"Which is NOT a compound lipid?",o:["Phospholipid","Glycolipid","Tripalmitin","Lipoprotein"],a:2},
+ {q:"Rancidity accelerates with:",o:["Light & oxygen","Cold & vacuum","Nitrogen","Antioxidants"],a:0}
+];
+const box=document.getElementById('quiz');
+QS.forEach((q,i)=>{const d=document.createElement('div');d.className='q';
+ d.innerHTML='<b>'+(i+1)+') '+q.q+'</b>'+q.o.map((t,j)=>'<label class="opt"><input type="radio" name="q'+i+'" value="'+j+'">'+t+'</label>').join('')+'<div class="fb" id="fb'+i+'"></div>';
+ box.appendChild(d);});
+document.getElementById('submit').onclick=()=>{let s=0;
+ QS.forEach((q,i)=>{const sel=document.querySelector('input[name="q'+i+'"]:checked');const fb=document.getElementById('fb'+i);
+  if(sel&&+sel.value===q.a){s++;fb.className='fb ok';fb.textContent='✅ صح';}else{fb.className='fb no';fb.textContent='❌ الصح: '+q.o[q.a];}});
+ const p=Math.round(s/QS.length*100);
+ const msg=p>=90?'🏆 Excellent':p>=75?'🔥 Very Good':p>=60?'👍 Good, Review Weak Areas':'📚 Below 60% — راجع المادة تاني';
+ document.getElementById('score').textContent='سكورك: '+p+'% ('+s+'/'+QS.length+') — '+msg;}; 
+</script>
+<script>
+// search
+document.getElementById('search').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();
+ document.querySelectorAll('section.card').forEach(sec=>{sec.classList.toggle('hidden', q && !sec.innerText.toLowerCase().includes(q));});});
+// theme
+const setT=t=>{document.documentElement.setAttribute('data-theme',t);localStorage.setItem('sg-theme',t);};
+setT(localStorage.getItem('sg-theme')||'light');
+document.getElementById('theme').onclick=()=>setT(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');
+document.getElementById('expand').onclick=()=>document.querySelectorAll('details').forEach(d=>d.open=true);
+document.getElementById('collapse').onclick=()=>document.querySelectorAll('details').forEach(d=>d.open=false);
+</script>
+</body>
+</html>
