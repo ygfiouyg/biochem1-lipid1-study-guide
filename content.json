@@ -1628,98 +1628,95 @@
  ],
  "high_risk": [
   {
-   "t": "تعريف Lipids وخصائص الذوبان",
-   "idea": "Lipids هي heterogeneous group من organic compounds طبيعية، تُصنف معاً أساساً بسبب common solubility properties: insoluble in water و soluble in organic solvents مثل diethyl ether و chloroform و acetone. أو ببساطة: organic compounds formed mainly from alcohol and fatty acids combined by ester linkage.",
-   "why": "سؤال تعريف مباشر أو true/false عن الذوبان شبه مؤكد، لأنه الأساس في Lecture.",
-   "page": "PAGE 3",
-   "alt": "اذكر تعريف Lipids من حيث الذوبان، وما هي common solvents؟"
+   "t": "ما تعريف الـ simple lipids وما أنواعها؟",
+   "idea": "Simple lipids = alcohol + fatty acids فقط، بدون phosphate أو carbohydrate أو protein. أنواعها: neutral fats (alcohol = glycerol؛ fats solid و oils liquid) و waxes (alcohol = higher alcohol وليس glycerol).",
+   "why": "سؤال تعريف وتصنيف أساسي ومتكرر في الامتحانات.",
+   "page": "Page 5",
+   "alt": "اذكر تركيب simple lipid واذكر مثالين/types."
   },
   {
-   "t": "التصنيفات الأربع الرئيسية لل Lipids",
-   "idea": "Four major lipid categories: Simple lipids = alcohol + fatty acids؛ Compound lipids = lipid + additional group؛ Substances associated with lipids = vitamins, steroids, carotenes؛ Derived lipids = hydrolysis products.",
-   "why": "Classification سؤال متكرر، و key point يقول classification depends on what is attached to lipid framework.",
-   "page": "PAGE 4",
-   "alt": "صنّف Lipids إلى four major categories مع وصف مختصر لكل فئة."
+   "t": "اذكر التصنيفات الأربعة الرئيسية للدهون.",
+   "idea": "Simple lipids، Compound lipids، Substances associated with lipids، Derived lipids. Compound = lipid + additional group؛ Associated = vitamins, steroids, carotenes؛ Derived = hydrolysis products.",
+   "why": "سؤال تصنيف شامل ومحتمل جداً.",
+   "page": "Page 4",
+   "alt": "صنف lipids إلى أربع categories مع توضيح ما يندرج تحت كل نوع."
   },
   {
-   "t": "Simple Lipids: neutral fats و waxes",
-   "idea": "Simple lipids = only two building blocks: alcohol + fatty acids، ولا تحتوي على phosphate أو carbohydrate أو protein group إضافي. Neutral fats: alcohol = glycerol؛ fats solid؛ oils liquid. Waxes: alcohol = higher alcohol, not glycerol.",
-   "why": "مقارنة simple lipids وأنواعها سؤال محتمل، خاصة الفرق بين neutral fats و waxes.",
-   "page": "PAGE 5",
-   "alt": "عرّف Simple lipids، واذكر الفرق بين neutral fats و waxes."
+   "t": "ما أهمية glycerol في الدهون والاستخدامات الدوائية؟",
+   "idea": "Glycerol به three hydroxyl groups، ويكون ester linkages مع fatty acids، وهو central alcohol في triglyceride formation. Soluble in water and alcohol. Uses: cosmetics، nitroglycerin for angina، glycerol-related osmotic use in glaucoma.",
+   "why": "يربط structure بوظيفة/pharmacy، وسؤال Quick Review يطلب استخدامين طبيين أو صيدلانيين.",
+   "page": "Page 10",
+   "alt": "اذكر تركيب glycerol ووظيفته واستخدامين طبيين له."
   },
   {
-   "t": "Compound Lipids وأنواعها",
-   "idea": "Compound lipids = lipid + additional group: Phospholipids = phosphate group؛ Glycolipids = carbohydrate residue؛ Sulfolipids = sulfur-containing group؛ Aminolipids = amino group؛ Lipoproteins = combined with proteins; transport in blood.",
-   "why": "جدول compound lipids مناسب لسؤال matching أو enum، والـ key point يربط الخصائص بالمجموعة الإضافية.",
-   "page": "PAGE 6",
-   "alt": "اذكر أنواع Compound lipids والمجموعة الإضافية لكل نوع، مع ذكر lipoproteins ووظيفتها."
+   "t": "قارن بين saturated و unsaturated fatty acids.",
+   "idea": "Saturated: no C=C double bonds؛ example butyric acid (4 carbons, found mainly in butter). Unsaturated: one or more C=C؛ monounsaturated = one double bond؛ polyunsaturated = more than one؛ examples oleic، linoleic، arachidonic.",
+   "why": "سؤال مقارنة مباشر ومتوقع.",
+   "page": "Page 12",
+   "alt": "ما الفرق في double bonds والأمثلة بين saturated و unsaturated fatty acids؟"
   },
   {
-   "t": "Derived Lipids ونواتج التحلل",
-   "idea": "Derived lipids هي hydrolysis products الناتجة من hydrolysis of simple or compound lipids، وتشمل: fatty acids (saturated or unsaturated)، alcohols (glycerol or higher alcohols)، hydrocarbons.",
-   "why": "تعريف derived lipids وعلاقتها بال hydrolysis سؤال شائع، وقد يطلب نواتج hydrolysis.",
-   "page": "PAGE 7",
-   "alt": "ما هي Derived lipids؟ اذكر ثلاث نواتج hydrolysis لل lipids."
+   "t": "لماذا زيادة unsaturation تقلل melting point؟",
+   "idea": "Unsaturation introduces bends and generally lowers melting point.",
+   "why": "سؤال Quick Review مباشر ويربط structure بـ physical property.",
+   "page": "Page 12/13/15/16",
+   "alt": "اشرح علاقة الunsaturation بالmelting point."
   },
   {
-   "t": "Glycerol: التركيب، الخواص، والأهمية الصيدلانية",
-   "idea": "Glycerol يحتوي على three hydroxyl groups ويرتبط مع fatty acids بـ ester linkages. Soluble in water and alcohol. Pharmaceutical relevance: cosmetics، nitroglycerin for angina، glycerol-related osmotic use in glaucoma. وهو central alcohol in triglyceride formation.",
-   "why": "Glycerol محوري في triglycerides وله applications طبية، وسؤال عنه متوقع كـ short note.",
-   "page": "PAGE 10",
-   "alt": "اذكر تركيب glycerol، خواصه، وأهميته الصيدلانية والطبية."
+   "t": "ما هو saponification؟",
+   "idea": "Industrially: Triglyceride + NaOH → Soap + glycerol؛ والsoap هي water-soluble fatty-acid salts. In the human body: Triglyceride + water via lipase enzymes → Glycerol + free fatty acids.",
+   "why": "سؤال Quick Review ومعادلة متوقعة.",
+   "page": "Page 22",
+   "alt": "اكتب معادلة saponification واذكر النواتج."
   },
   {
-   "t": "Saturated vs Unsaturated Fatty Acids",
-   "idea": "Saturated: no C=C double bonds، example Butyric acid، 4 carbons، found mainly in butter. Unsaturated: one or more C=C double bonds؛ Monounsaturated = one double bond؛ Polyunsaturated = more than one؛ Examples: oleic، linoleic، arachidonic. Unsaturation introduces bends and generally lowers melting point.",
-   "why": "مقارنة saturated/unsaturated وتأثير double bonds على melting point سؤال أساسي ومتكرر.",
-   "page": "PAGE 12",
-   "alt": "قارن بين Saturated و Unsaturated fatty acids مع مثال، واذكر تأثير unsaturation على melting point."
+   "t": "ما هي waxes ولماذا تهم صيدلانياً؟",
+   "idea": "Waxes = esters of higher fatty acids with higher alcohols—not glycerol. Insoluble in water، not easily hydrolyzed، not digested. Beeswax = mericyl alcohol + palmitic acid. Lanolin (wool fat) used in ointment preparation.",
+   "why": "نوع من simple lipids مع pharmaceutical application واضح.",
+   "page": "Page 26",
+   "alt": "اذكر تعريف waxes ومثالين واستخدام صيدلاني."
   },
   {
-   "t": "Hydrolysis & Saponification",
-   "idea": "In human body: Triglyceride + water → lipase enzymes → Glycerol + free fatty acids. In industry: saponification: Triglyceride + NaOH → Soap + glycerol. Soap = water-soluble fatty-acid salts.",
-   "why": "معادلات hydrolysis و saponification والفرق بينهما من أكثر النقاط exam-relevant.",
-   "page": "PAGE 22",
-   "alt": "اكتب معادلتي hydrolysis و saponification، وما هو soap؟"
+   "t": "اذكر Pharmacy Take-Home Messages للدهون.",
+   "idea": "Lipid solubility influences extraction, formulation and biological distribution. Glycerol is core alcohol of triglycerides. Unsaturation affects melting point and oxidative stability. Lipases hydrolyze triglycerides؛ NaOH causes saponification. Waxes useful in topical and ointment preparations. Always connect chemical structure → physical property → pharmaceutical relevance.",
+   "why": "ملخص المحاضرة وسؤال essay/short note محتمل.",
+   "page": "Page 27",
+   "alt": "اربط chemical structure → physical property → pharmaceutical relevance مع أمثلة."
   },
   {
-   "t": "Waxes: تعريف، أمثلة، واستخدام صيدلاني",
-   "idea": "Waxes هي esters of higher fatty acids with higher alcohols—not glycerol. Insoluble in water، not easily hydrolyzed، not digested. Beeswax = mericyl alcohol + palmitic acid. Lanolin (wool fat) used in ointment preparation.",
-   "why": "Waxes لها استخدام صيدلاني واضح، وسؤال تعريف/مثال/استخدام محتمل جداً.",
-   "page": "PAGE 26",
-   "alt": "عرّف Waxes واذكر مثالين واستخدامها في الصيدلانيات."
-  },
-  {
-   "t": "Pharmacy Take-Home Messages: structure → property → pharmaceutical relevance",
-   "idea": "Lipid solubility influences extraction, formulation and biological distribution. Glycerol is core alcohol of triglycerides and has medical applications. Unsaturation affects melting point and oxidative stability. Lipases hydrolyze triglycerides؛ NaOH causes saponification. Waxes are useful in topical and ointment preparations.",
-   "why": "هذه الصفحة تلخص الرسائل التي يبني عليها الامتحان أسئلة essay أو short notes.",
-   "page": "PAGE 27",
-   "alt": "اذكر pharmacy take-home messages عن lipids وربطها بالصيدلة."
+   "t": "أسئلة Quick Review: ما الفرق بين simple و mixed glyceride؟",
+   "idea": "سؤال مراجعة وارد (Question 4). الصفحات المقدمة لا تشرح الإجابة صراحة، لكن يجب مراجعة تعريف glycerides والمقارنة بينهما.",
+   "why": "مذكور حرفياً في Quick Review.",
+   "page": "Page 28",
+   "alt": "ما الفرق بين simple glyceride و mixed glyceride؟"
   }
  ],
  "must_know": [
-  "Lipids: heterogeneous organic compounds؛ insoluble in water؛ soluble in organic solvents مثل diethyl ether, chloroform, acetone؛ formed mainly from alcohol + fatty acids by ester linkage.",
-  "Four categories: Simple (alcohol + fatty acids)؛ Compound (lipid + additional group)؛ Associated (vitamins, steroids, carotenes)؛ Derived (hydrolysis products).",
-  "Simple lipids: only alcohol + fatty acids، no extra phosphate/carbohydrate/protein. Neutral fats: glycerol alcohol؛ fats solid؛ oils liquid. Waxes: higher alcohol, not glycerol.",
-  "Compound lipids: Phospholipids = phosphate؛ Glycolipids = carbohydrate؛ Sulfolipids = sulfur؛ Aminolipids = amino؛ Lipoproteins = proteins; transport in blood.",
-  "Derived lipids: fatty acids (saturated/unsaturated)، alcohols (glycerol/higher alcohols)، hydrocarbons.",
-  "Glycerol: three OH groups؛ soluble in water and alcohol؛ ester linkages with fatty acids؛ cosmetics، nitroglycerin for angina، osmotic use in glaucoma.",
-  "Saturated fatty acids: no C=C؛ example butyric acid (4 carbons، butter). Unsaturated: one or more C=C؛ mono = one؛ poly = more than one؛ oleic، linoleic، arachidonic؛ unsaturation lowers melting point.",
-  "Hydrolysis in body: triglyceride + water → lipase → glycerol + free fatty acids. Saponification: triglyceride + NaOH → soap + glycerol؛ soap = water-soluble fatty-acid salts.",
-  "Waxes: esters of higher fatty acids with higher alcohols—not glycerol؛ insoluble in water؛ not easily hydrolyzed or digested؛ beeswax = mericyl alcohol + palmitic acid؛ lanolin = wool fat used in ointments.",
-  "Pharmacy: lipid solubility affects extraction/formulation/distribution؛ unsaturation affects melting point and oxidative stability؛ waxes for topical/ointment preparations."
+  "Simple lipids = alcohol + fatty acids فقط، بدون phosphate/carbohydrate/protein.",
+  "Neutral fats: alcohol = glycerol؛ fats solid، oils liquid.",
+  "Waxes: higher alcohol + higher fatty acid، وليست glycerol.",
+  "Compound lipids = lipid + additional group.",
+  "Associated lipids = vitamins، steroids، carotenes.",
+  "Derived lipids = hydrolysis products.",
+  "Glycerol: three OH groups، ester linkages مع fatty acids، central alcohol في triglycerides.",
+  "Glycerol uses: cosmetics، nitroglycerin for angina، osmotic use in glaucoma.",
+  "Saturated fatty acids: no C=C؛ butyric acid (4C) in butter.",
+  "Unsaturated fatty acids: one or more C=C؛ mono = one، poly > one؛ oleic، linoleic، arachidonic.",
+  "Unsaturation introduces bends ويقلل melting point generally.",
+  "Saponification: Triglyceride + NaOH → Soap + glycerol؛ soap = water-soluble fatty-acid salts.",
+  "Body hydrolysis: Triglyceride + water via lipase → Glycerol + free fatty acids.",
+  "Waxes: insoluble in water، not easily hydrolyzed، not digested؛ beeswax = mericyl alcohol + palmitic acid؛ lanolin in ointments.",
+  "Lipid solubility influences extraction، formulation، biological distribution.",
+  "Unsaturation affects melting point and oxidative stability.",
+  "Waxes useful in topical and ointment preparations."
  ],
  "dont_confuse": [
-  "Simple lipids vs Compound lipids: simple = alcohol + fatty acids فقط؛ compound = lipid + additional group مثل phosphate/carbohydrate/sulfur/amino/protein.",
-  "Neutral fats vs Waxes: neutral fats alcohol = glycerol؛ waxes alcohol = higher alcohol، ليس glycerol.",
-  "Fats vs Oils: fats solid؛ oils liquid.",
-  "Saturated vs Unsaturated: saturated no C=C؛ unsaturated one or more C=C؛ monounsaturated one double bond؛ polyunsaturated more than one.",
-  "Hydrolysis vs Saponification: hydrolysis by lipase in body → glycerol + free fatty acids؛ saponification by NaOH in industry → soap + glycerol.",
-  "Soap vs Free fatty acid: soap = water-soluble fatty-acid salt؛ free fatty acid ليس soap.",
-  "Derived lipids vs Associated lipids: derived = hydrolysis products؛ associated = vitamins, steroids, carotenes.",
-  "Glycerol vs Waxes: glycerol هو central alcohol in triglycerides؛ waxes لا تحتوي glycerol.",
-  "Beeswax vs Lanolin: beeswax = mericyl alcohol + palmitic acid؛ lanolin = wool fat used in ointment preparation."
+  "Simple lipids لا تحتوي phosphate/carbohydrate/protein؛ ليست compound lipids.",
+  "Waxes alcohol = higher alcohol وليس glycerol؛ neutral fats alcohol = glycerol.",
+  "Saturated = no C=C؛ Unsaturated = one or more C=C.",
+  "Saponification industrial بـ NaOH → soap + glycerol؛ hydrolysis in body by lipase → glycerol + free fatty acids.",
+  "Fats solid؛ oils liquid.",
+  "Associated lipids (vitamins, steroids, carotenes) ليست Derived lipids (hydrolysis products)."
  ],
- "one_min": "الـ Lipids تُعرّف أساساً بالذوبان: insoluble in water و soluble in organic solvents. تُصنّف إلى simple (alcohol + fatty acids؛ neutral fats بـ glycerol، waxes بـ higher alcohol)، compound (lipid + phosphate/carbohydrate/sulfur/amino/protein)، associated (vitamins, steroids, carotenes)، derived (hydrolysis products). Glycerol له three OH groups ويدخل في triglycerides؛ له استخدامات مثل nitroglycerin for angina و glaucoma. Unsaturation في fatty acids يخفض melting point. Lipase hydrolysis → glycerol + free fatty acids؛ NaOH saponification → soap + glycerol. Waxes تُستخدم في ointments وتشمل beeswax و lanolin."
+ "one_min": "الدهون تُصنف إلى simple, compound, associated, derived. Simple lipids = alcohol + fatty acids فقط: neutral fats (glycerol) و waxes (higher alcohol). Glycerol به 3 OH، central alcohol في triglycerides، ويُستخدم في cosmetics، nitroglycerin for angina، وosmotic use in glaucoma. Saturated FA بلا C=C، مثال butyric acid. Unsaturated FA بها C=C، mono/poly، أمثلة oleic، linoleic، arachidonic، وزيادة unsaturation تقلل melting point. Saponification: Triglyceride + NaOH → soap + glycerol. Body: lipase → glycerol + free fatty acids. Waxes: higher alcohol + higher fatty acid، insoluble، not digested؛ beeswax و lanolin للointments. اربط دائماً structure → property → pharmaceutical relevance."
 }
