@@ -1,0 +1,565 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lipid Chemistry: Simple Lipids — Study Guide</title><style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#14161f;--dim:#5b6070;--line:#e6e8f0;--brand:#6d4aff;--brand2:#00b3a4;--warn:#e8562a;--ok:#1faa59;--hi:#fff4d6;--risk:#ffe3e3}
+html[data-theme=dark]{--bg:#0e1016;--card:#171a23;--ink:#eef1f8;--dim:#9aa1b2;--line:#262b38;--hi:#2a2413;--risk:#2a1616}
+*{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.85 -apple-system,Segoe UI,Roboto,Tahoma,Arial}
+.wrap{max-width:960px;margin:0 auto;padding:18px}
+.hero{background:linear-gradient(135deg,#6d4aff,#00b3a4);color:#fff;border-radius:20px;padding:24px 22px;margin-bottom:16px}
+.hero h1{margin:0 0 6px;font-size:22px}
+.bar{display:flex;gap:8px;flex-wrap:wrap;align-items:center;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:9;border-bottom:1px solid var(--line)}
+.bar input{flex:1;min-width:170px;padding:10px 13px;border-radius:12px;border:1px solid var(--line);background:var(--card);color:var(--ink)}
+.btn{cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 13px;border-radius:12px;font-size:14px}
+.btn.on{background:var(--brand);color:#fff;border-color:var(--brand);font-weight:700}
+.toc{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.toc a{display:block;color:var(--brand);text-decoration:none;padding:3px 0;font-size:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:20px;margin:16px 0}
+h2{font-size:19px;margin:0 0 8px} h3{font-size:15px;margin:14px 0 6px;color:var(--dim)}
+.en{direction:ltr;text-align:left;background:var(--hi);border-radius:10px;padding:10px 12px;margin:6px 0;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:14px;line-height:1.6;white-space:pre-wrap}
+.ar{background:linear-gradient(0deg,transparent,rgba(0,179,164,.08));border-radius:10px;padding:10px 12px;margin:6px 0;font-size:15px}
+body[data-lang=ar] .en{display:none} body[data-lang=en] .ar,body[data-lang=en] .ex{display:none}
+.ex{border-inline-start:3px solid var(--brand2);padding:8px 12px;margin:8px 0;font-size:14px;background:rgba(0,179,164,.06);border-radius:0 10px 10px 0}
+.det{border:1px solid var(--line);border-radius:12px;padding:8px 12px;margin:6px 0}
+.det summary{cursor:pointer;font-weight:700;color:var(--brand)}
+.q{margin:10px 0;padding:11px 12px;border:1px solid var(--line);border-radius:12px;font-size:14px}
+.opt{padding:2px 0}
+.risk{border:1px solid #f3b0b0;background:var(--risk)}
+.tag{display:inline-block;font-size:12px;padding:3px 9px;border-radius:999px;border:1px solid var(--line);margin:0 0 6px}
+.score{font-size:17px;font-weight:800;margin-top:8px}
+.ok{color:var(--ok);font-weight:700}.no{color:var(--warn);font-weight:700}
+.mnem{background:linear-gradient(0deg,transparent,rgba(109,74,255,.08));border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0}
+footer{color:var(--dim);font-size:13px;text-align:center;padding:24px 0}
+.hidden{display:none}
+</style></head><body>
+<div class="wrap"><header class="hero"><h1>Biochemistry I — Lipid Chemistry: Simple Lipids</h1><p>Premium Interactive Study Guide · Dr. Hanan Hafila · Delta University</p></header>
+<div class="bar"><input id="s" placeholder="🔎 ابحث في المحتوى...">
+<button class="btn" id="btn-ar">عربي</button><button class="btn on" id="btn-both">عربي + English</button><button class="btn" id="btn-en">English</button>
+<button class="btn" id="th">🌙/☀️</button><button class="btn" id="ex">Expand</button><button class="btn" id="co">Collapse</button></div>
+<div class="toc"><b>📚 المحتويات</b><a href="#p1">1) Biochemistry I Lecture 1 Lipid chemistry: Simple lipids  Dr.</a><a href="#p2">2) Learning Objectives  By the end of this lecture, you’ll be a</a><a href="#p3">3) What Is a Lipid?  Core definition: Lipids are a heterogeneou</a><a href="#p4">4) The Four Major Lipid Categories  1. Simple lipids: Alcohol +</a><a href="#p5">5) I. Simple Lipids: The Basic Framework  Simple = only two bui</a><a href="#p6">6) II. Compound Lipids  - Phospholipids: Phosphate group - Glyc</a><a href="#p7">7) III. Derived Lipids: Products of Hydrolysis  Hydrolysis of s</a><a href="#p8">8) IV. Substances Associated with Lipids  Fat-soluble vitamins:</a><a href="#p9">9) I. SIMPLE LIPIDS Chemistry, Classification & Pharmaceutical </a><a href="#p10">10) Glycerol: A Three-OH Alcohol  Structural idea: Glycerol cont</a><a href="#p11">11) Fatty Acids: The R–COOH Family  General formula: R–COOH  Nat</a><a href="#p12">12) Saturated vs Unsaturated Fatty Acids  Saturated: No C=C doub</a><a href="#p13">13) Saturated vs Unsaturated Fatty Acids  KEY POINT: Unsaturatio</a><a href="#p14">14) Saturated Fatty Acids  KEY POINT: Unsaturation introduces be</a><a href="#p15">15) Unsaturated Fatty Acids  KEY POINT: Unsaturation introduces </a><a href="#p16">16) Unsaturated Fatty Acids  KEY POINT: Unsaturation introduces </a><a href="#p17">17) Important Unsaturated Fatty Acids  Palmitoleic — 16:1(9) Ole</a><a href="#p18">18) Why Polyunsaturated Fatty Acids Matter  Needed for normal gr</a><a href="#p19">19) Neutral Fats = Triglycerides  Formation: Glycerol + Fatty ac</a><a href="#p20">20) Neutral Fats = Triglycerides  Note: This page appears to con</a><a href="#p21">21) Fats & Oils: Physical Properties  Fresh pure fats and oils a</a><a href="#p22">22) Hydrolysis & Saponification (14)  In the human body: Triglyc</a><a href="#p23">23) How Does Soap Remove Lipid? (15)  Soap has two chemically di</a><a href="#p24">24) Oxidation & Rancidity (16)  Oxidation targets double bonds. </a><a href="#p25">25) Preventing Rancidity (17)  - Keep food cold to inhibit lipas</a><a href="#p26">26) Waxes: Another Simple Lipid (18)  Definition: Esters of high</a><a href="#p27">27) Pharmacy Take-Home Messages (19)  - Lipid solubility influen</a><a href="#p28">28) Quick Review (20)  1. What makes a lipid “simple”? 2. How do</a><a href="#risk">🚨 شديد الخطورة — High-Risk Exam Predictions</a><a href="#rev">⚡ Last-Minute Revision</a><a href="#exam">🎓 Final Exam</a></div>
+<section class="card" id="p1">
+  <h2>Page 1</h2>
+  <div class="en">Biochemistry I
+Lecture 1
+Lipid chemistry: Simple lipids
+
+Dr. Hanan Hafila
+Assoc. Prof. of Biochemistry,
+Faculty of Pharmacy,
+Delta University for Science and Technology</div>
+  <div class="ar">المحاضرة الأولى في كيمياء حيوية ١: كيمياء الدهون: الدهون البسيطة. المحاضرة مقدمة من د. حنان حفيلة، أستاذ مشارك في الكيمياء الحيوية، كلية الصيدلة، جامعة دلتا للعلوم والتكنولوجيا.</div>
+  <div class="ex">💡 تخيل إنك داخل أول محاضرة في السكشن، الدكتور بيعرّف بنفسه وبعنوان المحاضرة: هنبدأ نتكلم عن الدهون البسيطة simple lipids.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) What is the topic of Lecture 1?</b><div class="opt">A. Lipid chemistry: Simple lipids</div><div class="opt">B. Protein chemistry: Amino acids</div><div class="opt">C. Carbohydrate chemistry: Monosaccharides</div><div class="opt">D. Nucleic acid chemistry: DNA replication</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Lipid chemistry: Simple lipids</div></details></div></div><div class="q"><b>2) Who is the lecturer?</b><div class="opt">A. Dr. Hanan Hafila</div><div class="opt">B. Dr. Mona Ali</div><div class="opt">C. Dr. Sara Ahmed</div><div class="opt">D. Dr. Nour Hassan</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Dr. Hanan Hafila</div></details></div></div><div class="q"><b>3) What is the lecturer&#x27;s academic position?</b><div class="opt">A. Assoc. Prof. of Biochemistry</div><div class="opt">B. Professor of Organic Chemistry</div><div class="opt">C. Lecturer of Microbiology</div><div class="opt">D. Assistant Professor of Pharmacology</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Assoc. Prof. of Biochemistry</div></details></div></div><div class="q"><b>4) Which faculty does the lecturer belong to?</b><div class="opt">A. Faculty of Pharmacy</div><div class="opt">B. Faculty of Medicine</div><div class="opt">C. Faculty of Science</div><div class="opt">D. Faculty of Dentistry</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Faculty of Pharmacy</div></details></div></div><div class="q"><b>5) Which university is mentioned?</b><div class="opt">A. Delta University for Science and Technology</div><div class="opt">B. Cairo University</div><div class="opt">C. Alexandria University</div><div class="opt">D. Ain Shams University</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Delta University for Science and Technology</div></details></div></div>
+</section>
+<section class="card" id="p2">
+  <h2>Page 2</h2>
+  <div class="en">Learning Objectives
+
+By the end of this lecture, you’ll be able to …
+- Define lipids using their chemical and solubility properties.
+- Classify simple, compound, associated and derived lipids.
+- Describe glycerol, fatty acids, triglycerides and waxes.
+- Connect lipid chemistry with pharmacy and medicine.
+
+Sections: Structure, Classification, Applications
+
+KEY POINT: Focus on the relationships between structure, properties and function.</div>
+  <div class="ar">أهداف التعلم: بنهاية المحاضرة تكون قادرًا على: تعريف الدهون lipids حسب خواصها الكيميائية وذوبانها solubility، تصنيف الدهون إلى simple و compound و associated و derived، وصف glycerol و fatty acids و triglycerides و waxes، وربط كيمياء الدهون بالصيدلة والطب. المحاور: Structure و Classification و Applications. النقطة المهمة: ركز على العلاقة بين التركيب structure والخواص properties والوظيفة function.</div>
+  <div class="ex">💡 تخيل إن المحاضرة زي خريطة طريق: أول حاجة هتعرف إيه هو الـ lipid، بعدين تقسمه classification، وبعدين تستخدمه applications. المهم تربط الشكل بالوظيفة.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Which of the following is a stated learning objective?</b><div class="opt">A. Memorize all lipid drug brand names</div><div class="opt">B. Define lipids using chemical and solubility properties</div><div class="opt">C. Perform lipid surgery</div><div class="opt">D. Diagnose all metabolic diseases</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Define lipids using chemical and solubility properties</div></details></div></div><div class="q"><b>2) According to the objectives, students should classify lipids into:</b><div class="opt">A. simple, compound, associated and derived lipids</div><div class="opt">B. only simple and compound</div><div class="opt">C. only saturated and unsaturated</div><div class="opt">D. only waxes and oils</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: simple, compound, associated and derived lipids</div></details></div></div><div class="q"><b>3) Which molecules are mentioned to be described in this lecture?</b><div class="opt">A. Glycerol, fatty acids, triglycerides and waxes</div><div class="opt">B. Glucose, fructose and sucrose</div><div class="opt">C. Amino acids and peptides</div><div class="opt">D. Nucleotides and RNA</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Glycerol, fatty acids, triglycerides and waxes</div></details></div></div><div class="q"><b>4) The lecture connects lipid chemistry with:</b><div class="opt">A. Pharmacy and medicine</div><div class="opt">B. Astronomy and physics</div><div class="opt">C. Geology and agriculture</div><div class="opt">D. Law and economics</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Pharmacy and medicine</div></details></div></div><div class="q"><b>5) What does the KEY POINT emphasize?</b><div class="opt">A. Relationships between structure, properties and function</div><div class="opt">B. The history of lipid discovery</div><div class="opt">C. The names of all enzymes</div><div class="opt">D. The classification of carbohydrates</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Relationships between structure, properties and function</div></details></div></div>
+</section>
+<section class="card" id="p3">
+  <h2>Page 3</h2>
+  <div class="en">What Is a Lipid?
+
+Core definition:
+Lipids are a heterogeneous group of naturally occurring organic compounds classified together mainly because of their common solubility properties.
+Or simply:
+Lipids are organic compounds formed mainly from alcohol and fatty acids combined by ester linkage.
+
+Solubility profile:
+- Insoluble in water
+- Soluble in organic solvents
+
+Common solvents:
+- Diethyl ether
+- Chloroform
+- Acetone
+
+KEY POINT: Many lipid properties begin with one idea: water avoidance.</div>
+  <div class="ar">إيه هو الـ Lipid؟ تعريف أساسي: الدهون مجموعة غير متجانسة heterogeneous من مركبات عضوية طبيعية، بتتصنف مع بعض بشكل رئيسي بسبب خواص الذوبان solubility المشتركة. أو ببساطة: مركبات عضوية تتكون أساسًا من كحول alcohol وأحماض دهنية fatty acids متصلة برابطة إستر ester linkage. الذوبان: لا تذوب في الماء insoluble in water، وتذوب في المذيبات العضوية organic solvents. أمثلة مذيبات: diethyl ether و chloroform و acetone. النقطة المهمة: كثير من خواص الدهون تبدأ من فكرة واحدة: تجنب الماء water avoidance.</div>
+  <div class="ex">💡 الدهون زي الزيت: لو حطيت زيت في ماء، مش هيختلط بيه ويفضل فوق. عشان كده بنقول إنها بتتجنب الماء water avoidance وبتدور على مذيب عضوي زي الإيثر أو الكلوروفورم.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Why are lipids classified together?</b><div class="opt">A. Common solubility properties</div><div class="opt">B. Same molecular weight</div><div class="opt">C. Same number of carbons</div><div class="opt">D. Identical functions</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Common solubility properties</div></details></div></div><div class="q"><b>2) Lipids are generally:</b><div class="opt">A. Insoluble in water and soluble in organic solvents</div><div class="opt">B. Soluble in water and insoluble in organic solvents</div><div class="opt">C. Soluble in both water and organic solvents</div><div class="opt">D. Insoluble in both water and organic solvents</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Insoluble in water and soluble in organic solvents</div></details></div></div><div class="q"><b>3) Which of the following is listed as a common lipid solvent?</b><div class="opt">A. Diethyl ether</div><div class="opt">B. Water</div><div class="opt">C. Ethanol only</div><div class="opt">D. Sodium chloride solution</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Diethyl ether</div></details></div></div><div class="q"><b>4) In the simple definition, lipids are formed mainly from:</b><div class="opt">A. Alcohol and fatty acids combined by ester linkage</div><div class="opt">B. Sugar and phosphate combined by glycosidic linkage</div><div class="opt">C. Amino acids combined by peptide bonds</div><div class="opt">D. Nucleotides combined by phosphodiester bonds</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Alcohol and fatty acids combined by ester linkage</div></details></div></div><div class="q"><b>5) The KEY POINT states that many lipid properties begin with:</b><div class="opt">A. Water avoidance</div><div class="opt">B. Protein folding</div><div class="opt">C. DNA replication</div><div class="opt">D. Enzyme inhibition</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Water avoidance</div></details></div></div>
+</section>
+<section class="card" id="p4">
+  <h2>Page 4</h2>
+  <div class="en">The Four Major Lipid Categories
+
+1. Simple lipids: Alcohol + fatty acids
+2. Compound lipids: Lipid + additional group
+3. Substances associated with lipids: Vitamins, steroids, carotenes
+4. Derived lipids: Hydrolysis products
+
+KEY POINT: Classification depends on what is attached to the lipid framework.</div>
+  <div class="ar">التصنيفات الأربعة الرئيسية للدهون:
+1. Simple lipids: كحول + أحماض دهنية.
+2. Compound lipids: دهن + مجموعة إضافية additional group.
+3. Substances associated with lipids: فيتامينات vitamins، ستيرويدات steroids، كاروتينات carotenes.
+4. Derived lipids: نواتج التحلل المائي hydrolysis products.
+النقطة المهمة: التصنيف بيعتمد على إيه اللي متصل بالهيكل الدهني lipid framework.</div>
+  <div class="ex">💡 تخيل الدهن زي شاسيه عربية: لو عليه بس عجل وموتور يبقى simple، لو زودت عليه صندوق إضافي يبقى compound، ولو بتتكلم عن قطع غيار نتجت من فك العربية يبقى derived.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Simple lipids are composed of:</b><div class="opt">A. Alcohol + fatty acids</div><div class="opt">B. Lipid + phosphate group</div><div class="opt">C. Vitamins + steroids</div><div class="opt">D. Proteins + carbohydrates</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Alcohol + fatty acids</div></details></div></div><div class="q"><b>2) Compound lipids are described as:</b><div class="opt">A. Lipid + additional group</div><div class="opt">B. Alcohol + fatty acids only</div><div class="opt">C. Hydrolysis products only</div><div class="opt">D. Vitamins and carotenes only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Lipid + additional group</div></details></div></div><div class="q"><b>3) Which of the following are listed as substances associated with lipids?</b><div class="opt">A. Vitamins, steroids, carotenes</div><div class="opt">B. Phospholipids, glycolipids, sulfolipids</div><div class="opt">C. Fatty acids, alcohols, hydrocarbons</div><div class="opt">D. Glycerol, triglycerides, waxes</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Vitamins, steroids, carotenes</div></details></div></div><div class="q"><b>4) Derived lipids are best described as:</b><div class="opt">A. Hydrolysis products</div><div class="opt">B. Transport proteins</div><div class="opt">C. Simple esters of glycerol</div><div class="opt">D. Storage polysaccharides</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Hydrolysis products</div></details></div></div><div class="q"><b>5) According to the KEY POINT, lipid classification depends on:</b><div class="opt">A. What is attached to the lipid framework</div><div class="opt">B. The color of the lipid</div><div class="opt">C. The temperature of the body</div><div class="opt">D. The presence of water</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: What is attached to the lipid framework</div></details></div></div>
+</section>
+<section class="card" id="p5">
+  <h2>Page 5</h2>
+  <div class="en">I. Simple Lipids: The Basic Framework
+
+Simple = only two building blocks:
+Alcohol + Fatty acids
+
+Main types are determined by the alcohol component.
+
+Neutral fats:
+- Alcohol = glycerol
+- Fats are solid; oils are liquid
+
+Waxes:
+- Alcohol = higher alcohol, not glycerol
+
+KEY POINT: Simple lipids contain no extra phosphate, carbohydrate or protein group.</div>
+  <div class="ar">الدهون البسيطة simple lipids: تتكون من مكونين أساسيين فقط: كحول alcohol + أحماض دهنية fatty acids. الأنواع الرئيسية بتتحدد حسب نوع الكحول. Neutral fats: الكحول هو glycerol، والدهون fats بتكون صلبة solid بينما الزيوت oils سائلة liquid. Waxes: الكحول كحول أعلى higher alcohol وليس glycerol. النقطة المهمة: الدهون البسيطة لا تحتوي على فوسفات phosphate أو كربوهيدرات carbohydrate أو بروتين protein إضافي.</div>
+  <div class="ex">💡 زي ساندويتش فيه عيش وحشوة بس: الكحول هو العيش، والأحماض الدهنية هي الحشوة. لو زودت جبنة أو فوسفات، يبقى مش simple.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Simple lipids are made of how many main building blocks?</b><div class="opt">A. Two: alcohol and fatty acids</div><div class="opt">B. Three: glycerol, phosphate and choline</div><div class="opt">C. Four: sugar, phosphate, alcohol and fatty acid</div><div class="opt">D. One: fatty acid only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Two: alcohol and fatty acids</div></details></div></div><div class="q"><b>2) In simple lipids, the main type is determined by:</b><div class="opt">A. The alcohol component</div><div class="opt">B. The phosphate group</div><div class="opt">C. The protein content</div><div class="opt">D. The number of double bonds only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: The alcohol component</div></details></div></div><div class="q"><b>3) Neutral fats contain which alcohol?</b><div class="opt">A. Glycerol</div><div class="opt">B. Higher alcohol</div><div class="opt">C. Sphingosine</div><div class="opt">D. Cholesterol</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Glycerol</div></details></div></div><div class="q"><b>4) Waxes contain:</b><div class="opt">A. Higher alcohol, not glycerol</div><div class="opt">B. Glycerol only</div><div class="opt">C. Phosphate and glycerol</div><div class="opt">D. Carbohydrate and protein</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Higher alcohol, not glycerol</div></details></div></div><div class="q"><b>5) Simple lipids contain no extra:</b><div class="opt">A. Phosphate, carbohydrate or protein group</div><div class="opt">B. Carbon or hydrogen</div><div class="opt">C. Oxygen or nitrogen</div><div class="opt">D. Fatty acid or alcohol</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Phosphate, carbohydrate or protein group</div></details></div></div>
+</section>
+<section class="card" id="p6">
+  <h2>Page 6</h2>
+  <div class="en">II. Compound Lipids
+
+- Phospholipids: Phosphate group
+- Glycolipids: Carbohydrate residue
+- Sulfolipids: Sulfur-containing group
+- Aminolipids: Amino group
+- Lipoproteins: Combined with proteins; transport in blood
+
+KEY POINT: Compound lipids gain new properties from the additional chemical group.</div>
+  <div class="ar">الدهون المركبة compound lipids:
+- Phospholipids: فيها مجموعة فوسفات phosphate.
+- Glycolipids: فيها بقايا كربوهيدرات carbohydrate residue.
+- Sulfolipids: فيها مجموعة تحتوي على كبريت sulfur-containing group.
+- Aminolipids: فيها مجموعة أمينو amino group.
+- Lipoproteins: متحدة مع بروتينات proteins، ووظيفتها النقل في الدم transport in blood.
+النقطة المهمة: الدهون المركبة بتكتسب خواص جديدة من المجموعة الكيميائية الإضافية additional chemical group.</div>
+  <div class="ex">💡 تخيل الدهن زي موبايل: لو ضفت كاميرا، بقى له خاصية تصوير. كل مجموعة إضافية في compound lipids بتدي خاصية جديدة.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Phospholipids contain:</b><div class="opt">A. A phosphate group</div><div class="opt">B. Only a carbohydrate residue</div><div class="opt">C. A sulfur-containing group</div><div class="opt">D. Only an amino group</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: A phosphate group</div></details></div></div><div class="q"><b>2) Glycolipids are characterized by:</b><div class="opt">A. A carbohydrate residue</div><div class="opt">B. A phosphate group</div><div class="opt">C. An amino group</div><div class="opt">D. A protein only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: A carbohydrate residue</div></details></div></div><div class="q"><b>3) Sulfolipids contain:</b><div class="opt">A. A sulfur-containing group</div><div class="opt">B. A phosphate group</div><div class="opt">C. A carbohydrate residue</div><div class="opt">D. Glycerol only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: A sulfur-containing group</div></details></div></div><div class="q"><b>4) Lipoproteins are combined with proteins and function in:</b><div class="opt">A. Transport in blood</div><div class="opt">B. Storing fat in adipose tissue</div><div class="opt">C. Digesting proteins</div><div class="opt">D. Synthesizing DNA</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Transport in blood</div></details></div></div><div class="q"><b>5) According to the KEY POINT, compound lipids gain new properties from:</b><div class="opt">A. The additional chemical group</div><div class="opt">B. The absence of fatty acids</div><div class="opt">C. The presence of only glycerol</div><div class="opt">D. The absence of alcohol</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: The additional chemical group</div></details></div></div>
+</section>
+<section class="card" id="p7">
+  <h2>Page 7</h2>
+  <div class="en">III. Derived Lipids: Products of Hydrolysis
+
+Hydrolysis of simple or compound lipids yields smaller lipid-derived components.
+
+- Fatty acids: Saturated or unsaturated
+- Alcohols: Glycerol or higher alcohols
+- Hydrocarbons: Hydrocarbon products
+
+KEY POINT: Hydrolysis breaks lipid molecules into fatty acids, alcohols and hydrocarbons.</div>
+  <div class="ar">الدهون المشتقة derived lipids: هي نواتج التحلل المائي hydrolysis products. التحلل المائي للدهون البسيطة أو المركبة ينتج مكونات أصغر مشتقة من الدهون. تشمل:
+- Fatty acids: مشبعة saturated أو غير مشبعة unsaturated.
+- Alcohols: glycerol أو كحولات أعلى higher alcohols.
+- Hydrocarbons: نواتج هيدروكربونية hydrocarbon products.
+النقطة المهمة: التحلل المائي يكسر جزيئات الدهون إلى أحماض دهنية fatty acids وكحولات alcohols وهيدروكربونات hydrocarbons.</div>
+  <div class="ex">💡 زي ما تفكك لعبة تركيب: لو فككت الدهن hydrolysis، هتطلع قطع صغيرة: أحماض دهنية، كحولات، وهيدروكربونات. دي بنسميها derived lipids.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Derived lipids are products of:</b><div class="opt">A. Hydrolysis</div><div class="opt">B. Oxidation only</div><div class="opt">C. Photosynthesis</div><div class="opt">D. Protein synthesis</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Hydrolysis</div></details></div></div><div class="q"><b>2) Hydrolysis of simple or compound lipids yields:</b><div class="opt">A. Smaller lipid-derived components</div><div class="opt">B. Larger proteins</div><div class="opt">C. Nucleic acids</div><div class="opt">D. Only vitamins</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Smaller lipid-derived components</div></details></div></div><div class="q"><b>3) Fatty acids derived from lipids may be:</b><div class="opt">A. Saturated or unsaturated</div><div class="opt">B. Only saturated</div><div class="opt">C. Only unsaturated</div><div class="opt">D. Always hydrocarbons</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Saturated or unsaturated</div></details></div></div><div class="q"><b>4) Alcohols produced by hydrolysis may include:</b><div class="opt">A. Glycerol or higher alcohols</div><div class="opt">B. Only cholesterol</div><div class="opt">C. Only ethanol</div><div class="opt">D. Only methanol</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Glycerol or higher alcohols</div></details></div></div><div class="q"><b>5) The KEY POINT says hydrolysis breaks lipids into:</b><div class="opt">A. Fatty acids, alcohols and hydrocarbons</div><div class="opt">B. Proteins, sugars and salts</div><div class="opt">C. Nucleotides and amino acids</div><div class="opt">D. Vitamins and minerals</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Fatty acids, alcohols and hydrocarbons</div></details></div></div>
+</section>
+<section class="card" id="p8">
+  <h2>Page 8</h2>
+  <div class="en">IV. Substances Associated with Lipids
+
+Fat-soluble vitamins: A, D, E, K
+Steroids: Cholesterol, bile acids, adrenal and sex hormones
+Carotenes: Pigment-related lipid-associated compounds
+
+KEY POINT: These substances are lipid-related because of their chemistry or biological association.</div>
+  <div class="ar">المواد المرتبطة بالدهون (Substances Associated with Lipids): فيه مجموعات مهمة زي الفيتامينات الذائبة في الدهون (fat-soluble vitamins) وهي A•D•E•K، والستيرويدات (Steroids) زي الكوليسترول (Cholesterol) وأحماض الصفراء (bile acids) وهرمونات الغدة الكظرية والهرمونات الجنسية (adrenal and sex hormones)، والكاروتينات (Carotenes) وهي مركبات مرتبطة بالدهون ومرتبطة بالصبغات. النقطة المهمة: المواد دي تعتبر مرتبطة بالدهون بسبب كيمياءها أو ارتباطها البيولوجي.</div>
+  <div class="ex">💡 تخيل الدهون كأنها عصابة ليها أعضاء قريبين منها: فيتامينات A D E K بتدوب فيها، والستيرويدات والكاروتينات بتمشي معاها في نفس الشغل الحيوي.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Which vitamins are listed as fat-soluble?</b><div class="opt">A. A, D, E, K</div><div class="opt">B. B, C, D, E</div><div class="opt">C. A, B, C, K</div><div class="opt">D. C, D, E, K</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: A, D, E, K</div></details></div></div><div class="q"><b>2) Which of the following is included under steroids on this page?</b><div class="opt">A. Cholesterol, bile acids, adrenal and sex hormones</div><div class="opt">B. Carotenes and pigments</div><div class="opt">C. A, D, E, K</div><div class="opt">D. Triglycerides and glycerol</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Cholesterol, bile acids, adrenal and sex hormones</div></details></div></div><div class="q"><b>3) What are carotenes described as?</b><div class="opt">A. Pigment-related lipid-associated compounds</div><div class="opt">B. Water-soluble vitamins</div><div class="opt">C. Bile acids</div><div class="opt">D. Simple sugars</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Pigment-related lipid-associated compounds</div></details></div></div><div class="q"><b>4) Why are these substances considered lipid-related?</b><div class="opt">A. Because of their chemistry or biological association</div><div class="opt">B. Because they are all proteins</div><div class="opt">C. Because they all contain nitrogen</div><div class="opt">D. Because they are all water-soluble</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Because of their chemistry or biological association</div></details></div></div><div class="q"><b>5) Which group is NOT listed under substances associated with lipids on this page?</b><div class="opt">A. Nucleic acids</div><div class="opt">B. Steroids</div><div class="opt">C. Carotenes</div><div class="opt">D. Fat-soluble vitamins</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Nucleic acids</div></details></div></div>
+</section>
+<section class="card" id="p9">
+  <h2>Page 9</h2>
+  <div class="en">I. SIMPLE LIPIDS
+Chemistry, Classification &amp; Pharmaceutical Relevance
+
+A visual learning guide to lipid chemistry</div>
+  <div class="ar">الدهون البسيطة (Simple Lipids): بنبدأ فيها بالكيمياء (Chemistry)، والتصنيف (Classification)، والأهمية الصيدلانية (Pharmaceutical Relevance). الصفحة دي مقدمة/دليل تعلم بصري عن كيمياء الدهون.</div>
+  <div class="ex">💡 يعني زي ما تكون فتحت باب فصل اسمه Simple Lipids، وواضع عليه 3 عناوين: الكيمياء، التصنيف، والفايدة الدوائية.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) What is the main section titled?</b><div class="opt">A. I. SIMPLE LIPIDS</div><div class="opt">B. II. Complex Lipids</div><div class="opt">C. III. Derived Lipids</div><div class="opt">D. IV. Substances Associated with Lipids</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: I. SIMPLE LIPIDS</div></details></div></div><div class="q"><b>2) Which topic is included in the subtitle?</b><div class="opt">A. Chemistry, Classification &amp; Pharmaceutical Relevance</div><div class="opt">B. Only clinical toxicology</div><div class="opt">C. Protein synthesis</div><div class="opt">D. Carbohydrate metabolism</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Chemistry, Classification &amp; Pharmaceutical Relevance</div></details></div></div><div class="q"><b>3) This page is described as a visual learning guide to what?</b><div class="opt">A. Lipid chemistry</div><div class="opt">B. Protein chemistry</div><div class="opt">C. Nucleic acid chemistry</div><div class="opt">D. Carbohydrate chemistry</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Lipid chemistry</div></details></div></div><div class="q"><b>4) Which of the following is part of the section heading?</b><div class="opt">A. Simple Lipids</div><div class="opt">B. Fatty Acid Oxidation</div><div class="opt">C. Cholesterol Synthesis</div><div class="opt">D. Lipoproteins</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Simple Lipids</div></details></div></div><div class="q"><b>5) What type of guide is mentioned?</b><div class="opt">A. A visual learning guide</div><div class="opt">B. A surgical atlas</div><div class="opt">C. A legal document</div><div class="opt">D. A statistical report</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: A visual learning guide</div></details></div></div>
+</section>
+<section class="card" id="p10">
+  <h2>Page 10</h2>
+  <div class="en">Glycerol: A Three-OH Alcohol
+
+Structural idea: Glycerol contains three hydroxyl groups and forms ester linkages with fatty acids.
+
+Key properties: Soluble in water and alcohol; Combines with fatty acids.
+
+Pharmaceutical relevance: Cosmetics; Nitroglycerin for angina; Glycerol-related osmotic use in glaucoma.
+
+KEY POINT: Glycerol is the central alcohol in triglyceride formation.</div>
+  <div class="ar">الجليسرول (Glycerol): كحول فيه ثلاث مجموعات هيدروكسيل (three hydroxyl groups). بيرتبط بالأحماض الدهنية (fatty acids) ويكوّن روابط إستر (ester linkages). خواصه: يذوب في الماء والكحول، وبيتحد مع الأحماض الدهنية. أهميته الصيدلانية: يدخل في مستحضرات التجميل (Cosmetics)، والنتروجليسرين (Nitroglycerin) لعلاج الذبحة/ألم الصدر (angina)، واستخدامات أسموزية متعلقة بالجليسرول في الجلوكوما (glaucoma). النقطة المهمة: الجليسرول هو الكحول المركزي في تكوين الدهون الثلاثية (triglyceride formation).</div>
+  <div class="ex">💡 تخيل الجليسرول زي الهيكل أو الشماعة اللي فيها 3 خطافات (OH)، والأحماض الدهنية بتتعلق بالخطافات دي وتكوّن الدهون الثلاثية.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) How many hydroxyl groups does glycerol contain?</b><div class="opt">A. Three</div><div class="opt">B. One</div><div class="opt">C. Two</div><div class="opt">D. Four</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Three</div></details></div></div><div class="q"><b>2) Glycerol forms which type of linkage with fatty acids?</b><div class="opt">A. Ester linkages</div><div class="opt">B. Peptide bonds</div><div class="opt">C. Glycosidic bonds</div><div class="opt">D. Phosphate bonds</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Ester linkages</div></details></div></div><div class="q"><b>3) Glycerol is soluble in which substances?</b><div class="opt">A. Water and alcohol</div><div class="opt">B. Only water</div><div class="opt">C. Only oil</div><div class="opt">D. Only acids</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Water and alcohol</div></details></div></div><div class="q"><b>4) Which is listed as a pharmaceutical relevance of glycerol?</b><div class="opt">A. Nitroglycerin for angina</div><div class="opt">B. Insulin for diabetes</div><div class="opt">C. Aspirin for fever</div><div class="opt">D. Penicillin for infection</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Nitroglycerin for angina</div></details></div></div><div class="q"><b>5) Glycerol is the central alcohol in the formation of which molecule?</b><div class="opt">A. Triglyceride</div><div class="opt">B. Cholesterol</div><div class="opt">C. Bile acid</div><div class="opt">D. Carotene</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Triglyceride</div></details></div></div>
+</section>
+<section class="card" id="p11">
+  <h2>Page 11</h2>
+  <div class="en">Fatty Acids: The R–COOH Family
+
+General formula: R–COOH
+
+Naturally occurring fatty acids are usually straight-chain and commonly contain an even number of carbon atoms.
+
+General features: Chain length affects solubility. The carbon chain is the hydrophobic region.
+
+Saturated: No double bonds. Unsaturated: One or more double bonds.
+
+KEY POINT: Fatty-acid structure controls the physical behavior of fats and oils.</div>
+  <div class="ar">الأحماض الدهنية (Fatty Acids): عائلة R–COOH. الصيغة العامة R–COOH. الأحماض الدهنية الطبيعية غالبًا تكون مستقيمة السلسلة (straight-chain) وعدد ذرات الكربون فيها غالبًا زوجي (even number). خصائص عامة: طول السلسلة يؤثر على الذوبان (solubility). سلسلة الكربون هي المنطقة الكارهة للماء (hydrophobic region). الدهون المشبعة (Saturated): لا يوجد روابط مزدوجة. غير المشبعة (Unsaturated): يوجد رابطة مزدوجة أو أكثر. النقطة المهمة: تركيب الحمض الدهني يتحكم في السلوك الفيزيائي للدهون والزيوت.</div>
+  <div class="ex">💡 تخيل الحمض الدهني زي خيط طويل: الجزء R هو الذيل الكاره للمية، وكل ما الخيط يطول أو يبقى فيه ثنيات، سلوك الدهن يتغير.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) What is the general formula of fatty acids?</b><div class="opt">A. R–COOH</div><div class="opt">B. R–NH2</div><div class="opt">C. R–OH</div><div class="opt">D. R–CHO</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: R–COOH</div></details></div></div><div class="q"><b>2) Naturally occurring fatty acids are usually...</b><div class="opt">A. straight-chain and commonly contain an even number of carbon atoms</div><div class="opt">B. branched and contain only odd carbons</div><div class="opt">C. cyclic and contain no carbon</div><div class="opt">D. always water-soluble</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: straight-chain and commonly contain an even number of carbon atoms</div></details></div></div><div class="q"><b>3) What does chain length affect?</b><div class="opt">A. Solubility</div><div class="opt">B. Color only</div><div class="opt">C. Taste only</div><div class="opt">D. DNA sequence</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Solubility</div></details></div></div><div class="q"><b>4) Which part of a fatty acid is the hydrophobic region?</b><div class="opt">A. The carbon chain</div><div class="opt">B. The carboxyl group</div><div class="opt">C. The hydroxyl group</div><div class="opt">D. The amino group</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: The carbon chain</div></details></div></div><div class="q"><b>5) Saturated fatty acids have...</b><div class="opt">A. No double bonds</div><div class="opt">B. One or more double bonds</div><div class="opt">C. Three double bonds always</div><div class="opt">D. Only triple bonds</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: No double bonds</div></details></div></div>
+</section>
+<section class="card" id="p12">
+  <h2>Page 12</h2>
+  <div class="en">Saturated vs Unsaturated Fatty Acids
+
+Saturated: No C=C double bonds. Example: Butyric acid, 4 carbons; found mainly in butter.
+
+Unsaturated: One or more C=C double bonds. Monounsaturated: one double bond. Polyunsaturated: more than one. Examples: oleic, linoleic, arachidonic.
+
+KEY POINT: Unsaturation introduces bends and generally lowers melting point.</div>
+  <div class="ar">المقارنة بين الدهون المشبعة (Saturated) وغير المشبعة (Unsaturated): المشبعة مافيهاش روابط مزدوجة C=C، مثال: حمض البيوتريك (Butyric acid) فيه 4 كربونات ومتواجد أساسًا في الزبدة. غير المشبعة فيها رابطة C=C أو أكثر. أحادية عدم التشبع (Monounsaturated): رابطة مزدوجة واحدة. متعددة عدم التشبع (Polyunsaturated): أكثر من رابطة. أمثلة: oleic، linoleic، arachidonic. النقطة المهمة: عدم التشبع بيعمل انحناءات (bends) وبيقلل درجة الانصهار (melting point) بشكل عام.</div>
+  <div class="ex">💡 تخيل السلسلة المشبعة زي ماسورة مستقيمة، وغير المشبعة فيها ثنيات (bends) فبتتراصش جنب بعض بسهولة، وده يخلي درجة الانصهار أقل.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) What is the example of a saturated fatty acid on this page?</b><div class="opt">A. Butyric acid</div><div class="opt">B. Oleic acid</div><div class="opt">C. Linoleic acid</div><div class="opt">D. Arachidonic acid</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Butyric acid</div></details></div></div><div class="q"><b>2) How many carbons does butyric acid have?</b><div class="opt">A. 4</div><div class="opt">B. 2</div><div class="opt">C. 6</div><div class="opt">D. 18</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: 4</div></details></div></div><div class="q"><b>3) Monounsaturated fatty acids have how many double bonds?</b><div class="opt">A. One</div><div class="opt">B. Two</div><div class="opt">C. Three</div><div class="opt">D. None</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: One</div></details></div></div><div class="q"><b>4) Which are examples of unsaturated fatty acids?</b><div class="opt">A. Oleic, linoleic, arachidonic</div><div class="opt">B. Butyric only</div><div class="opt">C. Cholesterol and bile acids</div><div class="opt">D. A, D, E, K</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Oleic, linoleic, arachidonic</div></details></div></div><div class="q"><b>5) What effect does unsaturation generally have on melting point?</b><div class="opt">A. Lowers it</div><div class="opt">B. Raises it</div><div class="opt">C. No effect</div><div class="opt">D. Makes it infinite</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Lowers it</div></details></div></div>
+</section>
+<section class="card" id="p13">
+  <h2>Page 13</h2>
+  <div class="en">Saturated vs Unsaturated Fatty Acids
+
+KEY POINT: Unsaturation introduces bends and generally lowers melting point.</div>
+  <div class="ar">المقارنة بين الدهون المشبعة وغير المشبعة (Saturated vs Unsaturated Fatty Acids). النقطة المهمة: عدم التشبع (unsaturation) بيعمل انحناءات (bends) وبيقلل درجة الانصهار (melting point) بشكل عام.</div>
+  <div class="ex">💡 الرابطة المزدوجة بتعمل كسر أو ثنية في السلسلة، فالدهن غير المشبع ما يقدرش يتراص بإحكام، فيدوب أسرع ودرجة انصهاره تقل.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) What is the title of this page?</b><div class="opt">A. Saturated vs Unsaturated Fatty Acids</div><div class="opt">B. Simple Lipids</div><div class="opt">C. Glycerol</div><div class="opt">D. Steroids</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Saturated vs Unsaturated Fatty Acids</div></details></div></div><div class="q"><b>2) What does unsaturation introduce?</b><div class="opt">A. Bends</div><div class="opt">B. Straight chains only</div><div class="opt">C. Peptide bonds</div><div class="opt">D. Hydroxyl groups</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Bends</div></details></div></div><div class="q"><b>3) What does unsaturation generally do to melting point?</b><div class="opt">A. Lowers it</div><div class="opt">B. Raises it</div><div class="opt">C. Has no effect</div><div class="opt">D. Doubles it</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Lowers it</div></details></div></div><div class="q"><b>4) The key point compares unsaturation with which property?</b><div class="opt">A. Melting point</div><div class="opt">B. Color</div><div class="opt">C. DNA sequence</div><div class="opt">D. Protein charge</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Melting point</div></details></div></div><div class="q"><b>5) Which term is directly mentioned in the key point?</b><div class="opt">A. Unsaturation</div><div class="opt">B. Cholesterol</div><div class="opt">C. Carotene</div><div class="opt">D. Glycerol</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Unsaturation</div></details></div></div>
+</section>
+<section class="card" id="p14">
+  <h2>Page 14</h2>
+  <div class="en">Saturated Fatty Acids
+
+KEY POINT: Unsaturation introduces bends and generally lowers melting point.</div>
+  <div class="ar">الأحماض الدهنية المشبعة (Saturated Fatty Acids). النقطة المهمة: عدم التشبع (unsaturation) بيعمل انحناءات (bends) وبيقلل درجة الانصهار (melting point) بشكل عام.</div>
+  <div class="ex">💡 لو السلسلة مشبعة يعني مافيهاش ثنيات، بتكون زي عصا مستقيمة؛ لكن لما تيجي غير مشبعة، الثنيات تخليها ما تتراصش، فدرجة الانصهار تقل.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) What is the page title?</b><div class="opt">A. Saturated Fatty Acids</div><div class="opt">B. Unsaturated Fatty Acids</div><div class="opt">C. Glycerol</div><div class="opt">D. Carotenes</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Saturated Fatty Acids</div></details></div></div><div class="q"><b>2) According to the key point, what does unsaturation introduce?</b><div class="opt">A. Bends</div><div class="opt">B. Only straight chains</div><div class="opt">C. Ester linkages</div><div class="opt">D. Hydroxyl groups</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Bends</div></details></div></div><div class="q"><b>3) According to the key point, unsaturation generally affects melting point by...</b><div class="opt">A. Lowering it</div><div class="opt">B. Raising it</div><div class="opt">C. Keeping it constant</div><div class="opt">D. Removing it</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Lowering it</div></details></div></div><div class="q"><b>4) Which topic is this page mainly about?</b><div class="opt">A. Saturated fatty acids</div><div class="opt">B. Fat-soluble vitamins</div><div class="opt">C. Steroids</div><div class="opt">D. Bile acids</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Saturated fatty acids</div></details></div></div><div class="q"><b>5) Which property is mentioned in the key point?</b><div class="opt">A. Melting point</div><div class="opt">B. Solubility in alcohol</div><div class="opt">C. Osmotic use</div><div class="opt">D. Angina treatment</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Melting point</div></details></div></div>
+</section>
+<section class="card" id="p15">
+  <h2>Page 15</h2>
+  <div class="en">Unsaturated Fatty Acids
+
+KEY POINT: Unsaturation introduces bends and generally lowers melting point.</div>
+  <div class="ar">الأحماض الدهنية غير المشبعة (Unsaturated Fatty Acids).
+النقطة المهمة (KEY POINT): وجود عدم التشبع (Unsaturation) يُدخل انحناءات (bends) في السلسلة، وبشكل عام يقلل درجة الانصهار (melting point).</div>
+  <div class="ex">💡 تخيل سلسلة دهنية زي عصا مستقيمة، لكن لما يكون فيها عدم تشبع (Unsaturation) بتبقى فيها ثنيات (bends)، فما تقدرش تتراص جنب بعض بإحكام، وبالتالي تسيح عند حرارة أقل.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) What is the KEY POINT about unsaturation?</b><div class="opt">A. It introduces bends and generally lowers melting point</div><div class="opt">B. It removes bends and raises melting point</div><div class="opt">C. It makes fatty acids water-soluble</div><div class="opt">D. It has no effect on melting point</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: It introduces bends and generally lowers melting point</div></details></div></div><div class="q"><b>2) Unsaturation generally ___ the melting point of fatty acids.</b><div class="opt">A. lowers</div><div class="opt">B. raises</div><div class="opt">C. does not change</div><div class="opt">D. doubles</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: lowers</div></details></div></div><div class="q"><b>3) The slide title is:</b><div class="opt">A. Unsaturated Fatty Acids</div><div class="opt">B. Saturated Fatty Acids</div><div class="opt">C. Neutral Fats</div><div class="opt">D. Fats &amp; Oils: Physical Properties</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Unsaturated Fatty Acids</div></details></div></div><div class="q"><b>4) According to the KEY POINT, unsaturation introduces:</b><div class="opt">A. bends</div><div class="opt">B. straight chains only</div><div class="opt">C. phosphate groups</div><div class="opt">D. amino groups</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: bends</div></details></div></div><div class="q"><b>5) Which statement matches the slide?</b><div class="opt">A. Unsaturation generally lowers melting point</div><div class="opt">B. Unsaturation generally increases melting point</div><div class="opt">C. Unsaturated fatty acids are always solid</div><div class="opt">D. Unsaturation removes bends</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Unsaturation generally lowers melting point</div></details></div></div>
+</section>
+<section class="card" id="p16">
+  <h2>Page 16</h2>
+  <div class="en">Unsaturated Fatty Acids
+
+KEY POINT: Unsaturation introduces bends and generally lowers melting point.</div>
+  <div class="ar">الأحماض الدهنية غير المشبعة (Unsaturated Fatty Acids).
+النقطة المهمة (KEY POINT): وجود عدم التشبع (Unsaturation) يُدخل انحناءات (bends) في السلسلة، وبشكل عام يقلل درجة الانصهار (melting point).</div>
+  <div class="ex">💡 تخيل سلسلة دهنية زي عصا مستقيمة، لكن لما يكون فيها عدم تشبع (Unsaturation) بتبقى فيها ثنيات (bends)، فما تقدرش تتراص جنب بعض بإحكام، وبالتالي تسيح عند حرارة أقل.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) What is the KEY POINT about unsaturation?</b><div class="opt">A. It introduces bends and generally lowers melting point</div><div class="opt">B. It removes bends and raises melting point</div><div class="opt">C. It makes fatty acids water-soluble</div><div class="opt">D. It has no effect on melting point</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: It introduces bends and generally lowers melting point</div></details></div></div><div class="q"><b>2) Unsaturation generally ___ the melting point of fatty acids.</b><div class="opt">A. lowers</div><div class="opt">B. raises</div><div class="opt">C. does not change</div><div class="opt">D. doubles</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: lowers</div></details></div></div><div class="q"><b>3) The slide title is:</b><div class="opt">A. Unsaturated Fatty Acids</div><div class="opt">B. Saturated Fatty Acids</div><div class="opt">C. Neutral Fats</div><div class="opt">D. Fats &amp; Oils: Physical Properties</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Unsaturated Fatty Acids</div></details></div></div><div class="q"><b>4) According to the KEY POINT, unsaturation introduces:</b><div class="opt">A. bends</div><div class="opt">B. straight chains only</div><div class="opt">C. phosphate groups</div><div class="opt">D. amino groups</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: bends</div></details></div></div><div class="q"><b>5) Which statement matches the slide?</b><div class="opt">A. Unsaturation generally lowers melting point</div><div class="opt">B. Unsaturation generally increases melting point</div><div class="opt">C. Unsaturated fatty acids are always solid</div><div class="opt">D. Unsaturation removes bends</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Unsaturation generally lowers melting point</div></details></div></div>
+</section>
+<section class="card" id="p17">
+  <h2>Page 17</h2>
+  <div class="en">Important Unsaturated Fatty Acids
+
+Palmitoleic — 16:1(9)
+Oleic — 18:1(9)
+Nervonic — 24:1(15)
+Linoleic — 18:2(9,12)
+Linolenic — 18:3(9,12,15)
+Arachidonic — 20:4(5,8,11,14)
+
+KEY POINT: Notation: carbon number : number of double bonds (positions in parentheses).</div>
+  <div class="ar">أحماض دهنية غير مشبعة مهمة (Important Unsaturated Fatty Acids):
+Palmitoleic = 16:1(9)، Oleic = 18:1(9)، Nervonic = 24:1(15)، Linoleic = 18:2(9,12)، Linolenic = 18:3(9,12,15)، Arachidonic = 20:4(5,8,11,14).
+النقطة المهمة (KEY POINT): طريقة الكتابة (Notation) هي: عدد ذرات الكربون (carbon number) : عدد الروابط المزدوجة (number of double bonds)، ومواضع الروابط المزدوجة تُكتب بين قوسين (positions in parentheses).</div>
+  <div class="ex">💡 الـ Notation زي بطاقة تعريف للحمض الدهني: 18:1(9) معناها 18 كربون، وفيها رابطة مزدوجة واحدة عند الموضع 9. و18:2(9,12) معناها 18 كربون، وفيها رابطتان مزدوجتان عند 9 و12.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) What does the notation 18:1(9) mean?</b><div class="opt">A. 18 carbons, 1 double bond at position 9</div><div class="opt">B. 18 double bonds, 1 carbon at position 9</div><div class="opt">C. 1 carbon, 18 double bonds at position 9</div><div class="opt">D. 18 carbons, 9 double bonds at position 1</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: 18 carbons, 1 double bond at position 9</div></details></div></div><div class="q"><b>2) Which fatty acid has the notation 20:4(5,8,11,14)?</b><div class="opt">A. Arachidonic</div><div class="opt">B. Linoleic</div><div class="opt">C. Oleic</div><div class="opt">D. Nervonic</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Arachidonic</div></details></div></div><div class="q"><b>3) In the notation, what does the number after the colon represent?</b><div class="opt">A. Number of double bonds</div><div class="opt">B. Number of carbon atoms</div><div class="opt">C. Position of the first carbon</div><div class="opt">D. Number of glycerol molecules</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Number of double bonds</div></details></div></div><div class="q"><b>4) Which fatty acid is 24:1(15)?</b><div class="opt">A. Nervonic</div><div class="opt">B. Palmitoleic</div><div class="opt">C. Linolenic</div><div class="opt">D. Arachidonic</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Nervonic</div></details></div></div><div class="q"><b>5) In the notation, what do the numbers in parentheses indicate?</b><div class="opt">A. Positions of double bonds</div><div class="opt">B. Positions of carbon atoms</div><div class="opt">C. Number of ester linkages</div><div class="opt">D. Number of fatty acyl groups</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Positions of double bonds</div></details></div></div>
+</section>
+<section class="card" id="p18">
+  <h2>Page 18</h2>
+  <div class="en">Why Polyunsaturated Fatty Acids Matter
+
+Needed for normal growth.
+Cis isomers predominate in most naturally occurring unsaturated fatty acids.
+Trans isomers are relatively rare.
+More double bonds generally means a lower melting point.
+
+Melting-point trend:
+Unsaturated ↓
+More double bonds ↓
+Lower melting point
+
+KEY POINT: Degree of unsaturation is a major determinant of lipid physical state.</div>
+  <div class="ar">لماذا الأحماض الدهنية عديدة عدم التشبع (Polyunsaturated Fatty Acids) مهمة؟
+- مطلوبة للنمو الطبيعي (normal growth).
+- Cis isomers هي السائدة في معظم الأحماض الدهنية غير المشبعة الطبيعية.
+- Trans isomers نادرة نسبيًا.
+- زيادة عدد الروابط المزدوجة (More double bonds) غالبًا تعني درجة انصهار أقل (lower melting point).
+اتجاه درجة الانصهار (Melting-point trend): غير مشبع (Unsaturated) ↓، روابط مزدوجة أكثر ↓، درجة انصهار أقل.
+النقطة المهمة (KEY POINT): درجة عدم التشبع (Degree of unsaturation) عامل رئيسي في تحديد الحالة الفيزيائية للدهون (lipid physical state).</div>
+  <div class="ex">💡 كل ما تزيد الروابط المزدوجة في الدهن، كل ما يبقى أقل تراصًا وبالتالي أقل درجة انصهار. زي الزيوت السائلة: عندها Unsaturated أكثر، فتبقى سائلة بدل ما تكون صلبة.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Polyunsaturated fatty acids are needed for:</b><div class="opt">A. normal growth</div><div class="opt">B. forming DNA only</div><div class="opt">C. making glucose only</div><div class="opt">D. producing bile salts only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: normal growth</div></details></div></div><div class="q"><b>2) Which isomers predominate in most naturally occurring unsaturated fatty acids?</b><div class="opt">A. Cis isomers</div><div class="opt">B. Trans isomers</div><div class="opt">C. Both equally</div><div class="opt">D. Neither</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Cis isomers</div></details></div></div><div class="q"><b>3) Trans isomers are relatively:</b><div class="opt">A. rare</div><div class="opt">B. common</div><div class="opt">C. the only form</div><div class="opt">D. water-soluble</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: rare</div></details></div></div><div class="q"><b>4) More double bonds generally means:</b><div class="opt">A. a lower melting point</div><div class="opt">B. a higher melting point</div><div class="opt">C. no change in melting point</div><div class="opt">D. a solid at all temperatures</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: a lower melting point</div></details></div></div><div class="q"><b>5) According to the KEY POINT, degree of unsaturation is a major determinant of:</b><div class="opt">A. lipid physical state</div><div class="opt">B. protein charge</div><div class="opt">C. carbohydrate solubility</div><div class="opt">D. nucleotide sequence</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: lipid physical state</div></details></div></div>
+</section>
+<section class="card" id="p19">
+  <h2>Page 19</h2>
+  <div class="en">Neutral Fats = Triglycerides
+
+Formation:
+Glycerol + Fatty acid 1 + Fatty acid 2 + Fatty acid 3
+Three ester linkages form a triacylglycerol.
+
+Simple glyceride:
+All three fatty acids are identical.
+Example: tripalmitin.
+
+Mixed glyceride:
+Fatty acids are different.
+Example: palmitostearin.
+
+KEY POINT: The word triacylglycerol highlights three fatty acyl groups attached to glycerol.</div>
+  <div class="ar">الدهون المتعادلة (Neutral Fats) = الدهون الثلاثية (Triglycerides).
+التكوين (Formation): جلسرول (Glycerol) + حمض دهني 1 + حمض دهني 2 + حمض دهني 3. تتكون ثلاثة روابط إستر (Three ester linkages) لتكوين تراي أسيل جليسرول (triacylglycerol).
+Simple glyceride: الأحماض الدهنية الثلاثة متطابقة. مثال: tripalmitin.
+Mixed glyceride: الأحماض الدهنية مختلفة. مثال: palmitostearin.
+النقطة المهمة (KEY POINT): كلمة triacylglycerol تشير إلى وجود ثلاث مجموعات أسيل دهنية (three fatty acyl groups) مرتبطة بالجلسرول (glycerol).</div>
+  <div class="ex">💡 تخيل الجلسرول كأنه أتوبيس فيه 3 كراسي، وكل حمض دهني راكب في كرسي. لو الثلاثة نفس الحمض = simple glyceride، ولو مختلفين = mixed glyceride. الروابط اللي ماسكة الركاب هي ester linkages.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Neutral fats are also called:</b><div class="opt">A. triglycerides</div><div class="opt">B. phospholipids</div><div class="opt">C. steroids</div><div class="opt">D. waxes</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: triglycerides</div></details></div></div><div class="q"><b>2) How many ester linkages form a triacylglycerol?</b><div class="opt">A. Three</div><div class="opt">B. One</div><div class="opt">C. Two</div><div class="opt">D. Four</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Three</div></details></div></div><div class="q"><b>3) A simple glyceride has:</b><div class="opt">A. all three fatty acids identical</div><div class="opt">B. three different fatty acids</div><div class="opt">C. no fatty acids</div><div class="opt">D. two glycerol molecules</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: all three fatty acids identical</div></details></div></div><div class="q"><b>4) Which is an example of a simple glyceride?</b><div class="opt">A. Tripalmitin</div><div class="opt">B. Palmitostearin</div><div class="opt">C. Oleic acid</div><div class="opt">D. Carotene</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Tripalmitin</div></details></div></div><div class="q"><b>5) Which is an example of a mixed glyceride?</b><div class="opt">A. Palmitostearin</div><div class="opt">B. Tripalmitin</div><div class="opt">C. Glycerol</div><div class="opt">D. Chloroform</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Palmitostearin</div></details></div></div>
+</section>
+<section class="card" id="p20">
+  <h2>Page 20</h2>
+  <div class="en">Neutral Fats = Triglycerides
+
+Note: This page appears to contain mostly image/no additional text beyond the title and slide numbers.</div>
+  <div class="ar">الشريحة عنوانها: Neutral Fats = Triglycerides، أي أن الدهون المتعادلة هي نفسها الدهون الثلاثية. لا يوجد نص إضافي واضح في المصدر غير العنوان، ويبدو أن الشريحة تعتمد على صورة.</div>
+  <div class="ex">💡 زي لافتة عنوان سريعة: الدهون المتعادلة (Neutral Fats) = الدهون الثلاثية (Triglycerides).</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) According to the slide title, neutral fats are equivalent to:</b><div class="opt">A. triglycerides</div><div class="opt">B. phospholipids</div><div class="opt">C. steroids</div><div class="opt">D. waxes</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: triglycerides</div></details></div></div><div class="q"><b>2) What is the main title on this slide?</b><div class="opt">A. Neutral Fats = Triglycerides</div><div class="opt">B. Fats &amp; Oils: Physical Properties</div><div class="opt">C. Important Unsaturated Fatty Acids</div><div class="opt">D. Why Polyunsaturated Fatty Acids Matter</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Neutral Fats = Triglycerides</div></details></div></div><div class="q"><b>3) Neutral fats are also known as:</b><div class="opt">A. triglycerides</div><div class="opt">B. amino acids</div><div class="opt">C. nucleotides</div><div class="opt">D. monosaccharides</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: triglycerides</div></details></div></div><div class="q"><b>4) The slide mainly contains:</b><div class="opt">A. the title and slide numbers with mostly image content</div><div class="opt">B. detailed fatty acid notation</div><div class="opt">C. properties of fats and oils</div><div class="opt">D. formation of ester linkages</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: the title and slide numbers with mostly image content</div></details></div></div><div class="q"><b>5) Which term appears in the title?</b><div class="opt">A. Triglycerides</div><div class="opt">B. Carotene</div><div class="opt">C. Oleic</div><div class="opt">D. Benzene</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Triglycerides</div></details></div></div>
+</section>
+<section class="card" id="p21">
+  <h2>Page 21</h2>
+  <div class="en">Fats &amp; Oils: Physical Properties
+
+Fresh pure fats and oils are colorless, odorless and tasteless.
+Specific gravity is less than 1.
+Insoluble in water.
+Soluble in ether, chloroform and benzene.
+
+Why can color appear?
+Associated substances may add color, odor or taste.
+Example: carotene can contribute yellow color.
+
+KEY POINT: Observed color or odor may come from substances associated with the fat—not the pure lipid itself.</div>
+  <div class="ar">خواص الدهون والزيوت الفيزيائية (Fats &amp; Oils: Physical Properties):
+- الدهون والزيوت النقية الطازجة عديمة اللون والرائحة والطعم (colorless, odorless and tasteless).
+- الكثافة النوعية (Specific gravity) أقل من 1.
+- غير ذائبة في الماء (Insoluble in water).
+- ذائبة في الإيثر والكلوروفورم والبنزين (ether, chloroform and benzene).
+لماذا قد يظهر اللون؟ مواد مصاحبة (Associated substances) قد تضيف لونًا أو رائحة أو طعمًا. مثال: الكاروتين (carotene) قد يعطي لونًا أصفر.
+النقطة المهمة (KEY POINT): اللون أو الرائحة الملاحظة قد تأتي من مواد مصاحبة للدهن وليس من الليبيد النقي نفسه.</div>
+  <div class="ex">💡 الدهن النقي مثل الماء المقطر للدهون: لا لون ولا ريح ولا طعم. لكن لو فيه شوائب أو مواد مصاحبة مثل carotene، ممكن يبقى أصفر. وكمان كثافته أقل من الماء فيطفو، وما يذوبش في الماء لكن يذوب في مذيبات عضوية زي ether وchloroform وbenzene.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Fresh pure fats and oils are:</b><div class="opt">A. colorless, odorless and tasteless</div><div class="opt">B. yellow, odorous and sweet</div><div class="opt">C. always blue</div><div class="opt">D. water-soluble</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: colorless, odorless and tasteless</div></details></div></div><div class="q"><b>2) The specific gravity of fats and oils is:</b><div class="opt">A. less than 1</div><div class="opt">B. equal to 1</div><div class="opt">C. greater than 1</div><div class="opt">D. zero</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: less than 1</div></details></div></div><div class="q"><b>3) Fats and oils are insoluble in:</b><div class="opt">A. water</div><div class="opt">B. ether</div><div class="opt">C. chloroform</div><div class="opt">D. benzene</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: water</div></details></div></div><div class="q"><b>4) Fats and oils are soluble in:</b><div class="opt">A. ether, chloroform and benzene</div><div class="opt">B. water and saline</div><div class="opt">C. glucose solution</div><div class="opt">D. strong acids only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: ether, chloroform and benzene</div></details></div></div><div class="q"><b>5) Carotene can contribute which color to fat?</b><div class="opt">A. Yellow</div><div class="opt">B. Blue</div><div class="opt">C. Green</div><div class="opt">D. Purple</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Yellow</div></details></div></div>
+</section>
+<section class="card" id="p22">
+  <h2>Page 22</h2>
+  <div class="en">Hydrolysis &amp; Saponification (14)
+
+In the human body:
+Triglyceride + water → (lipase enzymes) → Glycerol + free fatty acids
+
+In industry: saponification
+Triglyceride + NaOH → Soap + glycerol
+
+KEY POINT: Saponification produces water-soluble fatty-acid salts called soaps.</div>
+  <div class="ar">التحلل المائي (Hydrolysis) والتصبن (Saponification):
+- في جسم الإنسان: الـ Triglyceride + water ويتحلل بواسطة إنزيمات lipase إلى Glycerol + free fatty acids.
+- في الصناعة (saponification): الـ Triglyceride + NaOH وينتج Soap + glycerol.
+- نقطة مهمة: Saponification ينتج أملاح أحماض دهنية قابلة للذوبان في الماء تسمى soaps.</div>
+  <div class="ex">💡 تخيل الدهون زي قطعة زبدة؛ lipase في الجسم يكسّرها ل glycerol وأحماض دهنية. لكن لو حطينا NaOH (صودا كاوية) تتحول لصابون + glycerol، وده أساس صناعة الصابون.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Which enzyme hydrolyzes triglycerides in the human body?</b><div class="opt">A. Amylase</div><div class="opt">B. Lipase</div><div class="opt">C. Protease</div><div class="opt">D. Pepsin</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Lipase</div></details></div></div><div class="q"><b>2) In saponification, triglyceride reacts with...</b><div class="opt">A. HCl</div><div class="opt">B. NaOH</div><div class="opt">C. Water only</div><div class="opt">D. Lipase</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: NaOH</div></details></div></div><div class="q"><b>3) What are the products of industrial saponification?</b><div class="opt">A. Glycerol + free fatty acids</div><div class="opt">B. Soap + glycerol</div><div class="opt">C. Only fatty acids</div><div class="opt">D. Only soap</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Soap + glycerol</div></details></div></div><div class="q"><b>4) What are the products of triglyceride hydrolysis in the human body?</b><div class="opt">A. Soap + glycerol</div><div class="opt">B. Glycerol + free fatty acids</div><div class="opt">C. Triglyceride + NaOH</div><div class="opt">D. Aldehydes + ketones</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Glycerol + free fatty acids</div></details></div></div><div class="q"><b>5) Saponification produces water-soluble fatty-acid salts called...</b><div class="opt">A. Waxes</div><div class="opt">B. Soaps</div><div class="opt">C. Antioxidants</div><div class="opt">D. Peroxides</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Soaps</div></details></div></div>
+</section>
+<section class="card" id="p23">
+  <h2>Page 23</h2>
+  <div class="en">How Does Soap Remove Lipid? (15)
+
+Soap has two chemically different ends:
+- Nonpolar tail binds lipid
+- Ionic carboxylate interacts with water
+
+This dual behavior helps pull oily material into the water phase.
+
+KEY POINT: Soap bridges the gap between water and nonpolar lipids.</div>
+  <div class="ar">إزاي الصابون يشيل الدهون؟
+- الصابون له طرفان مختلفان كيميائيًا: tail غير قطبي (nonpolar) يرتبط بالدهن lipid، وطرف ionic carboxylate يتفاعل مع الماء.
+- هذا السلوك المزدوج يساعد على سحب المواد الزيتية إلى الطور المائي.
+- نقطة مهمة: Soap يعمل كجسر بين الماء والدهون غير القطبية nonpolar lipids.</div>
+  <div class="ex">💡 الصابون زي شخص عنده إيدين: إيد تمسك الزيت وإيد تمسك الماء؛ فتشيل الدهون من الأطباق وتدخلها في الماء.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) How many chemically different ends does soap have?</b><div class="opt">A. One</div><div class="opt">B. Two</div><div class="opt">C. Three</div><div class="opt">D. Four</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Two</div></details></div></div><div class="q"><b>2) The nonpolar tail of soap binds to...</b><div class="opt">A. Water</div><div class="opt">B. Lipid</div><div class="opt">C. Glycerol</div><div class="opt">D. NaOH</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Lipid</div></details></div></div><div class="q"><b>3) The ionic carboxylate end of soap interacts with...</b><div class="opt">A. Lipid</div><div class="opt">B. Water</div><div class="opt">C. Oxygen</div><div class="opt">D. Light</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Water</div></details></div></div><div class="q"><b>4) Soap&#x27;s dual behavior helps pull oily material into...</b><div class="opt">A. The water phase</div><div class="opt">B. The lipid phase</div><div class="opt">C. The gas phase</div><div class="opt">D. The solid phase</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: The water phase</div></details></div></div><div class="q"><b>5) Soap bridges the gap between water and...</b><div class="opt">A. Glycerol</div><div class="opt">B. Nonpolar lipids</div><div class="opt">C. Enzymes</div><div class="opt">D. Soaps</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Nonpolar lipids</div></details></div></div>
+</section>
+<section class="card" id="p24">
+  <h2>Page 24</h2>
+  <div class="en">Oxidation &amp; Rancidity (16)
+
+Oxidation targets double bonds.
+Unsaturated fatty acids can form: Aldehydes • Ketones • Peroxides.
+Rancidity = unpleasant odor and taste.
+
+Factors that accelerate rancidity:
+- Light
+- Oxygen
+- Moisture
+- Warm temperature
+
+KEY POINT: Oxidation is especially important in oils rich in unsaturated fatty acids.</div>
+  <div class="ar">الأكسدة (Oxidation) والزنخ (Rancidity):
+- الأكسدة تستهدف الروابط المزدوجة double bonds.
+- الأحماض الدهنية غير المشبعة unsaturated fatty acids قد تكون aldehydes • ketones • peroxides.
+- Rancidity = رائحة وطعم غير محببين.
+- عوامل تسرّع الزنخ: الضوء Light، الأكسجين Oxygen، الرطوبة Moisture، الحرارة الدافئة Warm temperature.
+- نقطة مهمة: الأكسدة مهمة خصوصًا في الزيوت الغنية بـ unsaturated fatty acids.</div>
+  <div class="ex">💡 الزيت لما يسيح في نور الشمس والهواء، يبدأ يزنخ وريحته تبوظ؛ ده لأن الأكسجين والضوء بيهجموا على double bonds.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Oxidation targets...</b><div class="opt">A. Single bonds</div><div class="opt">B. Double bonds</div><div class="opt">C. Glycerol</div><div class="opt">D. Sodium</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Double bonds</div></details></div></div><div class="q"><b>2) Rancidity is...</b><div class="opt">A. A sweet taste</div><div class="opt">B. Unpleasant odor and taste</div><div class="opt">C. No odor</div><div class="opt">D. A hardening process</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Unpleasant odor and taste</div></details></div></div><div class="q"><b>3) Unsaturated fatty acids can form...</b><div class="opt">A. Aldehydes, ketones, peroxides</div><div class="opt">B. Soaps and glycerol</div><div class="opt">C. Waxes only</div><div class="opt">D. Vitamins only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Aldehydes, ketones, peroxides</div></details></div></div><div class="q"><b>4) Which factor accelerates rancidity?</b><div class="opt">A. Cold</div><div class="opt">B. Light</div><div class="opt">C. Nitrogen</div><div class="opt">D. Vacuum</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Light</div></details></div></div><div class="q"><b>5) Oxidation is especially important in oils rich in...</b><div class="opt">A. Saturated fatty acids</div><div class="opt">B. Unsaturated fatty acids</div><div class="opt">C. Waxes</div><div class="opt">D. Glycerol</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Unsaturated fatty acids</div></details></div></div>
+</section>
+<section class="card" id="p25">
+  <h2>Page 25</h2>
+  <div class="en">Preventing Rancidity (17)
+
+- Keep food cold to inhibit lipase activity.
+- Replace oxygen with an inert gas such as nitrogen.
+- Use vacuum packaging.
+- Add antioxidants such as vitamin E.
+
+Protection strategy: ↓ Heat, ↓ Oxygen + Antioxidants
+
+KEY POINT: Control temperature and oxygen exposure to protect lipid-containing products.</div>
+  <div class="ar">منع الزنخ (Preventing Rancidity):
+- حفظ الطعام باردًا لتثبيط نشاط lipase.
+- استبدال الأكسجين بغاز خامل مثل nitrogen.
+- استخدام vacuum packaging.
+- إضافة مضادات الأكسدة antioxidants مثل vitamin E.
+- استراتيجية الحماية: تقليل الحرارة Heat، تقليل الأكسجين Oxygen + Antioxidants.
+- نقطة مهمة: التحكم في درجة الحرارة والتعرض للأكسجين لحماية المنتجات المحتوية على lipids.</div>
+  <div class="ex">💡 زي ما تحفظ الشيبس في كيس مقفول وبارد ومضاف له مضاد أكسدة، عشان ما يزنخش.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Keeping food cold helps inhibit...</b><div class="opt">A. Lipase activity</div><div class="opt">B. Antioxidant activity</div><div class="opt">C. Soap formation</div><div class="opt">D. Wax formation</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Lipase activity</div></details></div></div><div class="q"><b>2) Oxygen can be replaced with an inert gas such as...</b><div class="opt">A. Oxygen</div><div class="opt">B. Nitrogen</div><div class="opt">C. Hydrogen</div><div class="opt">D. Chlorine</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Nitrogen</div></details></div></div><div class="q"><b>3) Which antioxidant is mentioned?</b><div class="opt">A. Vitamin E</div><div class="opt">B. NaOH</div><div class="opt">C. Nitrogen</div><div class="opt">D. Lanolin</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Vitamin E</div></details></div></div><div class="q"><b>4) Which method prevents rancidity by removing oxygen?</b><div class="opt">A. Vacuum packaging</div><div class="opt">B. Heating</div><div class="opt">C. Adding oxygen</div><div class="opt">D. Adding NaOH</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Vacuum packaging</div></details></div></div><div class="q"><b>5) To protect lipid-containing products, control...</b><div class="opt">A. Temperature and oxygen exposure</div><div class="opt">B. Light only</div><div class="opt">C. Moisture only</div><div class="opt">D. Glycerol only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Temperature and oxygen exposure</div></details></div></div>
+</section>
+<section class="card" id="p26">
+  <h2>Page 26</h2>
+  <div class="en">Waxes: Another Simple Lipid (18)
+
+Definition: Esters of higher fatty acids with higher alcohols—not glycerol.
+
+Properties:
+- Insoluble in water
+- Not easily hydrolyzed • Not digested
+
+Examples:
+- Beeswax: Mericyl alcohol + palmitic acid
+- Lanolin (wool fat): Used in ointment preparation
+
+KEY POINT: Waxes are especially relevant to pharmaceutical ointment and protective formulations.</div>
+  <div class="ar">الشموع Waxes: نوع آخر من الدهون البسيطة Simple Lipid:
+- التعريف: esters of higher fatty acids with higher alcohols—not glycerol.
+- الخصائص: insoluble in water، not easily hydrolyzed، not digested.
+- أمثلة: Beeswax = Mericyl alcohol + palmitic acid. Lanolin (wool fat) يستخدم في تحضير المراهم ointment preparation.
+- نقطة مهمة: Waxes لها أهمية خاصة في pharmaceutical ointment والتركيبات الواقية protective formulations.</div>
+  <div class="ex">💡 الشمع زي طبقة واقية على الفواكه أو على الجلد: ما يذوبش في الماء وصعب الجسم يهضمه، وعشان كده يستخدم في المراهم والكريمات.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Waxes are esters of higher fatty acids with...</b><div class="opt">A. Glycerol</div><div class="opt">B. Higher alcohols</div><div class="opt">C. Water</div><div class="opt">D. NaOH</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Higher alcohols</div></details></div></div><div class="q"><b>2) Beeswax is composed of...</b><div class="opt">A. Glycerol + fatty acid</div><div class="opt">B. Mericyl alcohol + palmitic acid</div><div class="opt">C. Soap + glycerol</div><div class="opt">D. Vitamin E + oxygen</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Mericyl alcohol + palmitic acid</div></details></div></div><div class="q"><b>3) Waxes are...</b><div class="opt">A. Soluble in water</div><div class="opt">B. Insoluble in water</div><div class="opt">C. Easily hydrolyzed</div><div class="opt">D. Easily digested</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Insoluble in water</div></details></div></div><div class="q"><b>4) Lanolin (wool fat) is used in...</b><div class="opt">A. Ointment preparation</div><div class="opt">B. Soap making</div><div class="opt">C. Saponification</div><div class="opt">D. Oxidation</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Ointment preparation</div></details></div></div><div class="q"><b>5) Waxes are...</b><div class="opt">A. Easily hydrolyzed and digested</div><div class="opt">B. Not easily hydrolyzed and not digested</div><div class="opt">C. Triglycerides</div><div class="opt">D. Water-soluble</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Not easily hydrolyzed and not digested</div></details></div></div>
+</section>
+<section class="card" id="p27">
+  <h2>Page 27</h2>
+  <div class="en">Pharmacy Take-Home Messages (19)
+
+- Lipid solubility influences extraction, formulation and biological distribution.
+- Glycerol is the core alcohol of triglycerides and has medical applications.
+- Unsaturation affects melting point and oxidative stability.
+- Lipases hydrolyze triglycerides; NaOH causes saponification.
+- Waxes are useful in topical and ointment preparations.
+
+KEY POINT: Always connect chemical structure → physical property → pharmaceutical relevance.</div>
+  <div class="ar">رسائل الصيدلة المهمة:
+- ذوبان الدهون Lipid solubility يؤثر على extraction و formulation و biological distribution.
+- Glycerol هو الكحول الأساسي في triglycerides وله تطبيقات طبية.
+- عدم التشبع Unsaturation يؤثر على melting point و oxidative stability.
+- Lipases تحلل triglycerides؛ و NaOH يسبب saponification.
+- Waxes مفيدة في topical و ointment preparations.
+- نقطة مهمة: اربط دائمًا chemical structure → physical property → pharmaceutical relevance.</div>
+  <div class="ex">💡 الخلاصة: لو عرفت التركيب الكيميائي، تعرف الخصائص الفيزيائية، وتعرف تستخدمه في الصيدلية إزاي.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) Lipid solubility influences extraction, formulation and...</b><div class="opt">A. Taste only</div><div class="opt">B. Biological distribution</div><div class="opt">C. Color only</div><div class="opt">D. Odor only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Biological distribution</div></details></div></div><div class="q"><b>2) The core alcohol of triglycerides is...</b><div class="opt">A. Ethanol</div><div class="opt">B. Glycerol</div><div class="opt">C. Cholesterol</div><div class="opt">D. Palmitic acid</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Glycerol</div></details></div></div><div class="q"><b>3) Unsaturation affects...</b><div class="opt">A. Melting point and oxidative stability</div><div class="opt">B. Soap color</div><div class="opt">C. Glycerol absorption</div><div class="opt">D. Wax digestion</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Melting point and oxidative stability</div></details></div></div><div class="q"><b>4) NaOH causes...</b><div class="opt">A. Oxidation</div><div class="opt">B. Saponification</div><div class="opt">C. Rancidity</div><div class="opt">D. Digestion</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Saponification</div></details></div></div><div class="q"><b>5) Waxes are useful in...</b><div class="opt">A. Injection solutions only</div><div class="opt">B. Topical and ointment preparations</div><div class="opt">C. Saponification</div><div class="opt">D. Hydrolysis</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Topical and ointment preparations</div></details></div></div>
+</section>
+<section class="card" id="p28">
+  <h2>Page 28</h2>
+  <div class="en">Quick Review (20)
+
+1. What makes a lipid “simple”?
+2. How do saturated and unsaturated fatty acids differ?
+3. Why does increasing unsaturation lower melting point?
+4. What is the difference between a simple and mixed glyceride?
+5. What is saponification?
+6. Name two medical or pharmaceutical uses of glycerol.
+
+KEY POINT: Use these questions to check whether you can explain—not just memorize—the concepts.</div>
+  <div class="ar">مراجعة سريعة Quick Review:
+- أسئلة للمراجعة: ما الذي يجعل الـ lipid بسيطًا؟ إزاي تختلف saturated عن unsaturated fatty acids؟ لماذا زيادة unsaturation تقلل melting point؟ ما الفرق بين simple و mixed glyceride؟ ما هو saponification؟ اذكر استخدامين طبيين أو صيدلانيين للـ glycerol.
+- نقطة مهمة: استخدم هذه الأسئلة تتأكد إنك تقدر تشرح—مش تحفظ بس—المفاهيم.</div>
+  <div class="ex">💡 دي زي كروت مراجعة قبل الامتحان: بدل ما تحفظ، اسأل نفسك الأسئلة دي بصوت عالي واشرحها لحد.</div>
+  <h3>🧠 5 أسئلة على الصفحة</h3>
+  <div class="q"><b>1) According to the Quick Review, which question is asked?</b><div class="opt">A. What is saponification?</div><div class="opt">B. What is protein synthesis?</div><div class="opt">C. What is photosynthesis?</div><div class="opt">D. What is blood pH?</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: What is saponification?</div></details></div></div><div class="q"><b>2) The Quick Review asks about the difference between a simple and what?</b><div class="opt">A. Mixed glyceride</div><div class="opt">B. Mixed protein</div><div class="opt">C. Saturated soap</div><div class="opt">D. Hydrogen bond</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Mixed glyceride</div></details></div></div><div class="q"><b>3) The Quick Review asks for two medical or pharmaceutical uses of which molecule?</b><div class="opt">A. Glycerol</div><div class="opt">B. NaOH</div><div class="opt">C. Nitrogen</div><div class="opt">D. Lanolin</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Glycerol</div></details></div></div><div class="q"><b>4) According to the KEY POINT, these questions check whether you can...</b><div class="opt">A. Memorize only</div><div class="opt">B. Explain—not just memorize</div><div class="opt">C. Calculate pH only</div><div class="opt">D. Draw structures only</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Explain—not just memorize</div></details></div></div><div class="q"><b>5) The Quick Review asks why increasing unsaturation lowers...</b><div class="opt">A. Boiling point</div><div class="opt">B. Melting point</div><div class="opt">C. Solubility</div><div class="opt">D. Molecular weight</div><div class="det"><details><summary>Show Answer</summary><div class="ok">✅ Correct: Melting point</div></details></div></div>
+</section>
+<section class="card" id="risk"><h2>🚨 شديد الخطورة — High-Risk Exam Predictions</h2><p>أسئلة/نقاط متوقعة بشدة في الامتحان بناءً على تحليل الملف كامل وأسلوب الدكتور. لو مجتش بنفس الصيغة، هتيجي بنفس الفكرة.</p><div class="card risk"><h3>🚨 Define lipids using chemical and solubility properties. عرّف الدهون/الليبيدات حسب الخصائص الكيميائية والذوبانية.</h3><div class="ar"><b>💡 الفكرة الجوهرية:</b> Learning objective: define lipids by their chemical and solubility properties.<br><b>🎯 ليه متوقّعة:</b> Learning objective 01; exam definitions often start here.<br><b>📍 المصدر:</b> P2<br><b>🔁 لو مجتش بنفس الصيغة:</b> ما تعريف الليبيدات؟</div></div><div class="card risk"><h3>🚨 Classify lipids into simple, compound, associated, derived. صنّف الليبيدات إلى بسيطة، مركبة، مرتبطة، مشتقة.</h3><div class="ar"><b>💡 الفكرة الجوهرية:</b> Simple = alcohol + fatty acids; Compound = lipid + additional group; Associated = vitamins, steroids, carotenes; Derived lipids.<br><b>🎯 ليه متوقّعة:</b> Core classification on P4 and objective P2.<br><b>📍 المصدر:</b> P2/P4<br><b>🔁 لو مجتش بنفس الصيغة:</b> اذكر الأقسام الأربعة الرئيسية للدهون.</div></div><div class="card risk"><h3>🚨 What makes a lipid simple? ما الذي يجعل الليبيد بسيطًا؟</h3><div class="ar"><b>💡 الفكرة الجوهرية:</b> Simple = only two building blocks: alcohol + fatty acids; main types are determined by the alcohol.<br><b>🎯 ليه متوقّعة:</b> Quick Review Q1 and Simple Lipids P5.<br><b>📍 المصدر:</b> P5/P28<br><b>🔁 لو مجتش بنفس الصيغة:</b> Define simple lipids.</div></div><div class="card risk"><h3>🚨 Neutral fats: alcohol + fatty acids; fats vs oils. الدهون المتعادلة: كحول + أحماض دهنية؛ الدهون الصلبة مقابل الزيوت.</h3><div class="ar"><b>💡 الفكرة الجوهرية:</b> Neutral fats use glycerol as alcohol; fats are solid; oils are liquid.<br><b>🎯 ليه متوقّعة:</b> Key simple lipid example and terminology.<br><b>📍 المصدر:</b> P5<br><b>🔁 لو مجتش بنفس الصيغة:</b> Why are fats solid while oils are liquid?</div></div><div class="card risk"><h3>🚨 Glycerol structure and properties. تركيب وخصائص الجليسرول/الغليسرين.</h3><div class="ar"><b>💡 الفكرة الجوهرية:</b> Glycerol contains three OH groups; soluble in water and alcohol; combines with fatty acids.<br><b>🎯 ليه متوقّعة:</b> Pharmacy take-home says glycerol is core alcohol of triglycerides and has medical applications.<br><b>📍 المصدر:</b> P10/P27<br><b>🔁 لو مجتش بنفس الصيغة:</b> اذكر خصائص الجليسرول.</div></div><div class="card risk"><h3>🚨 Compare saturated and unsaturated fatty acids. قارن بين الأحماض الدهنية المشبعة وغير المشبعة.</h3><div class="ar"><b>💡 الفكرة الجوهرية:</b> Saturated: no C=C; example butyric acid, 4 carbons, mainly in butter. Unsaturated: one or more C=C; monounsaturated has one double bond.<br><b>🎯 ليه متوقّعة:</b> Quick Review Q2 and repeated P12-P16.<br><b>📍 المصدر:</b> P12/P28<br><b>🔁 لو مجتش بنفس الصيغة:</b> How do saturated and unsaturated fatty acids differ?</div></div><div class="card risk"><h3>🚨 Why does increasing unsaturation lower melting point? لماذا تقلل زيادة عدم التشبع درجة الانصهار؟</h3><div class="ar"><b>💡 الفكرة الجوهرية:</b> Unsaturation introduces bends and generally lowers melting point.<br><b>🎯 ليه متوقّعة:</b> KEY POINT repeated P13/P15/P16 and Quick Review Q3.<br><b>📍 المصدر:</b> P13/P15/P16/P28<br><b>🔁 لو مجتش بنفس الصيغة:</b> Explain effect of C=C on melting point.</div></div><div class="card risk"><h3>🚨 Hydrolysis and saponification of triglycerides. التحلل المائي والتصبن للثلاثي جليسرايد.</h3><div class="ar"><b>💡 الفكرة الجوهرية:</b> In human body: triglyceride + water ↓ lipase enzymes → glycerol + free fatty acids. In industry: triglyceride + NaOH ↓ saponification.<br><b>🎯 ليه متوقّعة:</b> Pharmacy take-home says lipases hydrolyze triglycerides; NaOH causes saponification.<br><b>📍 المصدر:</b> P22/P27<br><b>🔁 لو مجتش بنفس الصيغة:</b> What is the difference between lipase hydrolysis and NaOH saponification?</div></div><div class="card risk"><h3>🚨 Define waxes and give examples. عرّف الشموع وأعطِ أمثلة.</h3><div class="ar"><b>💡 الفكرة الجوهرية:</b> Waxes are esters of higher fatty acids with higher alcohols—not glycerol. Beeswax = Mericyl alcohol + palmitic acid; Lanolin = wool fat; insoluble in water.<br><b>🎯 ليه متوقّعة:</b> Simple lipid subtype and pharmacy topical/ointment use.<br><b>📍 المصدر:</b> P26/P27<br><b>🔁 لو مجتش بنفس الصيغة:</b> Are waxes glycerol esters?</div></div><div class="card risk"><h3>🚨 Pharmacy take-home messages about lipids. رسائل صيدلانية عن الدهون.</h3><div class="ar"><b>💡 الفكرة الجوهرية:</b> Lipid solubility influences extraction, formulation, biological distribution; glycerol has medical applications; unsaturation affects melting point and oxidative stability; lipases hydrolyze triglycerides; NaOH causes saponification; waxes are useful in topical and ointment preparations.<br><b>🎯 ليه متوقّعة:</b> Summary slide likely exam application.<br><b>📍 المصدر:</b> P27<br><b>🔁 لو مجتش بنفس الصيغة:</b> اذكر تطبيقات صيدلانية للدهون.</div></div></section>
+<section class="card" id="exam"><h2>🎓 Final Exam (تفاعلي)</h2><div id="quiz"></div><button class="btn" id="sub" style="background:var(--brand);color:#fff;border:none;padding:11px 18px;font-weight:700">تصحيح</button><div class="score" id="sc"></div></section>
+<section class="card" id="rev"><h2>⚡ Last-Minute Revision</h2><div class="tag">🔑 MUST KNOW</div><ul><li>Lipids are defined by chemical and solubility properties. الليبيدات تُعرّف حسب الخصائص الكيميائية والذوبانية.</li><li>Four major lipid categories: simple, compound, associated, derived. الأقسام الأربعة: بسيطة، مركبة، مرتبطة، مشتقة.</li><li>Simple lipids = alcohol + fatty acids. الليبيدات البسيطة = كحول + أحماض دهنية.</li><li>Compound lipids = lipid + additional group. الليبيدات المركبة = ليبيد + مجموعة إضافية.</li><li>Associated lipids include vitamins, steroids, carotenes. الليبيدات المرتبطة تشمل فيتامينات، ستيرويدات، كاروتينات.</li><li>Glycerol is a three-OH alcohol; soluble in water and alcohol; combines with fatty acids. الجليسرول كحول ثلاثي الهيدروكسيل؛ يذوب في الماء والكحول؛ يتحد مع الأحماض الدهنية.</li><li>Saturated fatty acids have no C=C; unsaturated have one or more C=C. المشبعة لا تحتوي C=C؛ غير المشبعة تحتوي رابطة مزدوجة أو أكثر.</li><li>Unsaturation introduces bends and generally lowers melting point. عدم التشبع يُحدث انحناءات ويخفض درجة الانصهار عمومًا.</li><li>Hydrolysis uses lipase enzymes; saponification uses NaOH. التحلل المائي بواسطة إنزيمات الليباز؛ التصبن بواسطة NaOH.</li><li>Waxes are esters of higher fatty acids with higher alcohols, not glycerol. الشموع إسترات لأحماض دهنية عالية مع كحولات عالية، وليست جليسرول.</li></ul><div class="tag">⚠️ DON'T CONFUSE</div><ul><li>Simple lipids (alcohol + fatty acids) ≠ Compound lipids (lipid + additional group). الليبيدات البسيطة ≠ المركبة.</li><li>Associated lipids (vitamins, steroids, carotenes) ≠ Derived lipids. المرتبطة ≠ المشتقة.</li><li>Fats are solid; oils are liquid. الدهون الصلبة ≠ الزيوت السائلة.</li><li>Saturated = no C=C; Unsaturated = one or more C=C. المشبعة ≠ غير المشبعة.</li><li>Hydrolysis by lipase ≠ Saponification by NaOH. التحلل المائي بالليباز ≠ التصبن بالـ NaOH.</li><li>Glycerol is the alcohol in neutral fats/triglycerides; waxes use higher alcohols, not glycerol. الجليسرول ≠ الكحولات العالية في الشموع.</li><li>Waxes are not glycerol esters; they are higher fatty acid + higher alcohol esters. الشموع ليست إسترات جليسرول.</li><li>Unsaturation lowers melting point; it does not raise it. عدم التشبع يخفض درجة الانصهار لا يرفعها.</li><li>Beeswax example = Mericyl alcohol + palmitic acid; Lanolin = wool fat. شمع النحل ≠ لانولين.</li></ul><div class="tag">📌 ONE-MINUTE SUMMARY</div><div class="ar">الدهون Lipids: simple = alcohol + fatty acids; compound = lipid + additional group; associated = vitamins/steroids/carotenes; derived. الجليسرول = three-OH alcohol. المشبعة = no C=C; غير المشبعة = C=C; عدم التشبع يخفض melting point. Hydrolysis = lipase → glycerol + free fatty acids; Saponification = NaOH. Waxes = higher fatty acids + higher alcohols, not glycerol; beeswax, lanolin. Pharmacy: solubility affects extraction, formulation, distribution.</div></section>
+<footer>Selena · Lipid Chemistry: Simple Lipids · Premium Study Guide</footer></div>
+<script>
+const QS=[{"q": "What is the topic of Lecture 1?", "o": ["Lipid chemistry: Simple lipids", "Protein chemistry: Amino acids", "Carbohydrate chemistry: Monosaccharides", "Nucleic acid chemistry: DNA replication"], "a": 0}, {"q": "Who is the lecturer?", "o": ["Dr. Hanan Hafila", "Dr. Mona Ali", "Dr. Sara Ahmed", "Dr. Nour Hassan"], "a": 0}, {"q": "What is the lecturer's academic position?", "o": ["Assoc. Prof. of Biochemistry", "Professor of Organic Chemistry", "Lecturer of Microbiology", "Assistant Professor of Pharmacology"], "a": 0}, {"q": "Which faculty does the lecturer belong to?", "o": ["Faculty of Pharmacy", "Faculty of Medicine", "Faculty of Science", "Faculty of Dentistry"], "a": 0}, {"q": "Which university is mentioned?", "o": ["Delta University for Science and Technology", "Cairo University", "Alexandria University", "Ain Shams University"], "a": 0}, {"q": "Which of the following is a stated learning objective?", "o": ["Memorize all lipid drug brand names", "Define lipids using chemical and solubility properties", "Perform lipid surgery", "Diagnose all metabolic diseases"], "a": 1}, {"q": "According to the objectives, students should classify lipids into:", "o": ["simple, compound, associated and derived lipids", "only simple and compound", "only saturated and unsaturated", "only waxes and oils"], "a": 0}, {"q": "Which molecules are mentioned to be described in this lecture?", "o": ["Glycerol, fatty acids, triglycerides and waxes", "Glucose, fructose and sucrose", "Amino acids and peptides", "Nucleotides and RNA"], "a": 0}, {"q": "The lecture connects lipid chemistry with:", "o": ["Pharmacy and medicine", "Astronomy and physics", "Geology and agriculture", "Law and economics"], "a": 0}, {"q": "What does the KEY POINT emphasize?", "o": ["Relationships between structure, properties and function", "The history of lipid discovery", "The names of all enzymes", "The classification of carbohydrates"], "a": 0}, {"q": "Why are lipids classified together?", "o": ["Common solubility properties", "Same molecular weight", "Same number of carbons", "Identical functions"], "a": 0}, {"q": "Lipids are generally:", "o": ["Insoluble in water and soluble in organic solvents", "Soluble in water and insoluble in organic solvents", "Soluble in both water and organic solvents", "Insoluble in both water and organic solvents"], "a": 0}];
+const box=document.getElementById('quiz');
+QS.forEach((q,i)=>{const d=document.createElement('div');d.className='q';d.innerHTML='<b>'+(i+1)+') '+q.q.replace(/</g,'&lt;')+'</b>'+q.o.map((t,j)=>'<div class="opt"><input type="radio" name="q'+i+'" value="'+j+'">'+t.replace(/</g,'&lt;')+'</div>').join('');box.appendChild(d);});
+document.getElementById('sub').onclick=()=>{let s=0;QS.forEach((q,i)=>{const el=document.querySelector('input[name="q'+i+'"]:checked');if(el&&+el.value===q.a)s++;});const p=Math.round(s/QS.length*100);document.getElementById('sc').textContent='سكورك: '+p+'٪ ('+s+'/'+QS.length+') — '+(p>=90?'🏆 Excellent':p>=75?'🔥 Very Good':p>=60?'👍 Good':'📚 راجع تاني');};
+const setL=l=>{document.body.setAttribute('data-lang',l);['ar','both','en'].forEach(x=>document.getElementById('btn-'+x).classList.toggle('on',x===l));localStorage.setItem('lang',l);};
+setL(localStorage.getItem('lang')||'both');
+document.getElementById('btn-ar').onclick=()=>setL('ar');document.getElementById('btn-both').onclick=()=>setL('both');document.getElementById('btn-en').onclick=()=>setL('en');
+const setT=t=>{document.documentElement.setAttribute('data-theme',t);localStorage.setItem('theme',t);};setT(localStorage.getItem('theme')||'light');document.getElementById('th').onclick=()=>setT(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');
+document.getElementById('ex').onclick=()=>document.querySelectorAll('details').forEach(d=>d.open=true);document.getElementById('co').onclick=()=>document.querySelectorAll('details').forEach(d=>d.open=false);
+document.getElementById('s').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();document.querySelectorAll('section.card').forEach(sec=>sec.classList.toggle('hidden',q&&!sec.innerText.toLowerCase().includes(q)));});
+</script></body></html>
