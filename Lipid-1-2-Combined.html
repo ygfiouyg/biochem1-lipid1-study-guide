@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lipid Chemistry — Lectures 1 &amp; 2 | Simple &amp; Compound Lipids</title>
+<style>
+:root{--bg:#0f1420;--card:#171f2e;--card2:#1e293b;--line:#2a3852;--txt:#e8eefc;--mut:#9fb0cc;--acc:#7c5cff;--acc2:#22d3ee;--ok:#22c55e;--bad:#ef4444;--en:#38bdf8;--arb:#fbbf24}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--txt);font-family:'Segoe UI',Tahoma,system-ui,sans-serif;line-height:1.95}
+body[data-lang="ar"] .en{display:none!important}
+body[data-lang="en"] .ar{display:none!important}
+.topbar{position:sticky;top:0;z-index:50;background:linear-gradient(90deg,#12182a,#1b2540);border-bottom:1px solid var(--line);padding:10px 14px;display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.brand{font-weight:800;font-size:1.05rem}.brand .sub{display:block;font-weight:400;font-size:.72rem;color:var(--mut)}
+.controls{display:flex;gap:6px;flex-wrap:wrap}
+.langbtn,.ctl{background:var(--card2);color:var(--txt);border:1px solid var(--line);border-radius:10px;padding:7px 12px;font-size:.8rem;cursor:pointer;font-family:inherit}
+.langbtn.active{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:700}
+.wrap{max-width:1000px;margin:0 auto;padding:16px}
+.progress{height:5px;background:#0b1120}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--acc),var(--acc2))}
+.toc{display:flex;gap:8px;overflow-x:auto;padding:10px 14px;border-bottom:1px solid var(--line);position:sticky;top:64px;background:#131a2b;z-index:40}
+.toc a{color:var(--mut);text-decoration:none;font-size:.72rem;white-space:nowrap;border:1px solid var(--line);border-radius:999px;padding:4px 10px}
+.toc a:hover{color:#fff;background:var(--card2)}
+.search{margin:14px 0;width:100%;padding:13px 16px;border-radius:14px;border:1px solid var(--line);background:var(--card);color:var(--txt);font-family:inherit;font-size:.95rem}
+h1{font-size:1.45rem;margin:28px 0 6px;border-right:5px solid var(--acc);padding-right:12px}
+h2{font-size:1.2rem;margin:14px 0 8px;color:#fff}.huge{font-size:1.8rem;text-align:center;color:var(--acc)}
+.part-title{font-size:1.65rem;text-align:center;color:var(--acc2);margin:40px 0 20px;border-top:2px solid var(--line);border-bottom:2px solid var(--line);padding:14px 0}
+h3{font-size:1rem;margin:14px 0 5px;color:var(--acc2)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;margin:16px 0;box-shadow:0 6px 24px rgba(0,0,0,.25)}
+.pill{display:inline-block;font-size:.66rem;background:var(--card2);border:1px solid var(--line);color:var(--mut);border-radius:999px;padding:3px 10px;margin:0 0 8px}
+.en{color:var(--en)}.ar{color:var(--arb)}
+.sect-tag{font-size:.7rem;color:var(--mut)}
+table{width:100%;border-collapse:collapse;margin:10px 0;font-size:.88rem;display:block;overflow-x:auto}
+th,td{border:1px solid var(--line);padding:8px 10px;text-align:right}
+th{background:var(--card2);color:#fff}
+.kp{background:linear-gradient(90deg,rgba(124,92,255,.16),transparent);border-right:4px solid var(--acc);border-radius:10px;padding:10px 14px;margin:12px 0}
+.hl{background:linear-gradient(90deg,rgba(239,68,68,.15),transparent);border-right:4px solid var(--bad);border-radius:10px;padding:12px 14px;margin:12px 0}
+.trick{background:linear-gradient(90deg,rgba(34,211,238,.13),transparent);border-right:4px solid var(--acc2);border-radius:10px;padding:12px 14px;margin:12px 0}
+details{background:var(--card2);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+summary{cursor:pointer;font-weight:700;color:var(--acc2)}
+.q{background:var(--card2);border:1px solid var(--line);border-radius:14px;padding:14px;margin:12px 0}
+.opt{display:block;padding:8px 12px;border:1px solid var(--line);border-radius:10px;margin:6px 0;cursor:pointer;background:#141d2f}
+.opt:hover{border-color:var(--acc)}
+.opt.right{background:rgba(34,197,94,.2);border-color:var(--ok)}
+.opt.wrong{background:rgba(239,68,68,.2);border-color:var(--bad)}
+.grid{display:grid;grid-template-columns:1fr;gap:14px}
+@media(min-width:720px){.grid.two{grid-template-columns:1fr 1fr}}
+.badge{border-radius:8px;padding:2px 8px;font-size:.72rem;font-weight:700}
+.b1{background:rgba(34,197,94,.2);color:#7ee2a8}.b2{background:rgba(245,158,11,.2);color:#fcd34d}.b3{background:rgba(239,68,68,.2);color:#fca5a5}
+.score{font-size:1.2rem;font-weight:800;margin-top:10px}
+footer{color:var(--mut);text-align:center;padding:30px 14px;font-size:.8rem}
+</style>
+</head>
+<body data-lang="both">
+<header class="topbar">
+<div class="brand">🧬 Lipid Chemistry — محاضرتين<span class="sub">Lecture 1: Simple Lipids · Lecture 2: Compound Lipids · Dr. Hanan Hafila</span></div>
+<div class="controls">
+<button class="langbtn" data-setlang="ar">عربي</button>
+<button class="langbtn" data-setlang="en">English</button>
+<button class="langbtn active" data-setlang="both">عربي + English</button>
+<button class="ctl" id="theme">☀️</button>
+</div>
+</header>
+<div class="progress"><i id="bar"></i></div>
+<nav class="toc">
+<a href="#A1">A: التعريف</a><a href="#A2">A: التصنيف</a><a href="#A3">A: الجليسرول</a><a href="#A4">A: أحماض دهنية</a><a href="#A5">A: مشبع/غيرمشبع</a><a href="#A6">A: الترقيم</a><a href="#A7">A: تراي جليسريد</a><a href="#A8">A: خواص</a><a href="#A9">A: تصبن+صابون</a><a href="#A10">A: زناخة</a><a href="#A11">A: شموع</a><a href="#B1">B: فوسفوليبيد</a><a href="#B2">B: كارديوليبين+ليسيثين</a><a href="#B3">B: سيفالين+سفينجو</a><a href="#B4">B: جليكوليبيدات</a><a href="#B5">B: سلفو+أمينو+مشتقة</a><a href="#B6">B: مواد مرافقة</a><a href="#hr">🚨 شديد الخطورة</a><a href="#qb">الأسئلة</a><a href="#exam">الامتحان</a><a href="#lm">آخر دقيقة</a>
+</nav>
+<div class="wrap">
+<input class="search" id="search" placeholder="🔎 ابحث في المحاضرتين...">
+<h1 class="huge">🧬 Lipid Chemistry — محاضرة ١ + ٢</h1>
+<p class="ar">دليل شامل يجمع <b>المحاضرة الأولى (الدهون البسيطة)</b> + <b>المحاضرة الثانية (الدهون المركبة)</b> — ٥٤ صفحة من التحليل والشرح والمراجعة والامتحانات. تم إعداده <b>يدويًا بالكامل</b> بدون أي موديل تحليل.</p>
+
+<div class="part-title">🔹 الجزء A — الدهون البسيطة (محاضرة ١ — Simple Lipids)</div>
+
+<h1 id="A1">A1) ما هو الدهن؟</h1>
+<div class="card"><span class="pill">محاضرة ١ ص٣</span>
+<p class="en"><b>Lipids</b> are a <b>heterogeneous group</b> classified mainly by <b>common solubility properties</b>: insoluble in water, soluble in organic solvents (ether, chloroform, acetone).</p>
+<p class="ar">الدهون مجموعة غير متجانسة جمعها <b>الذوبان المشترك</b> — مش بتدوب في المية وبتدوب في المذيبات العضوية. ده <b>سر كل خواصها</b>.</p>
+<div class="trick"><b>🧠 تبسيط:</b> الدهن = <b>زيت بيهرب من المية</b>. كل حاجة عنه بتبدأ من الفكرة دي.</div></div>
+
+<h1 id="A2">A2) التصنيفات الأربعة</h1>
+<div class="card"><span class="pill">محاضرة ١ ص٤-٨</span>
+<table>
+<tr><th>الفئة</th><th>المكوّن</th><th>أمثلة</th></tr>
+<tr><td><b>Simple</b></td><td>Alcohol + FA</td><td>Neutral fats, Waxes</td></tr>
+<tr><td><b>Compound</b></td><td>Lipid + مجموعة إضافية</td><td>Phospholipids, Glycolipids, Sulfolipids, Aminolipids, Lipoproteins</td></tr>
+<tr><td><b>Associated</b></td><td>مش دهون حرفيًا لكن مرتبطة</td><td>فيتامينات A·D·E·K, Steroids, Carotenes</td></tr>
+<tr><td><b>Derived</b></td><td>نواتج التحلل المائي</td><td>Fatty acids, Alcohols, Hydrocarbons</td></tr>
+</table>
+<div class="kp">دهون بسيطة = كحول + أحماض دهنية <b>بس</b> — مفيش فوسفات ولا كاربوهيدرات ولا بروتين.</div></div>
+
+<h1 id="A3">A3) الجليسرول</h1>
+<div class="card"><span class="pill">محاضرة ١ ص١٠</span>
+<p class="ar">الجليسرول: <b>3 مجموعات هيدروكسيل (OH)</b>، بيشكّل ٣ روابط إستر مع الأحماض الدهنية — عشان كده بيعمل التراي جليسريد. بيدوب في المية (عكس الدهون).</p>
+<p class="ar"><b>💊 صيدلانيًا:</b> مستحضرات التجميل · <b>Nitroglycerin للذبحة الصدرية</b> · استخدام تناضحي في الجلوكوما.</p>
+<div class="trick"><b>🧠 «٣ أذرع»</b> — كل ذراع OH تشيل حمض دهني. وافتكر <b>النيترو جليسرين للقلب</b>.</div></div>
+
+<h1 id="A4">A4) الأحماض الدهنية (R–COOH)</h1>
+<div class="card"><span class="pill">محاضرة ١ ص١١</span>
+<p class="ar">الصيغة العامة: <b>R–COOH</b> — ذيل كربوني كاره للماء + رأس كربوكسيل. سلاسل <b>مستقيمة</b> وعدد الكربونات <b>زوجي</b> عادةً.</p>
+<div class="trick"><b>🧠 «ذيل يكره المية + رأس يحبها»</b> — ده أصل قصة الصابون كمان شوية.</div></div>
+
+<h1 id="A5">A5) مشبع (Saturated) مقابل غير مشبع (Unsaturated)</h1>
+<div class="card"><span class="pill">محاضرة ١ ص١٢-١٦</span>
+<table>
+<tr><th></th><th>مشبع</th><th>غير مشبع</th></tr>
+<tr><td>روابط مزدوجة</td><td>مفيش C=C</td><td>واحد أو أكثر</td></tr>
+<tr><td>الشكل</td><td>مستقيم</td><td>فيه <b>انحناءات (bends)</b></td></tr>
+<tr><td>نقطة الانصهار</td><td>أعلى</td><td>أقل</td></tr>
+<tr><td>مثال</td><td>Butyric acid (زبدة)</td><td>Mono: oleic · Poly: linoleic, arachidonic</td></tr>
+</table>
+<div class="trick"><b>🧠 «الكيرف يسيّح»</b> — الروابط المزدوجة بتعمل كيرف، والكيرف يمنع التكويم → سائل.</div></div>
+
+<h1 id="A6">A6) الترقيم والأحماض المهمة</h1>
+<div class="card"><span class="pill">محاضرة ١ ص١٧-١٨</span>
+<p class="ar"><b>قاعدة:</b> (كربونات) : (دبل) (مواضع). مثال: <b>Linoleic 18:2(9,12)</b> = ١٨ كربون، رابطتين عند ٩ و١٢.</p>
+<table>
+<tr><th>الحمض</th><th>الترقيم</th></tr>
+<tr><td>Palmitoleic</td><td>16:1(9)</td></tr>
+<tr><td>Oleic</td><td>18:1(9)</td></tr>
+<tr><td>Linoleic</td><td>18:2(9,12)</td></tr>
+<tr><td>Linolenic</td><td>18:3(9,12,15)</td></tr>
+<tr><td>Arachidonic</td><td>20:4(5,8,11,14)</td></tr>
+</table>
+<div class="trick"><b>🧠 «كربون : دبل (مكان)»</b> زي عنوان بيت.</div></div>
+
+<h1 id="A7">A7) التراي جليسريد — Simple vs Mixed</h1>
+<div class="card"><span class="pill">محاضرة ١ ص١٩-٢٠</span>
+<p class="ar"><b>جليسرول + ٣ أحماض دهنية = triacylglycerol.</b></p>
+<div class="grid two"><div><b>Simple:</b> الأحماض متطابقة (tripalmitin).</div><div><b>Mixed:</b> مختلفة (palmitostearin).</div></div>
+<div class="kp">كلمة <b>triacylglycerol</b> = 3 مجموعات أسيل متوصّلة بالجليسرول.</div></div>
+
+<h1 id="A8">A8) الخواص الفيزيائية</h1>
+<div class="card"><span class="pill">محاضرة ١ ص٢١</span>
+<ul><li class="ar">دهون نقية طازجة: <b>بلا لون ولا ريحة ولا طعم</b>، كثافة &lt; ١ (تطفو).</li><li class="ar">اللون/الريحة = من مواد مرافقة (مثل الكاروتين).</li></ul></div>
+
+<h1 id="A9">A9) التصبن + إزاي الصابون بيشيل الدهن</h1>
+<div class="card"><span class="pill">محاضرة ١ ص٢٢-٢٣</span>
+<div class="grid two">
+<div><b class="ar">في الجسم:</b><br><span class="ar">TG + ماء ↓ ليباز → جليسرول + أحماض حرة</span></div>
+<div><b class="ar">صناعيًا (تصبن):</b><br><span class="ar">TG + <b>NaOH</b> → <b>صابون</b> + جليسرول</span></div>
+</div>
+<p class="ar">الصابون = أملاح الأحماض الدهنية. له <b>طرفين</b>: ذيل غير قطبي يمسك الدهن + رأس أيوني يتفاعل مع المية — بيعمل <b>جسر</b> بين الماء والدهن.</p>
+<div class="trick"><b>🧠 «رجل بقدمين»</b>: قدم في الدهن وقدم في المية — بيشد الدهن ويخلّيه يمشي مع المية.</div></div>
+
+<h1 id="A10">A10) الأكسدة والزناخة</h1>
+<div class="card"><span class="pill">محاضرة ١ ص٢٤-٢٥</span>
+<p class="ar"><b>الأكسدة بتضرب الروابط المزدوجة:</b> ← ألدهيدات/كيتونات/بيروكسيدات → <b>زناخة</b> (ريحة وطعم سيئين).</p>
+<p class="ar"><b>مسرّعات:</b> الضوء · الأكسجين · الرطوبة · الحرارة.</p>
+<p class="ar"><b>الوقاية:</b> تبريد + نيتروجين/تفريغ + مضادات أكسدة (فيتامين E).</p>
+<div class="trick"><b>🧠 «برّد + اشيل الأكسجين + حط مضاد أكسدة»</b>.</div></div>
+
+<h1 id="A11">A11) الشموع (Waxes)</h1>
+<div class="card"><span class="pill">محاضرة ١ ص٢٦</span>
+<p class="ar">إسترات <b>أحماض دهنية عالية + كحولات عالية</b> (مش جليسرول). مش بتدوب في المية، صعب تتحلل/تُهضم.</p>
+<ul><li class="ar"><b>Beeswax:</b> Mericyl alcohol + palmitic acid.</li><li class="ar"><b>Lanolin (wool fat):</b> استخدام في المراهم.</li></ul>
+<div class="kp">الشموع مهمة صيدلانيًا في المراهم والمستحضرات الواقية.</div></div>
+
+<div class="part-title">🔹 الجزء B — الدهون المركبة (محاضرة ٢ — Compound Lipids)</div>
+
+<h1 id="B1">B1) الدهون المركبة — مَدخل + Phospholipids</h1>
+<div class="card"><span class="pill">محاضرة ٢ ص٣-٧</span>
+<p class="ar">الدهون المركبة تحتوي <b>كحول + أحماض دهنية + مجموعات إضافية</b> (فوسفات/سكر/كبريت/أمينو/بروتين). أشهرهم: <b>الفوسفوليبيدات (phospholipids)</b>.</p>
+<p class="ar"><b>مفهوم عام:</b> جليسرول + 2 حمض دهني + فوسفات + قاعدة نيتروجينية. الفوسفور هو اللي بيميزهم، بيدخلوا في <b>الأغشية الحيوية</b>.</p>
+<p class="ar"><b>Phosphatidic Acid — أبسط فوسفوليبيد:</b> جليسرول + 2 FA + فوسفات. وسيط أيضي مهم ورسول تاني (second messenger).</p></div>
+
+<h1 id="B2">B2) كارديوليبين + ليسيثين</h1>
+<div class="card"><span class="pill">محاضرة ٢ ص٧-١٠</span>
+<h3>Cardiolipin</h3>
+<p class="ar"><b>= diphosphatidyl glycerol:</b> 3 جليسرول + 4 FA + 2 فوسفات. موجود في <b>غشاء الميتوكوندريا</b>. معزول أول مرة من عضلة القلب. يُستخدم كـ<b>مستضد (antigen) في اختبار VDRL للزهري</b>.</p>
+<h3>Lecithins</h3>
+<p class="ar">جليسرول + 2 FA + حمض فوسفوريك + <b>Choline</b> (القاعدة النيتروجينية المميزة). مهم في أغشية الخلايا. <b>التحلل:</b> إنزيم Lecithinase A (موجود في سم الثعابين🐍) بيشيل حمض دهني غير مشبع → <b>lysolecithin</b> (له تأثير <b>محلل للدم haemolytic</b>). الأهمية: أغشية الخلايا + استقلاب دهون الكبد + سلوك مزدوج (amphipathic).</p>
+<div class="kp">الليسيثين = <b>Choline</b> هو القاعدة المميزة. والـlysolecithin = محلل للدم.</div></div>
+
+<h1 id="B3">B3) سيفالين + إينوزيتيد + بلازمالوجين + سفينجوميلين + سيراميد</h1>
+<div class="card"><span class="pill">محاضرة ٢ ص١١-١٦</span>
+<h3>Cephalins</h3>
+<p class="ar">شبيهة بالليسيثين، تختلف في القاعدة النيتروجينية: <b>Ethanolamine → phosphatidylethanolamine</b> أو <b>Serine → phosphatidylserine</b>. تدخل في أغشية الخلايا + <b>تكوّن الثرمبوبلاستين</b> (ضروري لتجلط الدم🩸).</p>
+<h3>Inositides</h3>
+<p class="ar">شبيهة بالسيفالين/الليسيثين لكن <b>Inositol</b> يحل محل القاعدة النيتروجينية. مهم في <b>مسارات الإشارة داخل الخلية</b>.</p>
+<h3>Plasmalogens</h3>
+<p class="ar">فوسفوجليسريد خاص: الحمض الدهني عند كربون ١ مستبدل بـ<b>كحول دهني غير مشبع برابطة إيثر (ether)</b>. في أغشية الخلايا (خصوصًا <b>الدماغ والقلب</b>)، دور في الاستقرار والإشارة ومضاد للأكسدة.</p>
+<h3>Sphingomyelins</h3>
+<p class="ar">بتحتوي <b>sphingosine</b> (كحول أميني طويل السلسلة) بدل الجليسرول. <b>متوفر بكثرة في الجهاز العصبي</b>. بينظم بقاء/نمو/انقسام/هجرة الخلية.</p>
+<h3>Ceramides</h3>
+<p class="ar">مشتقات <b>N-acyl</b> للسفينجوزين (سفينجوزين + حمض دهني). موجودة في الطحال/الكبد/كرات الدم، دهون هيكلية في <b>حاجز الجلد</b>، مرتبطة بالإجهاد والـ<b>apoptosis</b>.</p></div>
+
+<h1 id="B4">B4) الجليكوليبيدات + جانجليوزيدات</h1>
+<div class="card"><span class="pill">محاضرة ٢ ص١٧-٢٠</span>
+<p class="ar"><b>تركيب:</b> سفينجوزين + حمض دهني + <b>كربوهيدرات</b>. موجودة في <b>نصفي الكرة المخية</b> (cerebral hemispheres).</p>
+<ul class="ar"><li>السكر غالبًا <b>جلوكوز أو جالاكتوز</b>.</li><li>كثير من الجليكوليبيدات مشتقة من السيراميد.</li><li>سلاسل كربوهيدراتية معقدة (> 3 سكريات) = <b>gangliosides</b>.</li><li><b>الأهمية:</b> المادة البيضاء في المخ + أغلفة المايلين + الأغشية العصبية.</li></ul>
+<h3>أنواع السيريبروزيدات (Cerebrosides)</h3>
+<table>
+<tr><th>النوع</th><th>التركيب</th></tr>
+<tr><td>Kerasin</td><td>Lignoceric acid + galactose</td></tr>
+<tr><td>Phrenosine / Cerebron</td><td>Cerebronic acid + galactose</td></tr>
+<tr><td>Nervon</td><td>Nervonic acid + galactose</td></tr>
+</table>
+<div class="kp">السيريبروزيدات بتتمايز بالحمض الدهني والكربوهيدرات — مهمة في المخ والأعصاب الطرفية.</div></div>
+
+<h1 id="B5">B5) سلفوليبيدات + أمينو ليبيدات + دهون مشتقة</h1>
+<div class="card"><span class="pill">محاضرة ٢ ص٢١-٢٣</span>
+<h3>Sulpholipids</h3>
+<p class="ar">إسترات كبريتاتية للكيراتين أو الفرينوزين — الكبريت على كربون ٣ من الجالاكتوز. مهمة في <b>الدماغ والمايلين</b> والتواصل الخلوي.</p>
+<h3>Amino Lipids &amp; Lipoproteins</h3>
+<p class="ar">ليبيدات متحدة مع مواد تحتوي مجموعات أمينو. <b>البروتين فيه مجموعات أمينو</b> → البروتينات الدهنية (lipoproteins) هي نوع من الأمينو ليبيدات.</p>
+<h3>Derived Lipids — الدهون المشتقة</h3>
+<p class="ar">مواد ناتجة عن <b>التحلل المائي</b> للدهون البسيطة أو المركبة: أحماض دهنية، كحولات، مكونات أخرى متحررة.</p></div>
+
+<h1 id="B6">B6) المواد المرافقة + جدول المقارنة</h1>
+<div class="card"><span class="pill">محاضرة ٢ ص٢٤-٢٦</span>
+<h3>Substances Associated with Lipids</h3>
+<ul class="ar"><li>موجودة في الطبيعة مرتبطة بالدهون لكن مش جزء من جزيء الدهن.</li><li>أمثلة: <b>فيتامينات A · D · E · K</b>، الكاروتينات.</li></ul>
+<h3>جدول مقارنة الدهون المركبة</h3>
+<table>
+<tr><th>المجموعة</th><th>المجموعة المميزة</th><th>مثال رئيسي</th><th>المكان/الدور</th></tr>
+<tr><td>Phospholipids</td><td>فوسفات</td><td>Lecithin, Cardiolipin</td><td>أغشية</td></tr>
+<tr><td>Glycolipids</td><td>كربوهيدرات</td><td>Cerebrosides</td><td>الدماغ/المايلين</td></tr>
+<tr><td>Sulpholipids</td><td>كبريت</td><td>Sulphated cerebrosides</td><td>الدماغ</td></tr>
+<tr><td>Amino lipids</td><td>مجموعة أمينو</td><td>Lipoproteins</td><td>ارتباط ليبيد-بروتين</td></tr>
+</table>
+<div class="kp">أسرع طريقة للتمييز: <b>المجموعة الكيميائية الإضافية</b> هي المفتاح.</div></div>
+
+<h1 id="hr">🚨 شديد الخطورة — توقعات المحاضرتين</h1>
+<div class="hl">تحليل شامل للـ54 صفحة — النقاط الأكثر عرضة للظهور في الامتحان.</div>
+<div class="card">
+<ol>
+<li><b>تعريف الدهون بالذوبانية</b> (heterogeneous + المذيبات) <span class="badge b3">إلزامي</span></li>
+<li><b>التصنيفات الأربعة + أمثلة لكل فئة</b> <span class="badge b3">إلزامي</span></li>
+<li><b>مشبع/غير مشبع + علاقته بنقطة الانصهار</b> <span class="badge b3">إلزامي</span></li>
+<li><b>التصبن (Saponification):</b> NaOH → صابون + جليسرول <span class="badge b3">إلزامي</span></li>
+<li><b>كيفية عمل الصابون</b> (الطرف المزدوج) <span class="badge b3">شرح متوقع</span></li>
+<li><b>الزناخة:</b> الأسباب + المُسرّعات + طرق الوقاية <span class="badge b2">عالٍ</span></li>
+<li><b>الترقيم الغذائي للأحماض:</b> oleic 18:1(9) · linoleic · arachidonic 20:4(5,8,11,14) <span class="badge b2">MCQ</span></li>
+<li><b>الجليسرول:</b> استخداماته الطبية (Nitroglycerin, glaucoma) <span class="badge b2">سؤال قصير</span></li>
+<li><b>Cardiolipin:</b> الميتوكوندريا + اختبار VDRL <span class="badge b2">إلزامي</span></li>
+<li><b>Lecithin vs Cephalin:</b> Choline مقابل Ethanolamine/Serine <span class="badge b2">مقارنة</span></li>
+<li><b>Lecithinase A:</b> سم الثعابين → lysolecithin (haemolytic) <span class="badge b2">إلزامي</span></li>
+<li><b>Sphingomyelin:</b> سفينجوزين + موجود في الجهاز العصبي <span class="badge b2">سؤال قصير</span></li>
+<li><b>Ceramides:</b> N-acyl سفينجوزين + حاجز الجلد <span class="badge b1">متوسط</span></li>
+<li><b>Glycolipids → Gangliosides (>3 سكريات):</b> المخ والمايلين <span class="badge b1">متوسط</span></li>
+<li><b>Cerebrosides:</b> Kerasin, Phrenosine, Nervon (الأحماض المختلفة) <span class="badge b1">متوسط</span></li>
+</ol>
+</div>
+
+<h1 id="qb">📝 بنك الأسئلة — ١٨ سؤال (3 مستويات)</h1>
+<div class="card">
+<h3>🟢 مستوى ١ — سهل</h3>
+<details><summary>Q1. Define lipids by solubility.</summary><p class="ar">مجموعة غير متجانسة لا تذوب في الماء وتذوب في المذيبات العضوية (إيثر/كلوروفورم/أسيتون).</p></details>
+<details><summary>Q2. Four lipid categories?</summary><p class="ar">Simple · Compound · Associated · Derived.</p></details>
+<details><summary>Q3. General fatty acid formula?</summary><p class="ar"><b>R–COOH.</b></p></details>
+<details><summary>Q4. Alcohol in neutral fats vs waxes?</summary><p class="ar">دهون متعادلة = جليسرول. شموع = كحولات عالية (مش جليسرول).</p></details>
+<details><summary>Q5. Which compound lipid groups are in Lecture 2?</summary><p class="ar">Phospholipids, Glycolipids, Sulpholipids, Amino lipids, Lipoproteins.</p></details>
+<h3>🟡 مستوى ٢ — متوسط</h3>
+<details><summary>Q6. Compare Lecithin and Cephalin.</summary><p class="ar">الليسيثين: قاعدة = Choline. السيفالين: قاعدة = Ethanolamine أو Serine. الاتنين فوسفوليبيدات أغشية.</p></details>
+<details><summary>Q7. What happens when Lecithinase A acts on lecithin?</summary><p class="ar">بيشيل حمض دهني غير مشبع → lysolecithin (lysoPC) — له تأثير <b>محلل للدم (haemolytic)</b>.</p></details>
+<details><summary>Q8. Why is cardiolipin relevant to syphilis diagnosis?</summary><p class="ar">بيُستخدم كمستضد في <b>اختبار VDRL</b> لمرض الزهري.</p></details>
+<details><summary>Q9. Simple vs Mixed glyceride?</summary><p class="ar">Simple: 3 أحماض متطابقة (tripalmitin). Mixed: مختلفة (palmitostearin).</p></details>
+<details><summary>Q10. How does saponification differ from lipolysis?</summary><p class="ar">ليباز (إنزيم) في الجسم بماء → جليسرول + FA. NaOH صناعيًا → <b>صابون</b> + جليسرول.</p></details>
+<h3>🔴 مستوى ٣ — صعب</h3>
+<details><summary>Q11. What distinguishes plasmalogens from other phosphoglycerides?</summary><p class="ar">الحمض الدهني عند C1 مستبدل بـ<b>كحول دهني غير مشبع برابطة إيثر</b>.</p></details>
+<details><summary>Q12. Explain the structural difference between cerebrosides and gangliosides.</summary><p class="ar">الاتنين جليكوليبيدات (سفينجوزين + FA + سكر). السيريبروزيد: سكر واحد (جلوكوز/جالاكتوز). الجانجليوزيد: سلسلة > ٣ سكريات معقدة.</p></details>
+<details><summary>Q13. Why does lecithin behave as amphipathic?</summary><p class="ar">الرأس (فوسفات + Choline) قطبي محب للماء، والذيل (السلسلتين الدهنيتين) غير قطبي كاره للماء.</p></details>
+<details><summary>Q14. Kerasin, Phrenosine, Nervon — how are they differentiated?</summary><p class="ar">نوع الحمض الدهني: Kerasin = Lignoceric، Phrenosine = Cerebronic، Nervon = Nervonic acid.</p></details>
+<details><summary>Q15. Why are vitamins A, D, E, K listed under "Associated Substances"?</summary><p class="ar">المواد دي موجودة في الطبيعة مرتبطة بالدهون لكنها مش جزء من جزيء الدهن نفسه — بتتصاحب وبتدوب فيها لكنها مش ليبيدات حقيقية.</p></details>
+</div>
+
+<h1 id="exam">🎓 الامتحان النهائي — ١٥ سؤال</h1>
+<div class="card" id="exambox"><div id="qbox"></div>
+<button class="ctl" id="submit" style="padding:11px 22px;font-size:.95rem">احسب النتيجة 🎯</button>
+<div class="score" id="score"></div></div>
+
+<h1 id="lm">⚡ آخر دقيقة — مراجعة</h1>
+<div class="card">
+<div class="kp"><b>🔑 MUST KNOW (المحاضرتين):</b> دهن = ذوبانية · 4 تصنيفات (Simple/Compound/Associated/Derived) · جليسرول 3OH (Nitroglycerin/glaucoma) · R–COOH زوجي · مشبع = 0 دبل مستقيم صلب / غير مشبع ≥1 كيرف سائل · ترقيم C:db(pos) · Simple/Mixed glyceride · NaOH → صابون + جليسرول · الصابون طرفين · زناخة: أكسدة الروابط المزدوجة → ألدهيد/كيتون/بيروكسيد، منعها = تبريد+N₂/Antioxidant · Waxes = كحولات عالية (Beeswax: mericyl+palmitic; Lanolin) · Cardiolipin: ميتوكوندريا+VDRL · Lecithin=Choline, Cephalin=Ethanolamine/Serine · Lecithinase A→lysolecithin haemolytic · Sphingomyelin=سفينجوزين+عصبي · Ceramide=N-acyl سفينجوزين+جلد · Glycolipids/Gangliosides · Cerebrosides (Kerasin/Phrenosine/Nervon) · Sulpholipids=كبريت · Lipoproteins=أمينو ليبيد · Derived=تحلل مائي · Associated=فيتامينات A·D·E·K.</div>
+<div class="trick"><b>📌 خلاصة ٥٤ صفحة في سطرين:</b> دهون بسيطة = كحول+FA. دهون مركبة = زائد مجموعة إضافية (فوسفات/سكر/كبريت/أمينو/بروتين). التصبن NaOH = صابون. الأكسدة = زناخة. المجموعة المميزة هي مفتاح التصنيف والوظيفة.</div>
+</div>
+
+</div>
+<footer>تم إعداده يدويًا بالكامل بمهارة عبد السلام — PDF Study Architect<br>المصدر: محاضرتا الدهون ١+٢ (54 صفحة) — Biochemistry I · Dr. Hanan Hafila</footer>
+<script>
+var EXAM=[
+{q:"Lipids are classified together mainly because:",o:["Same functional group","Common solubility properties","Same molecular weight","Same melting point"],a:1},
+{q:"Which is a simple lipid?",o:["Phospholipid","Wax","Lipoprotein","Glycolipid"],a:1},
+{q:"Glycerol has how many OH groups?",o:["1","2","3","4"],a:2},
+{q:"Saturated fatty acids compared to unsaturated:",o:["Have double bonds","Higher melting point","Lower melting point","More bends"],a:1},
+{q:"Arachidonic acid notation:",o:["18:1(9)","18:2(9,12)","20:4(5,8,11,14)","16:1(9)"],a:2},
+{q:"Saponification with NaOH gives:",o:["Glycerol + free FA","Soap + glycerol","Only soap","Aldehydes + ketones"],a:1},
+{q:"Soap works because it has:",o:["Two ionic ends","A nonpolar tail and ionic head","Only a polar head","A benzene ring"],a:1},
+{q:"Rancidity is accelerated by:",o:["Cold","Nitrogen","Light and oxygen","Antioxidants"],a:2},
+{q:"Beeswax is:",o:["Glycerol + palmitic","Mericyl alcohol + palmitic","Glycerol + oleic","Cholesterol + protein"],a:1},
+{q:"Cardiolipin is associated with:",o:["Blood clotting","Mitochondrial membrane + VDRL","Myelin sheath","Skin barrier"],a:1},
+{q:"The nitrogenous base in lecithin is:",o:["Ethanolamine","Serine","Choline","Inositol"],a:2},
+{q:"Lecithinase A produces:",o:["Soap","Lysolecithin (haemolytic)","Ceramide","Ganglioside"],a:1},
+{q:"Sphingomyelin contains:",o:["Glycerol","Sphingosine","Ethanolamine","Inositol"],a:1},
+{q:"Gangliosides have how many sugars?",o:["1","2","More than 3","None"],a:2},
+{q:"Which is NOT a compound lipid?",o:["Phospholipid","Wax","Glycolipid","Sulpholipid"],a:1}
+];
+var ans={};
+(function(){
+var b=document.getElementById('qbox');
+EXAM.forEach(function(x,i){
+var d=document.createElement('div');d.className='q';
+var h='<b>'+(i+1)+'. '+x.q+'</b>';
+x.o.forEach(function(o,j){h+='<div class="opt" data-i="'+i+'" data-j="'+j+'">'+String.fromCharCode(65+j)+'. '+o+'</div>'});
+d.innerHTML=h;b.appendChild(d);
+});
+b.addEventListener('click',function(e){
+var t=e.target.closest('.opt');if(!t)return;
+var i=+t.dataset.i,j=+t.dataset.j;ans[i]=j;
+var ops=t.parentNode.querySelectorAll('.opt');
+ops.forEach(function(o){o.classList.remove('right','wrong')});
+ops[EXAM[i].a].classList.add('right');
+if(j!==EXAM[i].a)t.classList.add('wrong');
+});
+document.getElementById('submit').addEventListener('click',function(){
+var c=0;EXAM.forEach(function(x,i){if(ans[i]===x.a)c++;});
+var p=Math.round(c/EXAM.length*100);
+var msg=p>=90?'🏆 Excellent':p>=75?'🔥 Very Good':p>=60?'👍 Good راجع':'📚 راجع المادة';
+document.getElementById('score').textContent=c+'/'+EXAM.length+' ('+p+'%) '+msg;
+});
+})();
+function setLang(l){document.body.setAttribute('data-lang',l);try{localStorage.setItem('lang',l)}catch(e){}
+document.querySelectorAll('.langbtn').forEach(function(b){b.classList.toggle('active',b.dataset.setlang===l)});}
+document.querySelectorAll('.langbtn').forEach(function(b){b.addEventListener('click',function(){setLang(b.dataset.setlang)})});
+try{var sv=localStorage.getItem('lang');if(sv)setLang(sv)}catch(e){}
+var th=document.getElementById('theme');
+th.addEventListener('click',function(){var l=th.textContent.trim()==='☀️';
+if(l){th.textContent='🌙';document.body.style.background='#0f1420';document.body.style.color='#e8eefc';try{localStorage.setItem('theme','dark')}catch(e){}}
+else{th.textContent='☀️';document.body.style.background='#f4f6fb';document.body.style.color='#111';try{localStorage.setItem('theme','light')}catch(e){}}});
+var search=document.getElementById('search');
+search.addEventListener('input',function(){
+var q=search.value.trim().toLowerCase();
+document.querySelectorAll('.card,h1,.part-title').forEach(function(el){
+if(!q){el.style.display='';return;}
+var hay=((el.textContent||'')+' '+(el.dataset.search||'')).toLowerCase();
+el.style.display=hay.indexOf(q)>-1?'':'none';
+});
+});
+window.addEventListener('scroll',function(){var h=document.documentElement;var p=h.scrollTop/(h.scrollHeight-h.clientHeight)*100;document.getElementById('bar').style.width=p+'%'});
+</script>
+</body>
+</html>
